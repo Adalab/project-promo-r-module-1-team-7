@@ -41,6 +41,8 @@
 .hero-image-container > img {
   width: 160%;
   height: 80%;
+  position: relative;
+  right: 28%;
 }
 .eslogan {
   margin-left: 15px;
