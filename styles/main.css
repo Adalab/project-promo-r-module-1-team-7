@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-:root{
-    --brand-color-one:#099d8d;
-    --brand-color-two:#14d9c4;
-}
+
 @font-face {
     font-family: OpenSans;
     src: url(/proyectos/project-promo-r-module-1-team-7/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);  
@@ -13,11 +9,6 @@
  
   }
 
-
-
-
-  
-=======
 :root {
   /* Colores del proyecto */
   --black: #000;
@@ -37,7 +28,6 @@
   --size-p: 1rem;
 }
 
->>>>>>> 2f32be89d971d0f834d71ec0b59fd3dea587873c
 /* a partir de aquí estilos header */
 
 /* a partir de aquí estilos hero */
@@ -150,7 +140,6 @@
     background-color: yellowgreen;
 }
 
-<<<<<<< HEAD
 .icon-list{
     width: 124px;
   height: 30px;
@@ -164,7 +153,5 @@
     text-decoration: none; 
     width: 80%;
 }
-/* a partir de aquí estilos header */
-=======
+
 /* a partir de aquí estilos footer */
->>>>>>> 2f32be89d971d0f834d71ec0b59fd3dea587873c
