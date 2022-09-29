@@ -14,9 +14,15 @@
   --OpenSanssemibold: "Open Sans", sans-serif;
   --RubikMedium: "Rubik", sans-serif;
   --OpenSansRegular: "Open Sans", sans-serif;
-  --size-p: 1rem;
+  --size-p: 0.8rem;
 }
-
+.body {
+  width: 100vw;
+  min-height: 100vh;
+}
+.main {
+  width: 100%;
+}
 /* a partir de aquí estilos header */
 
 /* a partir de aquí estilos hero */
@@ -24,28 +30,53 @@
   width: 100vw;
   background-color: var(--white);
 }
-.hero-image {
-  width: 100%;
-}
+/* .hero-image {
+  width: 80%;
+  height: 20%;
+} */
 .eslogan {
-  margin: 0px 15px;
-  background-color: var(--white);
+  margin-left: 15px;
+  margin-right: 15px;
   position: absolute;
   top: 4%;
   font-family: var(--OpenSanssemibold);
+  text-align: start;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: var(--white);
+  padding: 10px;
+  padding-top: 17px;
+  width: 61%;
+  height: 5%;
+  line-height: 20px;
 }
 .equipo {
-  width: 100%;
+  width: 76.5%;
+  height: 60vh;
   position: relative;
+  top: 65px;
 }
 .equipo-title {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
   color: var(--aqua);
   font-family: var(--RubikMedium);
+  font-size: 1.2rem;
+  width: 86%;
+  text-align: center;
 }
-.equipo-p {
+.equipo-p-container {
   margin: 0px 15px;
   font-size: var(--size-p);
   font-family: var(--OpenSansRegular);
+  color: var(--dark-grey);
+  text-align: center;
+  line-height: 19px;
+}
+.equipo-p {
+  padding: 0px 3px;
+  margin-top: 10px;
 }
 .pico-decorativo {
   width: 10%;
@@ -53,6 +84,8 @@
   transform: rotate(45deg);
   position: absolute;
   bottom: -2%;
+  border: 2px solid red;
+  background-color: var(--white);
 }
 .forts-y-debs {
   background-color: var(--cool-grey);
