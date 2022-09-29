@@ -90,7 +90,7 @@
 /* a partir de aquí estilos quienes somos */
 .quienes-somos{
     
-    color:var(--brand-color-one);
+    color:var(--blue-green);
     font-family: 'Rubik';
     font-size: 24px;
     font-weight: 500;
@@ -149,7 +149,7 @@
     
 }
 .icon{
-    color:var(--brand-color-one);
+    color:var(--blue-green);
     text-decoration: none; 
     width: 80%;
 }
