@@ -1,19 +1,16 @@
-
 @font-face {
-    font-family: OpenSans;
-    src: url(/proyectos/project-promo-r-module-1-team-7/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);  
+  font-family: OpenSans;
+  src: url(/proyectos/project-promo-r-module-1-team-7/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
 }
 @font-face {
-    font-family: Rubik;
-    src: url(/proyectos/project-promo-r-module-1-team-7/fonts/Rubik/static/Rubik-Medium.ttf) ;
- 
-  }
+  font-family: Rubik;
+  src: url(/proyectos/project-promo-r-module-1-team-7/fonts/Rubik/static/Rubik-Medium.ttf);
+}
 
 :root {
   /* Colores del proyecto */
   --black: #000;
   --light-grey-blue: rgba(184, 184, 185, 0.1);
-  --black-8: rgba(0, 0, 0, 0.08);
   --black-8: rgba(0, 0, 0, 0.08);
   --aqua: #14d9c4;
   --blue-green: #099d8d;
@@ -41,10 +38,10 @@
   width: 100vw;
   background-color: var(--white);
 }
-/* .hero-image {
+.hero-image {
   width: 80%;
   height: 20%;
-} */
+}
 .eslogan {
   margin-left: 15px;
   margin-right: 15px;
@@ -121,70 +118,68 @@
 }
 
 /* a partir de aquí estilos quienes somos */
-.quienes-somos{
-    
-    color:var(--blue-green);
-    font-family: 'Rubik';
-    font-size: 24px;
-    font-weight: 500;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.quienes-somos {
+  color: var(--blue-green);
+  font-family: "Rubik";
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
-.article{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-    /*  */
-    gap: 45px;
-    /*  */
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  /*  */
+  gap: 45px;
+  /*  */
 }
-.image-box{
-    width: 180px;
-    height: 180px;
-    border: 5px;
-    border: solid 5px rgba(0, 0, 0, 0.08);
-    border-radius: 4px;
+.image-box {
+  width: 180px;
+  height: 180px;
+  border: 5px;
+  border: solid 5px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
 }
-.image{ 
-    width: 100%;
+.image {
+  width: 100%;
 }
-.quienes-somos-text{
-    font-family: 'OpenSans';
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.quienes-somos-text {
+  font-family: "OpenSans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.our-name{
-    height: 45px;
-    font-size: 20px;
-    font-weight: normal;
+.our-name {
+  height: 45px;
+  font-size: 20px;
+  font-weight: normal;
 
-    text-align: center;
-    color: black;
-    background-color: red;
+  text-align: center;
+  color: var(--black);
+  background-color: red;
 }
-.bio{
-    color: black;
-    font-weight: normal;
-    font-size: 16px;
-    background-color: yellowgreen;
+.bio {
+  color: var(--black);
+  font-weight: normal;
+  font-size: 16px;
+  background-color: yellowgreen;
 }
 
-.icon-list{
-    width: 124px;
+.icon-list {
+  width: 124px;
   height: 30px;
-    display: flex;
-    justify-content: space-between;
-    width: 124px;
-    
+  display: flex;
+  justify-content: space-between;
+  width: 124px;
 }
-.icon{
-    color:var(--blue-green);
-    text-decoration: none; 
-    width: 80%;
+.icon {
+  color: var(--blue-green);
+  text-decoration: none;
+  width: 80%;
 }
 
 /* a partir de aquí estilos footer */
