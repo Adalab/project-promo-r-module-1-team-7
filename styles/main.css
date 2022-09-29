@@ -22,7 +22,7 @@
   --OpenSanssemibold: "Open Sans", sans-serif;
   --RubikMedium: "Rubik", sans-serif;
   --OpenSansRegular: "Open Sans", sans-serif;
-  --size-p: 0.8rem;
+  --size-p: 1rem;
 }
 .body {
   width: 100vw;
@@ -38,31 +38,33 @@
   width: 100vw;
   background-color: var(--white);
 }
-.hero-image {
-  width: 80%;
-  height: 20%;
+.hero-image-container > img {
+  width: 160%;
+  height: 80%;
 }
 .eslogan {
   margin-left: 15px;
   margin-right: 15px;
   position: absolute;
-  top: 4%;
+  top: 50%;
+  left: 6%;
   font-family: var(--OpenSanssemibold);
   text-align: start;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bold;
   background-color: var(--white);
-  padding: 10px;
+  padding: 0px 15px;
   padding-top: 17px;
-  width: 61%;
+  width: 70%;
   height: 5%;
   line-height: 20px;
 }
 .equipo {
-  width: 76.5%;
-  height: 60vh;
+  width: 80%;
+  height: 70vh;
   position: relative;
   top: 65px;
+  left: 30px;
 }
 .equipo-title {
   margin-left: 15px;
@@ -70,51 +72,68 @@
   margin-bottom: 15px;
   color: var(--aqua);
   font-family: var(--RubikMedium);
-  font-size: 1.2rem;
-  width: 86%;
+  font-size: 1.4rem;
   text-align: center;
+  font-weight: bold;
 }
 .equipo-p-container {
-  margin: 0px 15px;
+  margin: 0px 3px;
   font-size: var(--size-p);
   font-family: var(--OpenSansRegular);
-  color: var(--dark-grey);
   text-align: center;
-  line-height: 19px;
+  line-height: 23px;
 }
 .equipo-p {
-  padding: 0px 3px;
-  margin-top: 10px;
+  padding: 0px 2px;
+  margin-top: 20px;
 }
 .pico-decorativo {
-  width: 10%;
-  height: 10%;
+  width: 9%;
+  height: 4%;
   transform: rotate(45deg);
   position: absolute;
-  bottom: -2%;
-  border: 2px solid red;
+  bottom: -26.5%;
+  left: 45.5%;
+  z-index: 1;
   background-color: var(--white);
 }
 .forts-y-debs {
-  background-color: var(--cool-grey);
+  background-color: rgba(57, 57, 60, 0.1);
+  /* opacity: 0.2; */
   width: 100%;
+  height: 73vh;
 }
 .fortalezas {
   margin: 10px 15px;
+  position: relative;
+  top: 8%;
+  text-align: center;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .forts-y-debs-title {
   color: var(--blue-green);
   font-size: 1.375rem;
   font-family: var(--RubikMedium);
+  font-weight: bold;
 }
 .forts-y-debs-p {
   color: var(--dark-grey);
-  font-size: var(--size-p);
+  font-family: var(--OpenSansRegular);
+  font-size: 1.1rem;
+  padding: 10px;
 }
-.Debilidades {
-  margin-bottom: 45px;
-  color: var(--dark-grey);
-  font-size: var(--size-p);
+.debilidades {
+  margin: 10px 15px;
+  position: relative;
+  top: 13%;
+  text-align: center;
+  line-height: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* a partir de aquí estilos quienes somos */
