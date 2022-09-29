@@ -1,7 +1,81 @@
+:root {
+  /* Colores del proyecto */
+  --black: #000;
+  --light-grey-blue: rgba(184, 184, 185, 0.1);
+  --black-8: rgba(0, 0, 0, 0.08);
+  --black-8: rgba(0, 0, 0, 0.08);
+  --aqua: #14d9c4;
+  --blue-green: #099d8d;
+  --white: #fff;
+  --cool-grey: #b8b8b9;
+  --dark-grey: #54585a;
+
+  /* Tipografías */
+  --OpenSanssemibold: "Open Sans", sans-serif;
+  --RubikMedium: "Rubik", sans-serif;
+  --OpenSansRegular: "Open Sans", sans-serif;
+  --size-p: 1rem;
+}
+
 /* a partir de aquí estilos header */
 
 /* a partir de aquí estilos hero */
+.hero {
+  width: 100vw;
+  background-color: var(--white);
+}
+.hero-image {
+  width: 100%;
+}
+.eslogan {
+  margin: 0px 15px;
+  background-color: var(--white);
+  position: absolute;
+  top: 4%;
+  font-family: var(--OpenSanssemibold);
+}
+.equipo {
+  width: 100%;
+  position: relative;
+}
+.equipo-title {
+  color: var(--aqua);
+  font-family: var(--RubikMedium);
+}
+.equipo-p {
+  margin: 0px 15px;
+  font-size: var(--size-p);
+  font-family: var(--OpenSansRegular);
+}
+.pico-decorativo {
+  width: 10%;
+  height: 10%;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: -2%;
+}
+.forts-y-debs {
+  background-color: var(--cool-grey);
+  width: 100%;
+}
+.fortalezas {
+  margin: 10px 15px;
+}
+.forts-y-debs-title {
+  color: var(--blue-green);
+  font-size: 1.375rem;
+  font-family: var(--RubikMedium);
+}
+.forts-y-debs-p {
+  color: var(--dark-grey);
+  font-size: var(--size-p);
+}
+.Debilidades {
+  margin-bottom: 45px;
+  color: var(--dark-grey);
+  font-size: var(--size-p);
+}
 
 /* a partir de aquí estilos equipo */
 
-/* a partir de aquí estilos header */
+/* a partir de aquí estilos footer */
