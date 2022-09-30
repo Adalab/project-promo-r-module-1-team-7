@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,12 +14,11 @@
   --cool-grey: #b8b8b9;
   --gunmetal: #54585a;
   /* Tipografías */
-  font-family: 'Open Sans', sans-serif;
- 
-font-family: 'Rubik', sans-serif;
+  --font-familyOpenSans: "Open Sans", sans-serif;
+  --font-familyRubik: "Rubik", sans-serif;
 }
-html{
-  font-size: 62,5%;
+html {
+  font-size: 62.5%;
 }
 .body {
   width: 100vw;
@@ -133,23 +132,29 @@ html{
 
 /* a partir de aquí estilos quienes somos */
 .quienes-somos {
+  width: 320px;
+  height: 2225px;
   color: var(--blue-green);
-  font-family: "Rubik";
+  font-family: var(--font-familyRubik);
   font-size: 24px;
   font-weight: 500;
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-color: var(--white);
+}
+.quienessomosh2 {
+  width: 193px;
+  height: 45px;
+  align-self: center;
+  margin-top: 30px;
+  line-height: 45px;
 }
 .article {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 15px;
-  /*  */
-  gap: 45px;
-  /*  */
 }
 .image-box {
   width: 180px;
@@ -157,30 +162,32 @@ html{
   border: 5px;
   border: solid 5px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 .image {
   width: 100%;
 }
 .quienes-somos-text {
-  font-family: "OpenSans";
+  font-family: var(--font-familyOpenSans);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .our-name {
-  height: 45px;
   font-size: 20px;
   font-weight: normal;
-
+  line-height: 45px;
   text-align: center;
   color: var(--black);
-  background-color: red;
 }
 .bio {
-  color: var(--black);
+  width: 290px;
+  margin-bottom: 15px;
   font-weight: normal;
   font-size: 16px;
-  background-color: yellowgreen;
+  line-height: 24px;
+  color: var(--gunmetal);
 }
 
 .icon-list {
@@ -188,12 +195,18 @@ html{
   height: 30px;
   display: flex;
   justify-content: space-between;
-  width: 124px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
+
 .icon {
   color: var(--blue-green);
   text-decoration: none;
   width: 80%;
+  font-size: 16px;
 }
-
+.icon-list .last {
+  background-color: yellow;
+  margin-bottom: 45px;
+}
 /* a partir de aquí estilos footer */
