@@ -1,31 +1,25 @@
-
-@font-face {
-    font-family: OpenSans;
-    src: url(/proyectos/project-promo-r-module-1-team-7/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);  
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@font-face {
-    font-family: Rubik;
-    src: url(/proyectos/project-promo-r-module-1-team-7/fonts/Rubik/static/Rubik-Medium.ttf) ;
- 
-  }
-
 :root {
   /* Colores del proyecto */
   --black: #000;
   --light-grey-blue: rgba(184, 184, 185, 0.1);
   --black-8: rgba(0, 0, 0, 0.08);
-  --black-8: rgba(0, 0, 0, 0.08);
   --aqua: #14d9c4;
   --blue-green: #099d8d;
   --white: #fff;
   --cool-grey: #b8b8b9;
-  --dark-grey: #54585a;
-
+  --gunmetal: #54585a;
   /* Tipografías */
-  --OpenSanssemibold: "Open Sans", sans-serif;
-  --RubikMedium: "Rubik", sans-serif;
-  --OpenSansRegular: "Open Sans", sans-serif;
-  --size-p: 1rem;
+  font-family: 'Open Sans', sans-serif;
+ 
+font-family: 'Rubik', sans-serif;
+}
+html{
+  font-size: 62,5%;
 }
 
 /* a partir de aquí estilos header */
