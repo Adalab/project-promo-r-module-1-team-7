@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,12 +14,11 @@
   --cool-grey: #b8b8b9;
   --gunmetal: #54585a;
   /* Tipografías */
-  font-family: 'Open Sans', sans-serif;
- 
-font-family: 'Rubik', sans-serif;
+  --font-familyOpenSans: "Open Sans", sans-serif;
+  --font-familyRubik: "Rubik", sans-serif;
 }
-html{
-  font-size: 62,5%;
+html {
+  font-size: 62.5%;
 }
 .body {
   width: 100vw;
@@ -33,102 +32,101 @@ html{
 /* a partir de aquí estilos hero */
 .hero {
   width: 100vw;
-  background-color: var(--white);
-}
-.hero-image-container > img {
-  width: 160%;
-  height: 80%;
+  height: 49.82248520710059vh;
   position: relative;
-  right: 28%;
+  bottom: 39px;
 }
-.eslogan {
-  width: 70%;
-  height: 5%;
+.hero-image {
+  width: 100%;
+  height: 100%;
+}
+.equipo-lema {
+  width: 90.625%;
+  height: 9.467455621301776vh;
   position: absolute;
-  top: 50%;
-  left: 6%;
-  font-family: var(--OpenSanssemibold);
-  font-size: 1rem;
-  font-weight: bold;
-  line-height: 21px;
-  text-align: start;
+  bottom: 45%;
   background-color: var(--white);
-  padding: 0px 15px;
-  padding-top: 17px;
+  font-family: var(--font-familyOpenSans);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.39;
+  text-align: start;
+  padding-top: 13px;
+  padding-bottom: 16px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-left: 15px;
-  margin-right: 15px;
 }
-.equipo {
-  width: 80%;
-  height: 70vh;
-  position: relative;
-  top: 70px;
-  left: 30px;
+.equipo .equipo-info {
+  width: 100%;
+  height: 64.7vh;
+  padding: 0px 15px;
+  padding-top: 30px;
 }
 .equipo-title {
-  margin-bottom: 15px;
   color: var(--aqua);
-  font-family: var(--RubikMedium);
-  font-size: 1.4rem;
+  font-family: var(--font-familyRubik);
+  line-height: 1.88;
+  font-size: 2.4rem;
   text-align: center;
-  font-weight: bold;
-}
-.equipo-p-container {
-  margin: 0px 3px;
-  font-size: var(--size-p);
-  font-family: var(--OpenSansRegular);
-  line-height: 23px;
-  text-align: center;
+  font-weight: 500;
+  margin-bottom: 15px;
+  padding: 0px 20px;
 }
 .equipo-p {
-  padding: 0px 2px;
-  margin-top: 20px;
-}
-.pico-decorativo {
-  width: 9%;
-  height: 4%;
-  transform: rotate(45deg);
-  position: absolute;
-  z-index: 1;
-  bottom: -26.5%;
-  left: 45.5%;
-  background-color: var(--white);
-}
-.forts-y-debs {
-  background-color: rgba(57, 57, 60, 0.1);
-  height: 66vh;
-}
-.fortalezas {
-  margin: 10px 15px;
-  position: relative;
-  top: 8%;
+  width: 90.625vw;
+  height: 45.44378698224852vh;
+  font-size: 1.6rem;
+  font-family: var(--font-familyOpenSans);
+  line-height: 1.5;
   text-align: center;
-  line-height: 24px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 40px;
+}
+.cuadrado-decorativo {
+  background-color: var(--white);
+  transform: rotate(45deg);
+  position: absolute;
+  z-index: 999;
+  top: 117.8%;
+  left: 145.2px;
+  width: 30px;
+  height: 30px;
+}
+.forts-y-debs {
+  position: relative;
+  background-color: rgba(57, 57, 60, 0.1);
+  width: 100vw;
+  height: 68.52071005917159vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.forts-y-debs-container {
+  text-align: center;
+  padding: 0px 20px;
+}
+.forts-y-debs-container.box1 {
+  margin: 30px 0px;
+}
+.forts-y-debs-container.box2 {
+  margin-bottom: 45px;
 }
 .forts-y-debs-title {
   color: var(--blue-green);
-  font-size: 1.375rem;
-  font-family: var(--RubikMedium);
-  font-weight: bold;
+  font-size: 2.2rem;
+  font-family: var(--font-familyRubik);
+  font-weight: 500;
+  line-height: 2.05;
 }
 .forts-y-debs-p {
-  color: var(--dark-grey);
-  font-family: var(--OpenSansRegular);
-  font-size: 1.1rem;
-  padding: 10px;
-}
-.debilidades {
-  margin: 10px 15px;
-  position: relative;
-  top: 9%;
-  text-align: center;
-  line-height: 23px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  color: var(--gunmetal);
+  font-family: var(--font-familyOpenSans);
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 
 /* a partir de aquí estilos quienes somos */
