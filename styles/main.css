@@ -32,50 +32,51 @@ html {
 /* a partir de aquí estilos hero */
 .hero {
   width: 100vw;
-  height: 49.82248520710059vh;
+  height: 59.5vh;
   position: relative;
   bottom: 39px;
+}
+picture {
+  width: 100vw;
 }
 .hero-image {
   width: 100%;
   height: 100%;
 }
-.equipo-lema {
+.lema {
   width: 90.625%;
   height: 9.467455621301776vh;
-  position: absolute;
-  bottom: 45%;
   background-color: var(--white);
   font-family: var(--font-familyOpenSans);
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.39;
+  position: absolute;
+  top: 55%;
   text-align: start;
+  padding: 0px 15px;
   padding-top: 13px;
   padding-bottom: 16px;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-left: 15px;
 }
-.equipo .equipo-info {
+.equipo {
   width: 100%;
-  height: 64.7vh;
+  height: 69.7vh;
   padding: 0px 15px;
-  padding-top: 30px;
+  padding-top: 35px;
 }
 .equipo-title {
   color: var(--aqua);
   font-family: var(--font-familyRubik);
   line-height: 1.88;
   font-size: 2.4rem;
-  text-align: center;
   font-weight: 500;
+  text-align: center;
   margin-bottom: 15px;
-  padding: 0px 20px;
 }
 .equipo-p {
   width: 90.625vw;
-  height: 45.44378698224852vh;
+  height: 47.44378698224852vh;
   font-size: 1.6rem;
   font-family: var(--font-familyOpenSans);
   line-height: 1.5;
@@ -83,27 +84,26 @@ html {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding: 0px 8px;
 }
 .cuadrado-decorativo {
   background-color: var(--white);
+  width: 9.3vw;
+  height: 4vh;
   transform: rotate(45deg);
   position: absolute;
-  z-index: 999;
-  top: 117.8%;
-  left: 145.2px;
-  width: 30px;
-  height: 30px;
+  z-index: 1;
+  top: 132.8%;
+  left: 45.6%;
 }
 .forts-y-debs {
-  position: relative;
   background-color: rgba(57, 57, 60, 0.1);
   width: 100vw;
-  height: 68.52071005917159vh;
+  height: 79.52071005917159vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
 }
 .forts-y-debs-container {
   text-align: center;
@@ -111,6 +111,7 @@ html {
 }
 .forts-y-debs-container.box1 {
   margin: 30px 0px;
+  position: relative;
 }
 .forts-y-debs-container.box2 {
   margin-bottom: 45px;
