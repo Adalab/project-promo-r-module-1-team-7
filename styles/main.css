@@ -21,7 +21,13 @@ font-family: 'Rubik', sans-serif;
 html{
   font-size: 62,5%;
 }
-
+.body {
+  width: 100vw;
+  min-height: 100vh;
+}
+.main {
+  width: 100%;
+}
 /* a partir de aquí estilos header */
 
 /* a partir de aquí estilos hero */
@@ -29,123 +35,165 @@ html{
   width: 100vw;
   background-color: var(--white);
 }
-.hero-image {
-  width: 100%;
+.hero-image-container > img {
+  width: 160%;
+  height: 80%;
+  position: relative;
+  right: 28%;
 }
 .eslogan {
-  margin: 0px 15px;
-  background-color: var(--white);
+  width: 70%;
+  height: 5%;
   position: absolute;
-  top: 4%;
+  top: 50%;
+  left: 6%;
   font-family: var(--OpenSanssemibold);
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: start;
+  background-color: var(--white);
+  padding: 0px 15px;
+  padding-top: 17px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .equipo {
-  width: 100%;
+  width: 80%;
+  height: 70vh;
   position: relative;
+  top: 70px;
+  left: 30px;
 }
 .equipo-title {
+  margin-bottom: 15px;
   color: var(--aqua);
   font-family: var(--RubikMedium);
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: bold;
 }
-.equipo-p {
-  margin: 0px 15px;
+.equipo-p-container {
+  margin: 0px 3px;
   font-size: var(--size-p);
   font-family: var(--OpenSansRegular);
+  line-height: 23px;
+  text-align: center;
+}
+.equipo-p {
+  padding: 0px 2px;
+  margin-top: 20px;
 }
 .pico-decorativo {
-  width: 10%;
-  height: 10%;
+  width: 9%;
+  height: 4%;
   transform: rotate(45deg);
   position: absolute;
-  bottom: -2%;
+  z-index: 1;
+  bottom: -26.5%;
+  left: 45.5%;
+  background-color: var(--white);
 }
 .forts-y-debs {
-  background-color: var(--cool-grey);
-  width: 100%;
+  background-color: rgba(57, 57, 60, 0.1);
+  height: 66vh;
 }
 .fortalezas {
   margin: 10px 15px;
+  position: relative;
+  top: 8%;
+  text-align: center;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .forts-y-debs-title {
   color: var(--blue-green);
   font-size: 1.375rem;
   font-family: var(--RubikMedium);
+  font-weight: bold;
 }
 .forts-y-debs-p {
   color: var(--dark-grey);
-  font-size: var(--size-p);
+  font-family: var(--OpenSansRegular);
+  font-size: 1.1rem;
+  padding: 10px;
 }
-.Debilidades {
-  margin-bottom: 45px;
-  color: var(--dark-grey);
-  font-size: var(--size-p);
+.debilidades {
+  margin: 10px 15px;
+  position: relative;
+  top: 9%;
+  text-align: center;
+  line-height: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* a partir de aquí estilos quienes somos */
-.quienes-somos{
-    
-    color:var(--blue-green);
-    font-family: 'Rubik';
-    font-size: 24px;
-    font-weight: 500;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.quienes-somos {
+  color: var(--blue-green);
+  font-family: "Rubik";
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
-.article{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-    /*  */
-    gap: 45px;
-    /*  */
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  /*  */
+  gap: 45px;
+  /*  */
 }
-.image-box{
-    width: 180px;
-    height: 180px;
-    border: 5px;
-    border: solid 5px rgba(0, 0, 0, 0.08);
-    border-radius: 4px;
+.image-box {
+  width: 180px;
+  height: 180px;
+  border: 5px;
+  border: solid 5px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
 }
-.image{ 
-    width: 100%;
+.image {
+  width: 100%;
 }
-.quienes-somos-text{
-    font-family: 'OpenSans';
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.quienes-somos-text {
+  font-family: "OpenSans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.our-name{
-    height: 45px;
-    font-size: 20px;
-    font-weight: normal;
+.our-name {
+  height: 45px;
+  font-size: 20px;
+  font-weight: normal;
 
-    text-align: center;
-    color: black;
-    background-color: red;
+  text-align: center;
+  color: var(--black);
+  background-color: red;
 }
-.bio{
-    color: black;
-    font-weight: normal;
-    font-size: 16px;
-    background-color: yellowgreen;
+.bio {
+  color: var(--black);
+  font-weight: normal;
+  font-size: 16px;
+  background-color: yellowgreen;
 }
 
-.icon-list{
-    width: 124px;
+.icon-list {
+  width: 124px;
   height: 30px;
-    display: flex;
-    justify-content: space-between;
-    width: 124px;
-    
+  display: flex;
+  justify-content: space-between;
+  width: 124px;
 }
-.icon{
-    color:var(--blue-green);
-    text-decoration: none; 
-    width: 80%;
+.icon {
+  color: var(--blue-green);
+  text-decoration: none;
+  width: 80%;
 }
 
 /* a partir de aquí estilos footer */
