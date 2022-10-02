@@ -31,19 +31,19 @@ html {
 
 /* a partir de aquí estilos hero */
 .hero {
-  width: 100vw;
-  height: 59.5vh;
+  width: 100%;
   position: relative;
   bottom: 39px;
-}
-picture {
-  width: 100vw;
 }
 .hero-image {
   width: 100%;
   height: 100%;
 }
-.lema {
+.equipo {
+  display: flex;
+  flex-direction: column;
+}
+.equipo-lema {
   width: 90.625%;
   height: 9.467455621301776vh;
   background-color: var(--white);
@@ -52,16 +52,16 @@ picture {
   font-weight: 600;
   line-height: 1.39;
   position: absolute;
-  top: 55%;
+  top: 50%;
   text-align: start;
   padding: 0px 15px;
   padding-top: 13px;
   padding-bottom: 16px;
   margin-left: 15px;
 }
-.equipo {
+.equipo-info {
   width: 100%;
-  height: 69.7vh;
+  height: 65vh;
   padding: 0px 15px;
   padding-top: 35px;
 }
@@ -93,13 +93,12 @@ picture {
   transform: rotate(45deg);
   position: absolute;
   z-index: 1;
-  top: 132.8%;
-  left: 45.6%;
+  top: 122.5%;
+  align-self: center;
 }
 .forts-y-debs {
   background-color: rgba(57, 57, 60, 0.1);
   width: 100vw;
-  height: 79.52071005917159vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -189,7 +188,6 @@ picture {
   line-height: 24px;
   color: var(--gunmetal);
 }
-
 .icon-list {
   width: 124px;
   height: 30px;
@@ -209,7 +207,6 @@ picture {
   background-color: yellow;
   margin-bottom: 45px;
 }
-
 .footer{
   width: 100%;
   height: 34.62603878116344vh;
