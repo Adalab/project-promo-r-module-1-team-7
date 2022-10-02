@@ -90,9 +90,8 @@ picture {
   transform: rotate(45deg);
   position: absolute;
   z-index: 1;
-  top: 120.8%;
-  left: 45%;
-  
+  bottom: -24.5vh;
+  left: 18vh;
 }
 .forts-y-debs {
   background-color: rgba(57, 57, 60, 0.1);
@@ -205,7 +204,7 @@ picture {
 }
 
 /* A partir de aquí el footer*/
-.footer{
+.footer {
   width: 100%;
   height: 34.62603878116344vh;
   padding: 30px 74px 45px;
@@ -240,16 +239,16 @@ picture {
   display: flex;
   justify-content: center;
 }
-.main-nav-footer-item a{
+.main-nav-footer-item a {
   color: var(--gunmetal);
   text-decoration: none;
 }
-.main-nav-footer-item a :hover{
-  color: blue
+.main-nav-footer-item a :hover {
+  color: blue;
 }
-.logo-adalab{
+.logo-adalab {
   width: 115.9px;
   height: 45px;
 }
 /*faltan ubicar exactamente las cajas*/
-/*falta quizás cambiar px por vh/
+/*falta quizás cambiar px por vh*/
