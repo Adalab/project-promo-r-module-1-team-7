@@ -1,294 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="robots" content="index, follow" />
-    <!-- <meta name="description" content="Hola"> -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <title>(Nombre de equipo)</title> -->
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <link
-      rel="stylesheet"
-      href="./styles/tablet.css"
-      media="screen and (min-width:320px)"
-    />
-    <link
-      rel="stylesheet"
-      href="./styles/desktop.css"
-      media="screen and (min-width:768px)"
-    />
-  </head>
 
-  <body>
-    <header>
-      <h1>NOMBRE DEL GRUPO</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html#equipo">EQUIPO</a></li>
-          <li><a href="index.html#quienes-somos">QUIENES SOMOS</a></li>
-          <li><a href="form.html#contacto">CONTACTO</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <picture>
-          <source
-            srcset="./images/hero-img-medium.jpg"
-            media="(min-width: 320px)"
-          />
-          <source
-            srcset="./images/hero-img-big.jpg"
-            media="(min-width: 768px)"
-          />
-          <img
-            class="hero-image"
-            src="./images/hero-image-small.jpg"
-            alt="Foto de equipo poniendo las manos para animarse"
-          />
-        </picture>
-      </section>
-      <section class="equipo">
-        <h4 class="equipo-lema">
-          Lema ipsum dolor sit amet consectetur adipisicing elit.
-        </h4>
-        <section class="equipo-info" id="equipo">
-          <h2 class="equipo-title">EQUIPO</h2>
-          <div class="equipo-p">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-              quo neque ducimus excepturi? Corrupti at iusto placeat voluptatem
-              ipsam sapiente, ipsum neque. Numquam a vel consequatur nihil dicta
-              ipsam debitis?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-              quo neque ducimus excepturi? Corrupti at iusto placeat voluptatem
-              ipsam sapiente, ipsum neque. Numquam a vel consequatur nihil dicta
-              ipsam debitis?
-            </p>
-          </div>
-        </section>
-        <div class="cuadrado-decorativo"></div>
-        <section class="forts-y-debs">
-          <div class="forts-y-debs-container box1">
-            <h3 class="forts-y-debs-title">Fortalezas</h3>
-            <p class="forts-y-debs-p">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Architecto, nisi. Illo deserunt iusto delectus ullam, voluptas eum
-              quo veniam aliquam sit cupiditate voluptatem culpa, illum, dolores
-              at repellendus enim earum!
-            </p>
-          </div>
-          <div class="forts-y-debs-container box2">
-            <h3 class="forts-y-debs-title">Debilidades</h3>
-            <p class="forts-y-debs-p">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Architecto, nisi. Illo deserunt iusto delectus ullam, voluptas eum
-              quo veniam aliquam sit cupiditate voluptatem culpa, illum, dolores
-              at repellendus enim earum!
-            </p>
-          </div>
-        </section>
-      </section>
-      <section class="quienes-somos" id="quienes-somos">
-        <h2>QUIENES SOMOS</h2>
-        <article class="article">
-          <div class="image-box">
-            <img class="image" src="./images/pizza-6682514_1920.png" alt="" />
-          </div>
-          <div class="quienes-somos-text">
-            <h5 class="our-name">Marta Castrillo</h5>
-            <p class="bio">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-              corrupti magni? Expedita dolorem, earum illum alias voluptates
-              impedit magnam. Qui cumque nam deleniti voluptates? Debitis iure
-              quidem fugiat odit mollitia.
-            </p>
-            <ul class="icon-list">
-              <li>
-                <a class="icon" href="#"
-                  ><i class="fa-brands fa-twitter"></i
-                ></a>
-              </li>
-              <li>·</li>
-              <li>
-                <a class="icon" href="www.linkedin.com/in/marta-castrillo-gil"
-                  ><i class="fa-brands fa-linkedin-in"></i
-                ></a>
-              </li>
-              <li>·</li>
-              <li>
-                <a class="icon" href="#"
-                  ><i class="fa-brands fa-github-alt"></i
-                ></a>
-              </li>
-              <li>·</li>
-              <li>
-                <a class="icon" href="#"
-                  ><i class="fa-solid fa-envelope"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </article>
-        <article class="article">
-          <div class="image-box">
-            <img class="image" src="./images/pizza-6682514_1920.png" alt="" />
-          </div>
-          <div class="quienes-somos-text">
-            <div class="our-name">
-              <h5>Úrsula Borrego</h5>
-            </div>
-            <p class="bio">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-              corrupti magni? Expedita dolorem, earum illum alias voluptates
-              impedit magnam. Qui cumque nam deleniti voluptates? Debitis iure
-              quidem fugiat odit mollitia.
-            </p>
-            <ul class="icon-list">
-              <li>
-                <a class="icon" href="#"
-                  ><i class="fa-brands fa-twitter"></i
-                ></a>
-              </li>
-              <li>·</li>
-              <li>
-                <a class="icon" href="#"
-                  ><i class="fa-brands fa-linkedin-in"></i
-                ></a>
-              </li>
-              <li>·</li>
-              <li>
-                <a class="icon" href="#"
-                  ><i class="fa-brands fa-github-alt"></i
-                ></a>
-              </li>
-              <li>·</li>
-              <li>
-                <a class="icon" href="#"
-                  ><i class="fa-solid fa-envelope"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </article>
-        <article class="article">
-          <div class="image-box">
-            <img class="image" src="./images/pizza-6682514_1920.png" alt="" />
-          </div>
-          <div class="quienes-somos-text">
-            <h5 class="our-name">Virginia Menéndez</h5>
-            <p class="bio">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-              corrupti magni? Expedita dolorem, earum illum alias voluptates
-              impedit magnam. Qui cumque nam deleniti voluptates? Debitis iure
-              quidem fugiat odit mollitia.
-            </p>
-            <ul class="icon-list">
-              <li>
-                <a class="icon" href="#"
-                  ><i class="fa-brands fa-twitter"></i
-                ></a>
-              </li>
-              <li>·</li>
-              <li>
-                <a class="icon" href="#"
-                  ><i class="fa-brands fa-linkedin-in"></i
-                ></a>
-              </li>
-              <li>·</li>
-              <li>
-                <a class="icon" href="#"
-                  ><i class="fa-brands fa-github-alt"></i
-                ></a>
-              </li>
-              <li>·</li>
-              <li>
-                <a class="icon" href="#"
-                  ><i class="fa-solid fa-envelope"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </article>
-        <article class="article">
-          <div class="image-box">
-            <img class="image" src="./images/pizza-6682514_1920.png" alt="" />
-          </div>
-          <div class="quienes-somos-text">
-            <h5 class="our-name">Yara Paz</h5>
-            <p class="bio">
-              Antigua Traductora profesional de lengua inglesa, española,
-              francesa y portuguesa y futura Programadora Front-End. Su pasión
-              por el mundo de las lenguas y del aprendizaje la llevó a
-              aventurarse a descubrir un nuevo lenguaje: el de la programación.
-              Ahora Html y Css en mano no hay quien la pare maquetando páginas
-              responsive.
-            </p>
-            <ul class="icon-list">
-              <li>
-                <a class="icon" href="#"
-                  ><i class="fa-brands fa-twitter"></i
-                ></a>
-              </li>
-              <li>·</li>
-              <li>
-                <a class="icon" href="#"
-                  ><i class="fa-brands fa-linkedin-in"></i
-                ></a>
-              </li>
-              <li>·</li>
-              <li>
-                <a class="icon" href="#"
-                  ><i class="fa-brands fa-github-alt"></i
-                ></a>
-              </li>
-              <li>·</li>
-              <li>
-                <a class="icon" href="#"
-                  ><i class="fa-solid fa-envelope"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </article>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="main-copyright">
-        <p class="copyright">Nombre del grupo ©️ 2022</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="index, follow" />
+  <!-- <meta name="description" content="Hola"> -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <title>(Nombre de equipo)</title> -->
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="./styles/tablet.css" media="screen and (min-width:320px)" />
+  <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width:768px)" />
+</head>
+
+<body>
+  <header>
+    <h1>NOMBRE DEL GRUPO</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html#equipo">EQUIPO</a></li>
+        <li><a href="index.html#quienes-somos">QUIENES SOMOS</a></li>
+        <li><a href="form.html#contacto">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="./images/hero-img-medium.jpg" media="(min-width: 320px)" />
+        <source srcset="./images/hero-img-big.jpg" media="(min-width: 768px)" />
+        <img class="hero-image" src="./images/prueba 2.jpg" alt="Foto de equipo poniendo las manos para animarse" />
+      </picture>
+    </section>
+    <h4 class="lema">
+      Lema ipsum dolor sit amet consectetur adipisicing elit.
+    </h4>
+    <section class="equipo" id="equipo">
+      <h2 class="equipo-title">EQUIPO</h2>
+      <div class="equipo-p">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quo
+          neque ducimus excepturi? Corrupti at iusto placeat voluptatem ipsam
+          sapiente, ipsum neque. Numquam a vel consequatur nihil dicta ipsam
+          debitis?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quo
+          neque ducimus excepturi? Corrupti at iusto placeat voluptatem ipsam
+          sapiente, ipsum neque. Numquam a vel consequatur nihil dicta ipsam
+          debitis?
+        </p>
       </div>
-      <nav>
-        <ul class="main-nav">
-          <li class="main-nav-item"><a href="index.html#equipo">EQUIPO</a></li>
-          <li class="main-nav-item"><a href="index.html#quienes-somos">QUIENES SOMOS</a></li>
-          <li class="main-nav-item"><a href="form.html#contacto">CONTACTO</a></li>
-        </ul>
-      </nav>
-      <div>
-        <img class="logo-adalab" src="images/logo-adalab.png" alt="logo adalab"/>
+    </section>
+    <div class="cuadrado-decorativo"></div>
+    <section class="forts-y-debs">
+      <div class="forts-y-debs-container box1">
+        <h3 class="forts-y-debs-title">Fortalezas</h3>
+        <p class="forts-y-debs-p">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Architecto, nisi. Illo deserunt iusto delectus ullam, voluptas eum
+          quo veniam aliquam sit cupiditate voluptatem culpa, illum, dolores
+          at repellendus enim earum! quo veniam aliquam.
+        </p>
       </div>
-    </footer>
-  </body>
+      <div class="forts-y-debs-container box2">
+        <h3 class="forts-y-debs-title">Debilidades</h3>
+        <p class="forts-y-debs-p">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Architecto, nisi. Illo deserunt iusto delectus ullam, voluptas eum
+          quo veniam aliquam sit cupiditate voluptatem culpa, illum, dolores
+          at repellendus enim earum!
+        </p>
+        </article>
+    </section>
+    </section>
+    <section class="quienes-somos" id="quienes-somos">
+      <h2 class="quienessomosh2">QUIENES SOMOS</h2>
+      <article class="article">
+        <div class="image-box"><img class="image" src="./images/marta.png" alt="" /></div>
+        <div class="quienes-somos-text">
+          <h5 class="our-name">Marta Castrillo</h5>
+          <p class="bio">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+            corrupti magni? Expedita dolorem, earum illum alias voluptates
+            impedit magnam. Qui cumque nam deleniti voluptates? Debitis iure
+            quidem fugiat odit mollitia.
+          </p>
+        </div>
+      </article>
+      <article class="article">
+        <div class="image-box"><img class="image" src="./images/ursula.png" alt="" /></div>
+        <div class="quienes-somos-text">
+          <div class="our-name">
+            <h5>Úrsula Borrego</h5>
+          </div>
+          <p class="bio">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+            corrupti magni? Expedita dolorem, earum illum alias voluptates
+            impedit magnam. Qui cumque nam deleniti voluptates? Debitis iure
+            quidem fugiat odit mollitia.
+          </p>
+          <ul class="icon-list">
+            <li><a class="icon" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li>·</li>
+            <li><a class="icon" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li>·</li>
+            <li><a class="icon" href="#"><i class="fa-brands fa-github-alt"></i></a></li>
+            <li>·</li>
+            <li><a class="icon" href="#"><i class="fa-solid fa-envelope"></i></a></li>
+          </ul>
+        </div>
+      </article>
+      <article class="article">
+        <div class="image-box"><img class="image" src="./images/vicky.png" alt="" /></div>
+        <div class="quienes-somos-text">
+          <h5 class="our-name">Virginia Menéndez</h5>
+          <p class="bio">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+            corrupti magni? Expedita dolorem, earum illum alias voluptates
+            impedit magnam. Qui cumque nam deleniti voluptates? Debitis iure
+            quidem fugiat odit mollitia.
+          </p>
+          <ul class="icon-list">
+            <li><a class="icon" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li>·</li>
+            <li><a class="icon" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li>·</li>
+            <li><a class="icon" href="#"><i class="fa-brands fa-github-alt"></i></a></li>
+            <li>·</li>
+            <li><a class="icon" href="#"><i class="fa-solid fa-envelope"></i></a></li>
+          </ul>
+        </div>
+      </article>
+      <article class="article">
+        <div class="image-box"><img class="image" src="./images/yara.png" alt="" /></div>
+        <div class="quienes-somos-text">
+          <h5 class="our-name">Yara Paz</h5>
+          <p class="bio">
+            Antigua Traductora profesional de lengua inglesa, española, francesa y portuguesa y futura
+            Programadora
+            Front-End. Su pasión por el mundo de las lenguas y del aprendizaje la llevó a aventurarse a
+            descubrir un
+            nuevo lenguaje: el de la programación. Ahora Html y Css en mano no hay quien la pare maquetando
+            páginas
+            responsive.
+          </p>
+          <ul class="icon-list last">
+            <li><a class="icon" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li>·</li>
+            <li><a class="icon" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li>·</li>
+            <li><a class="icon" href="#"><i class="fa-brands fa-github-alt"></i></a></li>
+            <li>·</li>
+            <li><a class="icon" href="#"><i class="fa-solid fa-envelope"></i></a></li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <p>Nombre del grupo ©️ 2022</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html#equipo">EQUIPO</a></li>
+        <li><a href="index.html#quienes-somos">QUIENES SOMOS</a></li>
+        <li><a href="form.html#contacto">CONTACTO</a></li>
+      </ul>
+    </nav>
+    <div>
+      <img src="" alt="" />
+    </div>
+  </footer>
+</body>
 </html>
