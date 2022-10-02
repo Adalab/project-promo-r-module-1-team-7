@@ -24,6 +24,8 @@ html {
   width: 100vw;
   min-height: 100vh;
 }
+
+/* A partir de aquí el main*/
 .main {
   width: 100%;
 }
@@ -132,4 +134,52 @@ html {
   border: none;
   border-radius: 4%;
   margin-top: 60px;
+}
+/* A partir de aquí el footer */
+/* A partir de aquí el footer*/
+.footer {
+  width: 100%;
+  height: 34.62603878116344vh;
+  padding: 30px 74px 45px;
+  border: solid 1px var(--cool-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.copyright {
+  width: 172px;
+  height: 20px;
+  margin: 0 0 20px;
+  padding-top: 30px;
+  text-align: center;
+  color: var(--cool-grey);
+  font-size: 14px;
+  font-family: var(--font-familyOpenSans);
+  line-height: 1.43;
+}
+.main-nav-footer {
+  width: 114px;
+  height: 60px;
+  margin: 20px 29px 30px;
+  font-family: var(--font-familyOpenSans);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+  opacity: 0.75;
+}
+.main-nav-footer-item {
+  display: flex;
+  justify-content: center;
+}
+.main-nav-footer-item a {
+  color: var(--gunmetal);
+  text-decoration: none;
+}
+.main-nav-footer-item a :hover {
+  color: blue;
+}
+.logo-adalab {
+  width: 115.9px;
+  height: 45px;
 }
