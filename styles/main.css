@@ -37,7 +37,6 @@ html {
 }
 .hero-image {
   width: 100%;
-  height: 100%;
 }
 .equipo {
   display: flex;
@@ -45,14 +44,13 @@ html {
 }
 .equipo-lema {
   width: 90.625%;
-  height: 9.467455621301776vh;
   background-color: var(--white);
   font-family: var(--font-familyOpenSans);
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.39;
   position: absolute;
-  top: 50%;
+  top: 59%;
   text-align: start;
   padding: 0px 15px;
   padding-top: 13px;
@@ -61,7 +59,7 @@ html {
 }
 .equipo-info {
   width: 100%;
-  height: 65vh;
+  height: 80vh;
   padding: 0px 15px;
   padding-top: 35px;
 }
@@ -88,13 +86,13 @@ html {
 }
 .cuadrado-decorativo {
   background-color: var(--white);
-  width: 9.3vw;
-  height: 4vh;
+  width: 10vw;
+  height: 5vh;
   transform: rotate(45deg);
   position: absolute;
   z-index: 1;
-  top: 122.5%;
-  align-self: center;
+  top: 148.8%;
+  left: 45%;
 }
 .forts-y-debs {
   background-color: rgba(57, 57, 60, 0.1);
