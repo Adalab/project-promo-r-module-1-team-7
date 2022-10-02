@@ -8,84 +8,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <title>(Nombre de equipo)</title> -->
     <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="./styles/tablet.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/form-main.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/form-tablet.css"
       media="screen and (min-width:320px)"
     />
     <link
       rel="stylesheet"
-      href="./styles/desktop.css"
+      href="./styles/form-desktop.css"
       media="screen and (min-width:768px)"
     />
   </head>
-
   <body>
     <header>
       <h1>NOMBRE DEL GRUPO</h1>
       <nav>
         <ul>
           <li><a href="index.html#equipo">EQUIPO</a></li>
-          <li><a href="index.html#quienes-somos">QUIENES SOMOS</a></li>
-          <li><a href="form.html#contacto">CONTACTO</a></li>
+          <li><a href="iindex.html#quienes-somos">QUIENES SOMOS</a></li>
+          <li><a href="iform.html#contacto">CONTACTO</a></li>
         </ul>
       </nav>
-      <img src="" alt="" />
     </header>
     <main>
-      <section id="contacto">
-        <h2>CONTACTO</h2>
-        <div>
-          <p>
+      <section class="hero">
+        <picture>
+          <source
+            srcset="./images/hero-img-medium.jpg"
+            media="(min-width: 320px)"
+          />
+          <source
+            srcset="./images/hero-img-big.jpg"
+            media="(min-width: 768px)"
+          />
+          <img
+            class="hero-image"
+            src="./images/hero-image-small.jpg"
+            alt="Foto de equipo poniendo las manos para animarse"
+          />
+        </picture>
+      </section>
+      <section class="contacto" id="contacto">
+        <h2 class="contacto-title">CONTACTO</h2>
+        <div class="contacto-p">
+          <p class="p1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quo
             neque ducimus excepturi? Corrupti at iusto placeat voluptatem ipsam
-            sapiente, ipsum neque. Numquam a vel consequatur nihil dicta ipsam
-            debitis?
+            sapiente,
           </p>
-          <p>
+          <p class="p2">
             Todos los campos marcados con <span class="asterisco">*</span> son
             obligatorios.
           </p>
         </div>
-        <form action="url de la base de datos">
+        <form action="url de la base de datos" class="form">
           <!--      url de la base de datos -->
-          <label for="Nombre-completo">
-            <span>Nombre completo <span class="asterisco">*</span> </span>
+          <label for="Nombre-completo" class="label-type-1">
+            <span class="label-nombre"
+              >Nombre completo <span class="asterisco">*</span>
+            </span>
             <input
+              class="input-type-1"
               type="text"
               placeholder="Nombre..."
               id="Nombre-completo"
               required
             />
           </label>
-          <label for="mail">
-            <span>Email <span class="asterisco">*</span> </span>
+          <label for="mail" class="label-type-1">
+            <span class="label-email"
+              >Email <span class="asterisco">*</span>
+            </span>
             <input
+              class="input-type-1 mail"
               type="mail"
               placeholder="nombre.apellidos@mail.com"
               id="mail"
               required
             />
           </label>
-          <label for="telefono">
-            <span>Teléfono <span class="asterisco">*</span> </span>
+          <label for="telefono" class="label-type-1">
+            <span class="label-telefono"
+              >Teléfono <span class="asterisco">*</span>
+            </span>
             <input
+              class="input-type-1"
               type="text"
               placeholder="Ej: 123456789"
               id="telefono"
               required
             />
           </label>
-          <label for="Mensaje">
-            <span>Mensaje <span class="asterisco">*</span> </span>
+          <label for="Mensaje" class="label-type-2">
+            <span class="label-mensaje"
+              >Mensaje <span class="asterisco">*</span>
+            </span>
             <input
+              class="input-type-2"
               type="text"
               placeholder="¿Qué necesitas?"
               id="Mensaje"
               required
             />
           </label>
+          <button type="submit" class="boton">ENVIAR</button>
         </form>
       </section>
     </main>
@@ -98,7 +143,6 @@
           <li><a href="form.html#contacto">CONTACTO</a></li>
         </ul>
       </nav>
-
       <div>
         <img src="" alt="" />
       </div>
