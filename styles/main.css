@@ -31,19 +31,19 @@ html {
 
 /* a partir de aquí estilos hero */
 .hero {
-  width: 100vw;
-  height: 59.5vh;
+  width: 100%;
   position: relative;
   bottom: 39px;
-}
-picture {
-  width: 100vw;
 }
 .hero-image {
   width: 100%;
   height: 100%;
 }
-.lema {
+.equipo {
+  display: flex;
+  flex-direction: column;
+}
+.equipo-lema {
   width: 90.625%;
   height: 9.467455621301776vh;
   background-color: var(--white);
@@ -52,16 +52,16 @@ picture {
   font-weight: 600;
   line-height: 1.39;
   position: absolute;
-  top: 55%;
+  top: 50%;
   text-align: start;
   padding: 0px 15px;
   padding-top: 13px;
   padding-bottom: 16px;
   margin-left: 15px;
 }
-.equipo {
+.equipo-info {
   width: 100%;
-  height: 69.7vh;
+  height: 65vh;
   padding: 0px 15px;
   padding-top: 35px;
 }
@@ -93,13 +93,12 @@ picture {
   transform: rotate(45deg);
   position: absolute;
   z-index: 1;
-  top: 132.8%;
-  left: 45.6%;
+  top: 122.5%;
+  align-self: center;
 }
 .forts-y-debs {
   background-color: rgba(57, 57, 60, 0.1);
   width: 100vw;
-  height: 79.52071005917159vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,23 +131,29 @@ picture {
 
 /* a partir de aquí estilos quienes somos */
 .quienes-somos {
+  width: 320px;
+  height: 2225px;
   color: var(--blue-green);
-  font-family: "Rubik";
+  font-family: var(--font-familyRubik);
   font-size: 24px;
   font-weight: 500;
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-color: var(--white);
+}
+.quienessomosh2 {
+  width: 193px;
+  height: 45px;
+  align-self: center;
+  margin-top: 30px;
+  line-height: 45px;
 }
 .article {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 15px;
-  /*  */
-  gap: 45px;
-  /*  */
 }
 .image-box {
   width: 180px;
@@ -156,43 +161,97 @@ picture {
   border: 5px;
   border: solid 5px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 .image {
   width: 100%;
 }
 .quienes-somos-text {
-  font-family: "OpenSans";
+  font-family: var(--font-familyOpenSans);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .our-name {
-  height: 45px;
   font-size: 20px;
   font-weight: normal;
-
+  line-height: 45px;
   text-align: center;
   color: var(--black);
-  background-color: red;
 }
 .bio {
-  color: var(--black);
+  width: 290px;
+  margin-bottom: 15px;
   font-weight: normal;
   font-size: 16px;
-  background-color: yellowgreen;
+  line-height: 24px;
+  color: var(--gunmetal);
 }
-
 .icon-list {
   width: 124px;
   height: 30px;
   display: flex;
   justify-content: space-between;
-  width: 124px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
+
 .icon {
   color: var(--blue-green);
   text-decoration: none;
   width: 80%;
+  font-size: 16px;
 }
-
-/* a partir de aquí estilos footer */
+.icon-list .last {
+  background-color: yellow;
+  margin-bottom: 45px;
+}
+.footer{
+  width: 100%;
+  height: 34.62603878116344vh;
+  padding: 30px 74px 45px;
+  border: solid 1px var(--cool-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.copyright {
+  width: 172px;
+  height: 20px;
+  margin: 0 0 20px;
+  padding-top: 30px;
+  text-align: center;
+  color: var(--cool-grey);
+  font-size: 14px;
+  font-family: var(--font-familyOpenSans);
+  line-height: 1.43;
+}
+.main-nav-footer {
+  width: 114px;
+  height: 60px;
+  margin: 20px 29px 30px;
+  font-family: var(--font-familyOpenSans);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+  opacity: 0.75;
+}
+.main-nav-footer-item {
+  display: flex;
+  justify-content: center;
+}
+.main-nav-footer-item a{
+  color: var(--gunmetal);
+  text-decoration: none;
+}
+.main-nav-footer-item a :hover{
+  color: blue
+}
+.logo-adalab{
+  width: 115.9px;
+  height: 45px;
+}
+/*faltan ubicar exactamente las cajas*/
+/*falta quizás cambiar px por vh/
