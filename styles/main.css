@@ -1,0 +1,243 @@
+
+@font-face {
+  font-family: OpenSans;
+  src: url(/proyectos/project-promo-r-module-1-team-7/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: Rubik;
+  src: url(/proyectos/project-promo-r-module-1-team-7/fonts/Rubik/static/Rubik-Medium.ttf);
+}
+
+:root {
+  /* Colores del proyecto */
+  --black: #000;
+  --light-grey-blue: rgba(184, 184, 185, 0.1);
+  --black-8: rgba(0, 0, 0, 0.08);
+  --aqua: #14d9c4;
+  --blue-green: #099d8d;
+  --white: #fff;
+  --cool-grey: #b8b8b9;
+  --dark-grey: #54585a;
+
+  /* Tipografías */
+  --OpenSanssemibold: "Open Sans", sans-serif;
+  --RubikMedium: "Rubik", sans-serif;
+  --OpenSansRegular: "Open Sans", sans-serif;
+  --size-p: 1rem;
+}
+.body {
+  width: 100vw;
+  min-height: 100vh;
+}
+.main {
+  width: 100%;
+}
+.header {
+  width: 100%vw;
+  font-family: var(--RubikMedium);
+}
+.main-title-container {
+  opacity: 0.95;
+  background-color: var(--blue-green);
+  height: 70px;
+}
+.main-title {
+  color: var(--white) ;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}  
+
+.main-nav-items {
+  height: 20px;
+  opacity: 0.9;
+  background-color: var(--aqua);
+  padding: 10px 17px 7px 16px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: var(--white);
+}
+
+.nav-item {
+color: var(--white);
+text-decoration: none;
+}
+
+.sameline {
+  white-space: nowrap;
+}
+
+
+/* a partir de aquí estilos header */
+
+/* a partir de aquí estilos hero */
+.hero {
+  width: 100vw;
+  background-color: var(--white);
+}
+.hero-image-container > img {
+  width: 160%;
+  height: 80%;
+  position: relative;
+  right: 28%;
+}
+.eslogan {
+  width: 70%;
+  height: 5%;
+  position: absolute;
+  top: 50%;
+  left: 6%;
+  font-family: var(--OpenSanssemibold);
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: start;
+  background-color: var(--white);
+  padding: 0px 15px;
+  padding-top: 17px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.equipo {
+  width: 80%;
+  height: 70vh;
+  position: relative;
+  top: 70px;
+  left: 30px;
+}
+.equipo-title {
+  margin-bottom: 15px;
+  color: var(--aqua);
+  font-family: var(--RubikMedium);
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: bold;
+}
+.equipo-p-container {
+  margin: 0px 3px;
+  font-size: var(--size-p);
+  font-family: var(--OpenSansRegular);
+  line-height: 23px;
+  text-align: center;
+}
+.equipo-p {
+  padding: 0px 2px;
+  margin-top: 20px;
+}
+.pico-decorativo {
+  width: 9%;
+  height: 4%;
+  transform: rotate(45deg);
+  position: absolute;
+  z-index: 1;
+  bottom: -26.5%;
+  left: 45.5%;
+  background-color: var(--white);
+}
+.forts-y-debs {
+  background-color: rgba(57, 57, 60, 0.1);
+  height: 66vh;
+}
+.fortalezas {
+  margin: 10px 15px;
+  position: relative;
+  top: 8%;
+  text-align: center;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.forts-y-debs-title {
+  color: var(--blue-green);
+  font-size: 1.375rem;
+  font-family: var(--RubikMedium);
+  font-weight: bold;
+}
+.forts-y-debs-p {
+  color: var(--dark-grey);
+  font-family: var(--OpenSansRegular);
+  font-size: 1.1rem;
+  padding: 10px;
+}
+.debilidades {
+  margin: 10px 15px;
+  position: relative;
+  top: 9%;
+  text-align: center;
+  line-height: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* a partir de aquí estilos quienes somos */
+.quienes-somos {
+  color: var(--blue-green);
+  font-family: "Rubik";
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  /*  */
+  gap: 45px;
+  /*  */
+}
+.image-box {
+  width: 180px;
+  height: 180px;
+  border: 5px;
+  border: solid 5px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+.image {
+  width: 100%;
+}
+.quienes-somos-text {
+  font-family: "OpenSans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-name {
+  height: 45px;
+  font-size: 20px;
+  font-weight: normal;
+
+  text-align: center;
+  color: var(--black);
+  background-color: red;
+}
+.bio {
+  color: var(--black);
+  font-weight: normal;
+  font-size: 16px;
+  background-color: yellowgreen;
+}
+
+.icon-list {
+  width: 124px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 124px;
+}
+.icon {
+  color: var(--blue-green);
+  text-decoration: none;
+  width: 80%;
+}
+
+/* a partir de aquí estilos footer */
