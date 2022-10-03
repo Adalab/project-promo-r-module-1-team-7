@@ -1,0 +1,18 @@
+@media all and (min-width: 768px){
+.header {
+    opacity: 0.95;
+    background-color: var(--blue-green);
+    padding-right: 30px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav-items {
+    background-color: var(--blue-green);
+}
+.nav-item {
+    margin: 0 18px 0 0;
+}
+}
