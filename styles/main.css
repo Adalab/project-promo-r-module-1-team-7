@@ -196,8 +196,8 @@ html {
 
 .footer{
   width: 100%;
-  height: 34.62603878116344vh;
-  padding: 30px 74px 45px;
+  height: 250px /*34.62603878116344vh*/;
+  padding: 30px 74px 45px /*4.335260115606936vh 11.821086261980831vw 6.502890173410405vh*/;
   border: solid 1px var(--cool-grey);
   display: flex;
   flex-direction: column;
@@ -207,38 +207,34 @@ html {
 .copyright {
   width: 172px;
   height: 20px;
-  margin: 0 0 20px;
-  padding-top: 30px;
+  margin: 0 0 20px /*2.8901734104046244vh*/;
   text-align: center;
   color: var(--cool-grey);
   font-size: 14px;
   font-family: var(--font-familyOpenSans);
   line-height: 1.43;
 }
-.main-nav-footer {
-  width: 114px;
-  height: 60px;
-  margin: 20px 29px 30px;
+.nav-footer {
+  width: 114px /*18.210862619808307vw*/;
+  height: 60px /*8.670520231213873vh*/;
+  margin: 20px 29px 30px /*2.770083102493075vh 1.8880208333333333vw 4.1551246537396125vh*/ ;
   font-family: var(--font-familyOpenSans);
   font-size: 14px;
   font-weight: 600;
   line-height: 1.43;
   opacity: 0.75;
 }
-.main-nav-footer-item {
+.link {
   display: flex;
   justify-content: center;
-}
-.main-nav-footer-item a{
   color: var(--gunmetal);
   text-decoration: none;
+  text-transform: uppercase;
 }
-.main-nav-footer-item a :hover{
+.link :hover{
   color: blue
 }
 .logo-adalab{
   width: 115.9px;
   height: 45px;
 }
-/*faltan ubicar exactamente las cajas*/
-/*falta quizás cambiar px por vh/
