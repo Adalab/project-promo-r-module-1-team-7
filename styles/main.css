@@ -24,12 +24,12 @@ html {
   width: 100vw;
   min-height: 100vh;
 }
-.main {
-  width: 100%;
-}
+/* A partir de aquí el header */
 .header {
   width: 100%;
   font-family: var(--RubikMedium);
+  position: absolute;
+  z-index: 1;
 }
 .main-title-container {
   opacity: 0.95;
@@ -37,14 +37,13 @@ html {
   height: 70px;
 }
 .main-title {
-  color: var(--white) ;
+  color: var(--white);
   font-size: 16px;
   line-height: 1.88;
   display: flex;
   justify-content: center;
   padding-top: 20px;
-}  
-
+}
 .main-nav-items {
   height: 20px;
   opacity: 0.9;
@@ -56,86 +55,74 @@ html {
   font-size: 14px;
   color: var(--white);
 }
-
 .nav-item {
-color: var(--white);
-text-decoration: none;
+  color: var(--white);
+  text-decoration: none;
 }
-
 .sameline {
   white-space: nowrap;
 }
-
-
-/* a partir de aquí estilos header */
-
-/* a partir de aquí estilos hero */
+/* a partir de aquí estilos hero y equipo*/
+.main {
+  width: 100%;
+}
 .hero {
-  width: 100vw;
+  width: 100%;
   position: relative;
   bottom: 39px;
 }
-picture {
-  width: 100vw;
-}
 .hero-image {
   width: 100%;
+  height: 58vh;
 }
 .lema {
-  width: 90.625%;
+  position: absolute;
+  top: 387px;
   background-color: var(--white);
   font-family: var(--font-familyOpenSans);
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 900;
   line-height: 1.39;
-  position: absolute;
-  top: 48%;
   text-align: start;
-  padding: 0px 15px;
-  padding-top: 13px;
-  padding-bottom: 16px;
-  margin-left: 15px;
+  padding: 14px 15px 16px 15px;
+  margin: 0px 15px 0px 15px;
 }
 .equipo {
   width: 100%;
-  height: 65vh;
-  padding: 0px 15px;
-  padding-top: 35px;
+  padding: 30px 15px 30px 15px;
 }
 .equipo-title {
   color: var(--aqua);
   font-family: var(--font-familyRubik);
-  line-height: 1.88;
   font-size: 2.4rem;
   font-weight: 500;
   text-align: center;
+  line-height: 1.88;
+  text-transform: uppercase;
   margin-bottom: 15px;
 }
 .equipo-p {
-  width: 90.625vw;
-  height: 47.44378698224852vh;
   font-size: 1.6rem;
   font-family: var(--font-familyOpenSans);
   line-height: 1.5;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding: 0px 8px;
+  gap: 30px;
 }
 .cuadrado-decorativo {
-  background-color: var(--white);
   width: 30px;
   height: 30px;
+  background-color: var(--white);
   transform: rotate(45deg);
-  position: absolute;
+  position: relative;
   z-index: 1;
-  bottom: -24.5vh;
-  left: 18vh;
+  bottom: 595px;
+  left: 145.2px;
 }
 .forts-y-debs {
   background-color: rgba(57, 57, 60, 0.1);
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,14 +130,15 @@ picture {
 }
 .forts-y-debs-container {
   text-align: center;
-  padding: 0px 20px;
+  margin: 0px 15px;
+  padding: 0px 10px;
 }
-.forts-y-debs-container.box1 {
-  margin: 30px 0px;
-  position: relative;
+.box1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-.forts-y-debs-container.box2 {
-  margin-bottom: 45px;
+.box2 {
+  padding-bottom: 45px;
 }
 .forts-y-debs-title {
   color: var(--blue-green);
