@@ -40,64 +40,51 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="main-title-container"> <span class="main-title">NOMBRE DEL GRUPO</span></h1>
+      <h1 class="main-title-container">
+        <span class="main-title">NOMBRE DEL GRUPO</span>
+      </h1>
       <nav class="main-nav-container">
         <ul class="main-nav-items">
           <li><a href="index.html#equipo" class="nav-item">EQUIPO</a></li>
-          <li><a href="index.html#quienes-somos" class="nav-item"  > <span class="sameline"> QUIENES SOMOS</span> </a></li>
+          <li>
+            <a href="index.html#quienes-somos" class="nav-item">
+              <span class="sameline"> QUIENES SOMOS</span>
+            </a>
+          </li>
           <li><a href="form.html#contacto" class="nav-item">CONTACTO</a></li>
         </ul>
       </nav>
     </header>
     <main>
-        <section id="contacto">
-            <h2>Hola</h2>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                    quo neque ducimus excepturi? Corrupti at iusto placeat voluptatem
-                    ipsam sapiente, ipsum neque. Numquam a vel consequatur nihil dicta
-                    ipsam debitis?
-                </p>
-                <p>
-                    Todos los campos marcados con <span class="asterisco">*</span> son obligatorios.
-                </p>
-            </div>
-            <form action="url de la base de datos">
-                <!--      url de la base de datos -->
-                <label for="Nombre-completo">
-                    <span>Nombre completo <span class="asterisco">*</span> </span>
-                    <input type="text" placeholder="Nombre..." id="Nombre-completo" required />
-                </label>
-                <label for="mail">
-                    <span>Email <span class="asterisco">*</span> </span>
-                    <input type="mail" placeholder="nombre.apellidos@mail.com" id="mail" required />
-                </label>
-                <label for="telefono">
-                    <span>Teléfono <span class="asterisco">*</span> </span>
-                    <input type="text" placeholder="Ej: 123456789" id="telefono" required />
-                </label>
-                <label for="Mensaje">
-                    <span>Mensaje <span class="asterisco">*</span> </span>
-                    <input type="text" placeholder="¿Qué necesitas?" id="Mensaje" required />
-                </label>
-            </form>
-
-        </section>
-
-    </main>
-    <footer>
-        <div>Nombre del grupo ©️ 2022</div>
-        <nav>
-            <ul>
-                <li><a href=”index.html#equipo">EQUIPO</a></li>
-                <li><a href=”index.html#quienes-somos">QUIENES SOMOS</a></li>
-                <li><a href=form.html#contacto">CONTACTO</a></li>
-            </ul>
-        </nav>
-
-        <div>
-            <img src="" alt="" />
+      <section class="hero">
+        <picture>
+          <source
+            srcset="./images/hero-img-medium.jpg"
+            media="(min-width: 320px)"
+          />
+          <source
+            srcset="./images/hero-img-big.jpg"
+            media="(min-width: 768px)"
+          />
+          <img
+            class="hero-image"
+            src="./images/hero-image-small.jpg"
+            alt="Foto de equipo poniendo las manos para animarse"
+          />
+        </picture>
+      </section>
+      <section class="contacto" id="contacto">
+        <h2 class="contacto-title">CONTACTO</h2>
+        <div class="contacto-p">
+          <p class="p1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quo
+            neque ducimus excepturi? Corrupti at iusto placeat voluptatem ipsam
+            sapiente,
+          </p>
+          <p class="p2">
+            Todos los campos marcados con <span class="asterisco">*</span> son
+            obligatorios.
+          </p>
         </div>
         <form action="url de la base de datos" class="form">
           <!--      url de la base de datos -->
@@ -153,11 +140,13 @@
         </form>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" class="footer">
       <div class="copyright">
+        <p class="copyright">
         <p>Nombre del grupo ©️ 2022</p>
+      </p>
       </div>
-      <nav class="main-nav-footer">
+      <nav class="main-nav-footer" class="main-nav-footer">
         <ul>
           <li class="main-nav-footer-item">
             <a href="index.html#equipo">EQUIPO</a>
