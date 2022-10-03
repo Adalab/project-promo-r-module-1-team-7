@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Colores del proyecto */
+  --black: #000;
+  --light-grey-blue: rgba(184, 184, 185, 0.1);
+  --black-8: rgba(0, 0, 0, 0.08);
+  --aqua: #14d9c4;
+  --blue-green: #099d8d;
+  --white: #fff;
+  --cool-grey: #b8b8b9;
+  --gunmetal: #54585a;
+  /* Tipografías */
+  --font-familyOpenSans: "Open Sans", sans-serif;
+  --font-familyRubik: "Rubik", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+/* A partir de aquí el main*/
+.main {
+  width: 100%;
+}
+.hero {
+  width: 100vw;
+  height: 42.5vh;
+  position: relative;
+  bottom: 40px;
+}
+.hero-image {
+  width: 100%;
+  height: 100%;
+}
+.contacto {
+  width: 100%;
+  height: 100%;
+}
+.contacto-title {
+  color: var(--blue-green);
+  font-family: var(--font-familyRubik);
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.88;
+  text-align: center;
+}
+.contacto-p {
+  color: var(--gunmetal);
+  font-family: var(--font-familyOpenSans);
+  line-height: 1.5;
+  margin-bottom: 58px;
+  margin: 0px 15px;
+}
+.p1 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 15px;
+  padding: 0px 14px;
+}
+.p2 {
+  font-size: 1.2rem;
+  text-align: start;
+  margin-top: 30px;
+}
+.asterisco {
+  color: var(--aqua);
+}
+.form {
+  /* width: 100%; */
+  height: 65vh;
+  margin-top: 58px;
+  margin-right: 15px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+  font-family: var(--font-familyOpenSans);
+  font-size: 1.4rem;
+}
+.label-type-1 {
+  width: 100%;
+  height: 5.325443786982248vh;
+  display: flex;
+  flex-direction: column;
+}
+.label-nombre,
+.label-email,
+.label-telefono {
+  color: var(--gunmetal);
+  margin-bottom: 7px;
+}
+.input-type-1 {
+  padding: 15px;
+  color: var(--cool-grey);
+  opacity: 0.7;
+}
+.mail {
+  font-size: 1.8rem;
+  color: var(--gunmetal);
+  opacity: 1;
+}
+.label-type-2 {
+  width: 100%;
+  height: 5.325443786982248vh;
+  display: flex;
+  flex-direction: column;
+}
+.label-mensaje {
+  color: var(--gunmetal);
+  margin-bottom: 7px;
+}
+.input-type-2 {
+  height: 10vh;
+  font-size: 1.5rem;
+  color: var(--cool-grey);
+  opacity: 0.7;
+  padding-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 75px;
+}
+.boton {
+  width: 100%;
+  height: 5.325443786982248vh;
+  color: var(--white);
+  font-size: 1.5rem;
+  background-color: var(--blue-green);
+  border: none;
+  border-radius: 4%;
+  margin-top: 60px;
+}
+/* A partir de aquí el footer */
+/* A partir de aquí el footer*/
+.footer {
+  width: 100%;
+  height: 34.62603878116344vh;
+  padding: 30px 74px 45px;
+  border: solid 1px var(--cool-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.copyright {
+  width: 172px;
+  height: 20px;
+  margin: 0 0 20px;
+  padding-top: 30px;
+  text-align: center;
+  color: var(--cool-grey);
+  font-size: 14px;
+  font-family: var(--font-familyOpenSans);
+  line-height: 1.43;
+}
+.main-nav-footer {
+  width: 114px;
+  height: 60px;
+  margin: 20px 29px 30px;
+  font-family: var(--font-familyOpenSans);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+  opacity: 0.75;
+}
+.main-nav-footer-item {
+  display: flex;
+  justify-content: center;
+}
+.main-nav-footer-item a {
+  color: var(--gunmetal);
+  text-decoration: none;
+}
+.main-nav-footer-item a :hover {
+  color: blue;
+}
+.logo-adalab {
+  width: 115.9px;
+  height: 45px;
+}

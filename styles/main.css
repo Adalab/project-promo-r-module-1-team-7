@@ -1,13 +1,8 @@
-
-@font-face {
-  font-family: OpenSans;
-  src: url(/proyectos/project-promo-r-module-1-team-7/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@font-face {
-  font-family: Rubik;
-  src: url(/proyectos/project-promo-r-module-1-team-7/fonts/Rubik/static/Rubik-Medium.ttf);
-}
-
 :root {
   /* Colores del proyecto */
   --black: #000;
@@ -17,13 +12,13 @@
   --blue-green: #099d8d;
   --white: #fff;
   --cool-grey: #b8b8b9;
-  --dark-grey: #54585a;
-
+  --gunmetal: #54585a;
   /* Tipografías */
-  --OpenSanssemibold: "Open Sans", sans-serif;
-  --RubikMedium: "Rubik", sans-serif;
-  --OpenSansRegular: "Open Sans", sans-serif;
-  --size-p: 1rem;
+  --font-familyOpenSans: "Open Sans", sans-serif;
+  --font-familyRubik: "Rubik", sans-serif;
+}
+html {
+  font-size: 62.5%;
 }
 .body {
   width: 100vw;
@@ -33,7 +28,7 @@
   width: 100%;
 }
 .header {
-  width: 100%vw;
+  width: 100%;
   font-family: var(--RubikMedium);
 }
 .main-title-container {
@@ -77,123 +72,124 @@ text-decoration: none;
 /* a partir de aquí estilos hero */
 .hero {
   width: 100vw;
-  background-color: var(--white);
-}
-.hero-image-container > img {
-  width: 160%;
-  height: 80%;
   position: relative;
-  right: 28%;
+  bottom: 39px;
 }
-.eslogan {
-  width: 70%;
-  height: 5%;
-  position: absolute;
-  top: 50%;
-  left: 6%;
-  font-family: var(--OpenSanssemibold);
-  font-size: 1rem;
-  font-weight: bold;
-  line-height: 21px;
-  text-align: start;
+picture {
+  width: 100vw;
+}
+.hero-image {
+  width: 100%;
+}
+.lema {
+  width: 90.625%;
   background-color: var(--white);
+  font-family: var(--font-familyOpenSans);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.39;
+  position: absolute;
+  top: 48%;
+  text-align: start;
   padding: 0px 15px;
-  padding-top: 17px;
+  padding-top: 13px;
+  padding-bottom: 16px;
   margin-left: 15px;
-  margin-right: 15px;
 }
 .equipo {
-  width: 80%;
-  height: 70vh;
-  position: relative;
-  top: 70px;
-  left: 30px;
+  width: 100%;
+  height: 65vh;
+  padding: 0px 15px;
+  padding-top: 35px;
 }
 .equipo-title {
-  margin-bottom: 15px;
   color: var(--aqua);
-  font-family: var(--RubikMedium);
-  font-size: 1.4rem;
+  font-family: var(--font-familyRubik);
+  line-height: 1.88;
+  font-size: 2.4rem;
+  font-weight: 500;
   text-align: center;
-  font-weight: bold;
-}
-.equipo-p-container {
-  margin: 0px 3px;
-  font-size: var(--size-p);
-  font-family: var(--OpenSansRegular);
-  line-height: 23px;
-  text-align: center;
+  margin-bottom: 15px;
 }
 .equipo-p {
-  padding: 0px 2px;
-  margin-top: 20px;
+  width: 90.625vw;
+  height: 47.44378698224852vh;
+  font-size: 1.6rem;
+  font-family: var(--font-familyOpenSans);
+  line-height: 1.5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0px 8px;
 }
-.pico-decorativo {
-  width: 9%;
-  height: 4%;
+.cuadrado-decorativo {
+  background-color: var(--white);
+  width: 30px;
+  height: 30px;
   transform: rotate(45deg);
   position: absolute;
   z-index: 1;
-  bottom: -26.5%;
-  left: 45.5%;
-  background-color: var(--white);
+  bottom: -24.5vh;
+  left: 18vh;
 }
 .forts-y-debs {
   background-color: rgba(57, 57, 60, 0.1);
-  height: 66vh;
-}
-.fortalezas {
-  margin: 10px 15px;
-  position: relative;
-  top: 8%;
-  text-align: center;
-  line-height: 24px;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.forts-y-debs-container {
+  text-align: center;
+  padding: 0px 20px;
+}
+.forts-y-debs-container.box1 {
+  margin: 30px 0px;
+  position: relative;
+}
+.forts-y-debs-container.box2 {
+  margin-bottom: 45px;
 }
 .forts-y-debs-title {
   color: var(--blue-green);
-  font-size: 1.375rem;
-  font-family: var(--RubikMedium);
-  font-weight: bold;
+  font-size: 2.2rem;
+  font-family: var(--font-familyRubik);
+  font-weight: 500;
+  line-height: 2.05;
 }
 .forts-y-debs-p {
-  color: var(--dark-grey);
-  font-family: var(--OpenSansRegular);
-  font-size: 1.1rem;
-  padding: 10px;
-}
-.debilidades {
-  margin: 10px 15px;
-  position: relative;
-  top: 9%;
-  text-align: center;
-  line-height: 23px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  color: var(--gunmetal);
+  font-family: var(--font-familyOpenSans);
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 
 /* a partir de aquí estilos quienes somos */
 .quienes-somos {
+  width: 100%;
   color: var(--blue-green);
-  font-family: "Rubik";
+  font-family: var(--font-familyRubik);
   font-size: 24px;
   font-weight: 500;
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-color: var(--white);
+}
+.quienessomosh2 {
+  width: 193px;
+  height: 45px;
+  align-self: center;
+  margin-top: 30px;
+  line-height: 45px;
 }
 .article {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 15px;
-  /*  */
-  gap: 45px;
-  /*  */
 }
 .image-box {
   width: 180px;
@@ -201,43 +197,98 @@ text-decoration: none;
   border: 5px;
   border: solid 5px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 .image {
   width: 100%;
 }
 .quienes-somos-text {
-  font-family: "OpenSans";
+  font-family: var(--font-familyOpenSans);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .our-name {
-  height: 45px;
   font-size: 20px;
   font-weight: normal;
-
+  line-height: 45px;
   text-align: center;
   color: var(--black);
-  background-color: red;
 }
 .bio {
-  color: var(--black);
+  width: 290px;
+  margin-bottom: 15px;
   font-weight: normal;
   font-size: 16px;
-  background-color: yellowgreen;
+  line-height: 24px;
+  color: var(--gunmetal);
 }
-
 .icon-list {
   width: 124px;
   height: 30px;
   display: flex;
   justify-content: space-between;
-  width: 124px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .icon {
   color: var(--blue-green);
   text-decoration: none;
   width: 80%;
+  font-size: 16px;
+}
+.icon-list .last {
+  background-color: yellow;
+  margin-bottom: 45px;
 }
 
-/* a partir de aquí estilos footer */
+/* A partir de aquí el footer*/
+.footer {
+  width: 100%;
+  height: 34.62603878116344vh;
+  padding: 30px 74px 45px;
+  border: solid 1px var(--cool-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.copyright {
+  width: 172px;
+  height: 20px;
+  margin: 0 0 20px;
+  padding-top: 30px;
+  text-align: center;
+  color: var(--cool-grey);
+  font-size: 14px;
+  font-family: var(--font-familyOpenSans);
+  line-height: 1.43;
+}
+.main-nav-footer {
+  width: 114px;
+  height: 60px;
+  margin: 20px 29px 30px;
+  font-family: var(--font-familyOpenSans);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+  opacity: 0.75;
+}
+.main-nav-footer-item {
+  display: flex;
+  justify-content: center;
+}
+.main-nav-footer-item a {
+  color: var(--gunmetal);
+  text-decoration: none;
+}
+.main-nav-footer-item a :hover {
+  color: blue;
+}
+.logo-adalab {
+  width: 115.9px;
+  height: 45px;
+}
+/*faltan ubicar exactamente las cajas*/
+/*falta quizás cambiar px por vh*/
