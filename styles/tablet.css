@@ -1,18 +1,28 @@
-@media all and (min-width: 768px){
-.header {
-    opacity: 0.95;
-    background-color: var(--blue-green);
-    padding-right: 30px;
-    padding-left: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+@media all and (min-width: 768px) {
 
-.main-nav-items {
-    background-color: var(--blue-green);
-}
-.nav-item {
-    margin: 0 18px 0 0;
-}
-}
+    .header {
+        background-color: var(--blue-green);
+        height: 60px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .h1{
+        text-align: left;
+        padding-left: 45px;
+    }
+
+    .ul {
+       background-color: var(--blue-green);
+       opacity: 0.95;
+        height: 60px;
+        width: 340px;
+       justify-content: center;
+       align-items: center;
+       padding-right: 45px;
+       padding-bottom: 10px;
+
+    }
+}  
