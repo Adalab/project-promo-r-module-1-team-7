@@ -132,8 +132,6 @@ html {
 
 /* a partir de aquí estilos quienes somos */
 .quienes-somos {
-  width: 320px;
-  height: 2225px;
   color: var(--blue-green);
   font-family: var(--font-familyRubik);
   font-size: 24px;
@@ -144,8 +142,6 @@ html {
   background-color: var(--white);
 }
 .quienessomosh2 {
-  width: 193px;
-  height: 45px;
   align-self: center;
   margin-top: 30px;
   line-height: 45px;
@@ -160,7 +156,8 @@ html {
   width: 180px;
   height: 180px;
   border: 5px;
-  border: solid 5px rgba(0, 0, 0, 0.08);
+  /* border: solid 5px rgba(0, 0, 0, 0.08); */
+  border: solid 5px var(--blue-green);
   border-radius: 4px;
   margin-top: 30px;
   margin-bottom: 15px;
@@ -202,11 +199,9 @@ html {
 .icon {
   color: var(--blue-green);
   text-decoration: none;
-  width: 80%;
   font-size: 16px;
 }
 .icon-list .last {
-  background-color: yellow;
   margin-bottom: 45px;
 }
 /* a partir de aquí estilos footer */
