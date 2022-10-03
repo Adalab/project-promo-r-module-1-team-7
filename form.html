@@ -41,17 +41,17 @@
   <body>
     <header class="header">
       <h1 class="main-title-container">
-        <span class="main-title">NOMBRE DEL GRUPO</span>
+        <span class="main-title">Nombre del grupo</span>
       </h1>
       <nav class="main-nav-container">
         <ul class="main-nav-items">
-          <li><a href="index.html#equipo" class="nav-item">EQUIPO</a></li>
+          <li><a href="index.html#equipo" class="nav-item">Equipo</a></li>
           <li>
             <a href="index.html#quienes-somos" class="nav-item">
-              <span class="sameline"> QUIENES SOMOS</span>
+              <span class="sameline"> Quienes somos</span>
             </a>
           </li>
-          <li><a href="form.html#contacto" class="nav-item">CONTACTO</a></li>
+          <li><a href="form.html#contacto" class="nav-item">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -74,8 +74,8 @@
         </picture>
       </section>
       <section class="contacto" id="contacto">
-        <h2 class="contacto-title">Hola</h2>
-        <div class="contacto-p">
+        <h2 class="contacto-title">Contacto</h2>
+        <article class="contacto-p">
           <p class="p1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quo
             neque ducimus excepturi? Corrupti at iusto placeat voluptatem ipsam
@@ -85,60 +85,85 @@
             Todos los campos marcados con <span class="asterisco">*</span> son
             obligatorios.
           </p>
-        </div>
+        </article>
         <form action="url de la base de datos" class="form">
           <!--      url de la base de datos -->
-          <label for="Nombre-completo" class="label-type-1">
-            <span class="label-nombre"
+          <label for="Nombre-completo" class="label">
+            <span class="label-name"
               >Nombre completo <span class="asterisco">*</span>
             </span>
             <input
-              class="input-type-1"
+              class="input name"
               type="text"
               placeholder="Nombre..."
               id="Nombre-completo"
               required
             />
           </label>
-          <label for="mail" class="label-type-1">
-            <span class="label-email"
+          <label for="mail" class="label">
+            <span class="label-mail"
               >Email <span class="asterisco">*</span>
             </span>
             <input
-              class="input-type-1 mail"
+              class="input mail"
               type="mail"
               placeholder="nombre.apellidos@mail.com"
               id="mail"
               required
             />
           </label>
-          <label for="telefono" class="label-type-1">
-            <span class="label-telefono"
+          <label for="telefono" class="label">
+            <span class="label-phone"
               >Teléfono <span class="asterisco">*</span>
             </span>
             <input
-              class="input-type-1"
+              class="input phone"
               type="text"
               placeholder="Ej: 123456789"
               id="telefono"
               required
             />
           </label>
-          <label for="Mensaje" class="label-type-2">
-            <span class="label-mensaje"
+          <label for="Mensaje" class="label">
+            <span class="label-message"
               >Mensaje <span class="asterisco">*</span>
             </span>
             <input
-              class="input-type-2"
+              class="input message"
               type="text"
               placeholder="¿Qué necesitas?"
               id="Mensaje"
               required
             />
           </label>
-          <button type="submit" class="button">ENVIAR</button>
+          <button type="submit" class="button">Enviar</button>
         </form>
       </section>
     </main>
+    <footer class="footer">
+      <div class="copyright">
+        <p>Nombre del grupo ©️ 2022</p>
+      </div>
+      <nav class="main-nav-footer">
+        <ul>
+          <li class="main-nav-footer-item">
+            <a href="index.html#equipo">EQUIPO</a>
+          </li>
+          <li class="main-nav-footer-item">
+            <a href="index.html#quienes-somos">QUIENES SOMOS</a>
+          </li>
+          <li class="main-nav-footer-item">
+            <a href="form.html#contacto">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <img
+          class="logo-adalab"
+          src="images/logo-adalab.png"
+          alt="logo adalab"
+        />
+      </div>
+    </footer>
   </body>
 </html>
