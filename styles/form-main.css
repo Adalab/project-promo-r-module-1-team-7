@@ -24,6 +24,46 @@ html {
   width: 100vw;
   min-height: 100vh;
 }
+.header {
+  width: 100%vw;
+  font-family: var(--RubikMedium);
+  z-index: 100;
+}
+.main-title-container {
+  opacity: 0.95;
+  background-color: var(--blue-green);
+  height: 70px;
+}
+.main-title {
+  color: var(--white);
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.main-nav-items {
+  height: 20px;
+  opacity: 0.9;
+  background-color: var(--aqua);
+  padding: 10px 17px 7px 16px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: var(--white);
+}
+
+.nav-item {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.sameline {
+  white-space: nowrap;
+}
+
 .main {
   width: 100%;
 }
