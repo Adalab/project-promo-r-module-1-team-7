@@ -35,6 +35,7 @@
 .header {
   width: 100%vw;
   font-family: var(--RubikMedium);
+  z-index: 100;
 }
 .main-title-container {
   opacity: 0.95;
