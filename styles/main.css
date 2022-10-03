@@ -28,47 +28,51 @@ html {
   width: 100%;
 }
 .header {
-  width: 100%;
+  width: 100vw;
+  height: 105px;
   font-family: var(--RubikMedium);
-  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
 }
-.main-title-container {
-  opacity: 0.95;
+.h1 {
   background-color: var(--blue-green);
-  height: 70px;
-}
-.main-title {
-  color: var(--white) ;
-  font-size: 16px;
-  line-height: 1.88;
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-}  
-
-.main-nav-items {
-  height: 20px;
-  opacity: 0.9;
-  background-color: var(--aqua);
-  padding: 10px 17px 7px 16px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  font-size: 14px;
   color: var(--white);
+  opacity: 0.95;
+  width: 100vw;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  /* funciona con line pero se podría hacer de otra manera? */
+  
+}
+
+.ul {
+    list-style: none;
+    background-color: var(--aqua);
+    width: 100vw;
+    height: 45px;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 8px;
+    /* padding pone los items en el medio pero desplaza su caja vista en inspeccionar hacia abajo, no es visible al usuario */
 }
 
 .nav-item {
-color: var(--white);
-text-decoration: none;
+  color: var(--white);
+  font-size: 15px;
+  height: 30px;
+  padding: 8px 7px 7px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 30px;  
+  
 }
 
-.sameline {
-  white-space: nowrap;
-}
-
-
-/* a partir de aquí estilos header */
 
 /* a partir de aquí estilos hero */
 .hero {
