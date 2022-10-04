@@ -85,7 +85,6 @@ html {
   position: relative;
   bottom: 39px;
 }
-
 .hero-image {
   width: 100%;
   height: 65vh;
@@ -158,12 +157,10 @@ html {
   margin: 0px 15px;
   padding: 0px 10px;
 }
-
 .box1 {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 .box2 {
   padding-bottom: 45px;
 }
