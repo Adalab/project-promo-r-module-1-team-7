@@ -196,45 +196,47 @@ html {
 
 .footer{
   width: 100%;
-  height: 250px /*34.62603878116344vh*/;
-  padding: 30px 74px 45px /*4.335260115606936vh 11.821086261980831vw 6.502890173410405vh*/;
-  border: solid 1px var(--cool-grey);
+  padding-top: 30px;
+  padding-bottom: 45px;
+  border-top: solid 1px var(--cool-grey);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  gap: 20px 30px;
 }
 .copyright {
-  width: 172px;
-  height: 20px;
-  margin: 0 0 20px /*2.8901734104046244vh*/;
+  padding: 0px 40px;
   text-align: center;
   color: var(--cool-grey);
-  font-size: 14px;
+  font-size: 1.4rem;
   font-family: var(--font-familyOpenSans);
-  line-height: 1.43;
+  text-transform: capitalize;
 }
 .nav-footer {
-  width: 114px /*18.210862619808307vw*/;
-  height: 60px /*8.670520231213873vh*/;
-  margin: 20px 29px 30px /*2.770083102493075vh 1.8880208333333333vw 4.1551246537396125vh*/ ;
+  padding-bottom: 30px;
+  padding: 0px 103px;
   font-family: var(--font-familyOpenSans);
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 600;
   line-height: 1.43;
   opacity: 0.75;
 }
-.link {
+.link-footer {
   display: flex;
   justify-content: center;
   color: var(--gunmetal);
   text-decoration: none;
   text-transform: uppercase;
 }
-.link :hover{
-  color: blue
+.link-footer:hover{
+  color: var(--blue-green)
 }
 .logo-adalab{
   width: 115.9px;
   height: 45px;
+}
+.logo-adalab-img{
+  width: 100%;
+  height: 100%;
 }
