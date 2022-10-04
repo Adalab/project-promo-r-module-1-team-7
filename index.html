@@ -8,24 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <title>(Nombre de equipo)</title> -->
     <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="stylesheet" href="./styles/main.css" />
     <link
       rel="stylesheet"
@@ -37,8 +19,18 @@
       href="./styles/desktop.css"
       media="screen and (min-width:768px)"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open-Sans" />
+ -->
+    <!--   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik" />
+ -->
   </head>
-
   <body>
     <header class="header">
       <h1 class="h1"> NOMBRE DEL GRUPO</h1>
@@ -52,7 +44,7 @@
     </header>
     <main>
       <section class="hero">
-        <picture>
+        <picture class="hero-image-container">
           <source
             srcset="./images/hero-img-medium.jpg"
             media="(min-width: 320px)"
@@ -62,71 +54,70 @@
             media="(min-width: 768px)"
           />
           <img
-            class="hero-image"
-            src="./images/hero-image-small.jpg"
+            src="./images/hero-img-small.jpg"
             alt="Foto de equipo poniendo las manos para animarse"
           />
         </picture>
-      </section>
-      <h4 class="lema">
-        Lema ipsum dolor sit amet consectetur adipisicing elit.
-      </h4>
-      <section class="equipo" id="equipo">
-        <h2 class="equipo-title">EQUIPO</h2>
-        <div class="equipo-p">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quo
-            neque ducimus excepturi? Corrupti at iusto placeat voluptatem ipsam
-            sapiente, ipsum neque. Numquam a vel consequatur nihil dicta ipsam
-            debitis?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quo
-            neque ducimus excepturi? Corrupti at iusto placeat voluptatem ipsam
-            sapiente, ipsum neque. Numquam a vel consequatur nihil dicta ipsam
-            debitis?
-          </p>
-        </div>
-      </section>
-      <div class="cuadrado-decorativo"></div>
-      <section class="forts-y-debs">
-        <div class="forts-y-debs-container box1">
-          <h3 class="forts-y-debs-title">Fortalezas</h3>
-          <p class="forts-y-debs-p">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Architecto, nisi. Illo deserunt iusto delectus ullam, voluptas eum
-            quo veniam aliquam sit cupiditate voluptatem culpa, illum, dolores
-            at repellendus enim earum! quo veniam aliquam.
-          </p>
-        </div>
-        <div class="forts-y-debs-container box2">
-          <h3 class="forts-y-debs-title">Debilidades</h3>
-          <p class="forts-y-debs-p">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Architecto, nisi. Illo deserunt iusto delectus ullam, voluptas eum
-            quo veniam aliquam sit cupiditate voluptatem culpa, illum, dolores
-            at repellendus enim earum! Lorem ipsum dolor
-          </p>
-        </div>
+        <h4 class="eslogan">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </h4>
+        <section class="equipo" id="equipo">
+          <h2 class="equipo-title">EQUIPO</h2>
+          <div class="equipo-p-container">
+            <p class="equipo-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              quo neque ducimus excepturi? Corrupti at iusto placeat voluptatem
+              ipsam sapiente, ipsum neque. Numquam a vel consequatur nihil dicta
+              ipsam debitis?
+            </p>
+            <p class="equipo-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              quo neque ducimus excepturi? Corrupti at iusto placeat voluptatem
+              ipsam sapiente, ipsum neque. Numquam a vel consequatur nihil dicta
+              ipsam debitis?
+            </p>
+          </div>
+        </section>
+        <div class="pico-decorativo"></div>
+        <section class="forts-y-debs">
+          <article class="fortalezas">
+            <h3 class="forts-y-debs-title">Fortalezas</h3>
+            <p class="forts-y-debs-p">
+              Lorem ipsum dolor sit amet, <br />consectetur adipisicing elit.
+              Architecto, nisi. Illo deserunt iusto delectus ullam, voluptas eum
+              quo veniam aliquam sit cupiditate voluptatem culpa, illum, dolores
+              at repellendus enim earum!
+            </p>
+          </article>
+          <article class="debilidades">
+            <h3 class="forts-y-debs-title">Debilidades</h3>
+            <p class="forts-y-debs-p">
+              Lorem ipsum dolor sit amet, <br />
+              consectetur adipisicing elit. Architecto, nisi. Illo deserunt
+              iusto delectus ullam, voluptas eum quo veniam aliquam sit
+              cupiditate voluptatem culpa, illum, dolores at repellendus enim
+              earum!
+            </p>
+          </article>
+        </section>
       </section>
       <section class="quienes-somos" id="quienes-somos">
-        <h2 class="quienessomosh2">QUIENES SOMOS</h2>
+        <h2>QUIENES SOMOS</h2>
         <article class="article">
           <div class="image-box">
-            <img class="image" src="./images/marta.png" alt="" />
+            <img class="image" src="./images/pizza-6682514_1920.png" alt="" />
           </div>
           <div class="quienes-somos-text">
             <h5 class="our-name">Marta Castrillo</h5>
             <p class="bio">
-              Editora de vídeo y diseñadora gráfica, también realizando otras
-              labores como ayudante de dirección, ayudante de cámara y
-              producción según la necesidad. Una persona enérgica, trabajadora,
-              colaboradora, con ganas de aprender y muy motivada. Ahora mismo
-              estudiando desarrollo web y todo lo que se le ponga por delante.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+              corrupti magni? Expedita dolorem, earum illum alias voluptates
+              impedit magnam. Qui cumque nam deleniti voluptates? Debitis iure
+              quidem fugiat odit mollitia.
             </p>
             <ul class="icon-list">
               <li>
-                <a class="icon" href="https://twitter.com/martscastrillo"
+                <a class="icon" href="#"
                   ><i class="fa-brands fa-twitter"></i
                 ></a>
               </li>
@@ -138,13 +129,13 @@
               </li>
               <li>·</li>
               <li>
-                <a class="icon" href="https://github.com/martcastrillo"
+                <a class="icon" href="#"
                   ><i class="fa-brands fa-github-alt"></i
                 ></a>
               </li>
               <li>·</li>
               <li>
-                <a class="icon" href="mailto:mart.castrillo@gmail.com"
+                <a class="icon" href="#"
                   ><i class="fa-solid fa-envelope"></i
                 ></a>
               </li>
@@ -153,42 +144,39 @@
         </article>
         <article class="article">
           <div class="image-box">
-            <img class="image" src="./images/ursula.png" alt="" />
+            <img class="image" src="./images/pizza-6682514_1920.png" alt="" />
           </div>
           <div class="quienes-somos-text">
             <div class="our-name">
               <h5>Úrsula Borrego</h5>
             </div>
             <p class="bio">
-              Antropóloga sociocultural, con perspectiva de género. Abogando por
-              la inclusión de las mujeres en el mundo tech, decidió tomar ella
-              misma las riendas, actualizarse y ser Full Stack Developer. En
-              continuo aprendizaje, con una suerte de compañeras en este camino,
-              el futuro para ella solo acaba de empezar.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+              corrupti magni? Expedita dolorem, earum illum alias voluptates
+              impedit magnam. Qui cumque nam deleniti voluptates? Debitis iure
+              quidem fugiat odit mollitia.
             </p>
             <ul class="icon-list">
               <li>
-                <a class="icon" href="https://twitter.com/"
+                <a class="icon" href="#"
                   ><i class="fa-brands fa-twitter"></i
                 ></a>
               </li>
               <li>·</li>
               <li>
-                <a
-                  class="icon"
-                  href="https://www.linkedin.com/in/ursulaborregotoledano/"
+                <a class="icon" href="#"
                   ><i class="fa-brands fa-linkedin-in"></i
                 ></a>
               </li>
               <li>·</li>
               <li>
-                <a class="icon" href="https://github.com/UrsulaBorrego"
+                <a class="icon" href="#"
                   ><i class="fa-brands fa-github-alt"></i
                 ></a>
               </li>
               <li>·</li>
               <li>
-                <a class="icon" href="mailto:ursulaborrego@hotmail.com"
+                <a class="icon" href="#"
                   ><i class="fa-solid fa-envelope"></i
                 ></a>
               </li>
@@ -197,7 +185,7 @@
         </article>
         <article class="article">
           <div class="image-box">
-            <img class="image" src="./images/vicky.png" alt="" />
+            <img class="image" src="./images/pizza-6682514_1920.png" alt="" />
           </div>
           <div class="quienes-somos-text">
             <h5 class="our-name">Virginia Menéndez</h5>
@@ -227,7 +215,7 @@
               </li>
               <li>·</li>
               <li>
-                <a class="icon" href="mailto:"
+                <a class="icon" href="#"
                   ><i class="fa-solid fa-envelope"></i
                 ></a>
               </li>
@@ -236,7 +224,7 @@
         </article>
         <article class="article">
           <div class="image-box">
-            <img class="image" src="./images/yara.png" alt="" />
+            <img class="image" src="./images/pizza-6682514_1920.png" alt="" />
           </div>
           <div class="quienes-somos-text">
             <h5 class="our-name">Yara Paz</h5>
@@ -248,29 +236,27 @@
               Ahora Html y Css en mano no hay quien la pare maquetando páginas
               responsive.
             </p>
-            <ul class="icon-list last">
+            <ul class="icon-list">
               <li>
-                <a class="icon" href="https://twitter.com/yara_musique?lang=en"
+                <a class="icon" href="#"
                   ><i class="fa-brands fa-twitter"></i
                 ></a>
               </li>
               <li>·</li>
               <li>
-                <a
-                  class="icon"
-                  href="https://www.linkedin.com/in/yara-paz-gordillo-06956a11b/"
+                <a class="icon" href="#"
                   ><i class="fa-brands fa-linkedin-in"></i
                 ></a>
               </li>
               <li>·</li>
               <li>
-                <a class="icon" href="https://github.com/Yarap07"
+                <a class="icon" href="#"
                   ><i class="fa-brands fa-github-alt"></i
                 ></a>
               </li>
               <li>·</li>
               <li>
-                <a class="icon" href="mailto:yara.gordillo@gmail.com"
+                <a class="icon" href="#"
                   ><i class="fa-solid fa-envelope"></i
                 ></a>
               </li>
@@ -279,29 +265,17 @@
         </article>
       </section>
     </main>
-    <footer class="footer">
-      <div class="copyright">
-        <p>Nombre del grupo ©️ 2022</p>
-      </div>
-      <nav class="main-nav-footer">
+    <footer>
+      <div>Nombre del grupo ©️ 2022</div>
+      <nav>
         <ul>
-          <li class="main-nav-footer-item">
-            <a href="index.html#equipo">EQUIPO</a>
-          </li>
-          <li class="main-nav-footer-item">
-            <a href="index.html#quienes-somos">QUIENES SOMOS</a>
-          </li>
-          <li class="main-nav-footer-item">
-            <a href="form.html#contacto">CONTACTO</a>
-          </li>
+          <li><a href="index.html#equipo">EQUIPO</a></li>
+          <li><a href="index.html#quienes-somos">QUIENES SOMOS</a></li>
+          <li><a href="form.html#contacto">CONTACTO</a></li>
         </ul>
       </nav>
       <div>
-        <img
-          class="logo-adalab"
-          src="images/logo-adalab.png"
-          alt="logo adalab"
-        />
+        <img src="" alt="" />
       </div>
     </footer>
   </body>
