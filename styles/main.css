@@ -47,6 +47,7 @@ html {
   opacity: 0.95;
   width: 100%;
   height: 60px;
+  line-height: 30px;
   /* pasamos a medida responsive y h1 no se centra */
   text-align: center;
   padding: 15px 40px 15px 40px; 
