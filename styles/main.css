@@ -90,6 +90,8 @@ html {
   height: 100%;
 }
 .lema {
+  /* no pondria position absolute, te lo deja estático si le cambias el tamaño al viewport se queda estático en el sitio, tendría que fluir dentro de la página */
+  /* también veo que el hero tiene más altura en el ejemplo, por otro lado, el lema veo que la caja está la mitad sobre la imagen del hero. además de que está mas baja de lo que debería, se solapa con la caja de equipo*/
   position: absolute;
   top: 350px;
   background-color: var(--white);
@@ -100,6 +102,7 @@ html {
   text-align: start;
   padding: 14px 15px 16px 27px;
   margin: 0px 15px 0px 15px;
+  background-color: orange;
 }
 .emphasized {
   font-style: oblique;
@@ -141,6 +144,8 @@ html {
   z-index: 1;
   bottom: 545px;
   left: 145.2px;
+  background-color: red;
+  /* este elemento creo que lo metería en css dentro de la section equipo para que de ese modo se alineen juntos porque tal y como está ahora pasa lo mismo que con el lema, creo que incluso poniendolo donde te indico podría colocarse mejor y no quedarse donde está */
 }
 
 .forts-y-debs {
@@ -187,17 +192,18 @@ html {
 .quienes-somos {
   color: var(--blue-green);
   font-family: var(--font-familyRubik);
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
   display: flex;
   flex-direction: column;
   text-align: center;
   background-color: var(--white);
+  padding-top: 30px;
+  margin-bottom: 45px;
 }
 .quienessomosh2 {
   align-self: center;
   margin-top: 30px;
-  line-height: 45px;
   text-transform: uppercase;
 }
 .article {
@@ -209,7 +215,6 @@ html {
 .image-box {
   width: 180px;
   height: 180px;
-  border: 5px;
   /* border: solid 5px rgba(0, 0, 0, 0.08); */
   border: solid 5px var(--blue-green);
   border-radius: 4px;
@@ -226,7 +231,7 @@ html {
   align-items: center;
 }
 .our-name {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: normal;
   line-height: 45px;
   text-align: center;
@@ -237,7 +242,7 @@ html {
   font-weight: normal;
   padding-left: 15px;
   padding-right: 15px;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 24px;
   color: var(--gunmetal);
 }
@@ -253,10 +258,10 @@ html {
 .icon {
   color: var(--blue-green);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
-.icon-list .last {
-  margin-bottom: 45px;
+.icon:hover {
+  color: var(--aqua);
 }
 
 /* a partir de aquí estilos footer */
