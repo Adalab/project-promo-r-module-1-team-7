@@ -79,41 +79,39 @@ html {
 }
 .hero {
   width: 100%;
+  height: 65vh;
   position: relative;
   bottom: 40px;
-}
-.hero-picture {
-  width: 100%;
 }
 .hero-image {
   width: 100%;
   height: 100%;
 }
+.equipo {
+  width: 100%;
+  padding: 30px 15px 30px 15px;
+  position: relative;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .lema {
-  /* no pondria position absolute, te lo deja estático si le cambias el tamaño al viewport se queda estático en el sitio, tendría que fluir dentro de la página */
-  /* también veo que el hero tiene más altura en el ejemplo, por otro lado, el lema veo que la caja está la mitad sobre la imagen del hero. además de que está mas baja de lo que debería, se solapa con la caja de equipo*/
-  position: absolute;
-  top: 350px;
   background-color: var(--white);
   font-family: var(--font-familyOpenSans);
   font-size: 1.8rem;
   font-weight: 900;
   line-height: 1.39;
   text-align: start;
-  padding: 14px 15px 16px 27px;
+  padding: 14px 15px 16px 15px;
   margin: 0px 15px 0px 15px;
-  background-color: orange;
+  position: absolute;
+  bottom: 550px;
 }
 .emphasized {
   font-style: oblique;
 }
-.equipo {
-  width: 100%;
-  padding: 30px 15px 30px 15px;
-  position: relative;
-  top: 50px;
-}
-
 .equipo-title {
   color: var(--aqua);
   font-family: var(--font-familyRubik);
@@ -122,7 +120,9 @@ html {
   text-align: center;
   line-height: 1.88;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  position: relative;
+  top: 90px;
 }
 
 .equipo-p {
@@ -130,9 +130,12 @@ html {
   font-family: var(--font-familyOpenSans);
   line-height: 1.5;
   text-align: center;
+  padding: 0px 15px;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  position: relative;
+  top: 75px;
 }
 
 .cuadrado-decorativo {
@@ -144,8 +147,6 @@ html {
   z-index: 1;
   bottom: 545px;
   left: 145.2px;
-  background-color: red;
-  /* este elemento creo que lo metería en css dentro de la section equipo para que de ese modo se alineen juntos porque tal y como está ahora pasa lo mismo que con el lema, creo que incluso poniendolo donde te indico podría colocarse mejor y no quedarse donde está */
 }
 
 .forts-y-debs {
@@ -156,9 +157,16 @@ html {
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 50px;
+  top: 40px;
 }
-
+.cuadrado-decorativo {
+  width: 30px;
+  height: 30px;
+  background-color: var(--white);
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 565px;
+}
 .forts-y-debs-container {
   text-align: center;
   margin: 0px 15px;
@@ -179,7 +187,9 @@ html {
   font-weight: 500;
   line-height: 2.05;
 }
-
+.p-capitalize {
+  text-transform: capitalize;
+}
 .forts-y-debs-p {
   color: var(--gunmetal);
   font-family: var(--font-familyOpenSans);
