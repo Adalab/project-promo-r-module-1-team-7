@@ -90,27 +90,23 @@ html {
 .main {
   width: 100%;
 }
-.main__hero {
+.index__hero {
   width: 100%;
   height: 56.5vh;
   position: relative;
   bottom: 40px;
 }
-.main__hero__image-small {
+.index__hero__image--small {
   width: 100%;
   height: 100%;
 }
-.equipo {
-  width: 100%;
-  padding: 30px 15px 30px 15px;
-  position: relative;
-  bottom: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.emphasize {
+  font-style: oblique;
 }
-.lema {
+.capitalize {
+  text-transform: capitalize;
+}
+.hero__banner {
   background-color: var(--white);
   font-family: var(--font-familyOpenSans);
   font-size: 1.8rem;
@@ -120,13 +116,20 @@ html {
   padding: 14px 15px 16px 15px;
   margin: 0px 15px 0px 15px;
   position: absolute;
-  bottom: 589px;
+  top: 415px;
 }
-.emphasized {
-  font-style: oblique;
+.team {
+  width: 100%;
+  padding: 30px 15px 30px 15px;
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.equipo-title {
-  color: var(--aqua);
+.team__title {
+  color: var(--blue-green);
   font-family: var(--font-familyRubik);
   font-size: 2.4rem;
   font-weight: 500;
@@ -138,7 +141,7 @@ html {
   top: 50px;
 }
 
-.equipo-p {
+.team__title__p {
   font-size: 1.6rem;
   font-family: var(--font-familyOpenSans);
   line-height: 1.5;
@@ -150,7 +153,6 @@ html {
   position: relative;
   top: 38px;
 }
-
 .cuadrado-decorativo {
   width: 30px;
   height: 30px;
@@ -162,7 +164,7 @@ html {
   left: 145.2px;
 }
 
-.forts-y-debs {
+.forts-and-debs {
   background-color: rgba(57, 57, 60, 0.1);
   width: 100%;
   display: flex;
@@ -172,7 +174,7 @@ html {
   position: relative;
   top: 40px;
 }
-.cuadrado-decorativo {
+.forts-and-debs__top-square {
   width: 30px;
   height: 30px;
   background-color: var(--white);
@@ -180,30 +182,27 @@ html {
   position: absolute;
   bottom: 565px;
 }
-.forts-y-debs-container {
+.forts-and-debs__container {
   text-align: center;
   margin: 0px 15px;
   padding: 0px 10px;
 }
-.box1 {
+.div1 {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.box2 {
+.div2 {
   padding-bottom: 45px;
 }
 
-.forts-y-debs-title {
+.forts-and-debs__title {
   color: var(--blue-green);
   font-size: 2.2rem;
   font-family: var(--font-familyRubik);
   font-weight: 500;
   line-height: 2.05;
 }
-.p-capitalize {
-  text-transform: capitalize;
-}
-.forts-y-debs-p {
+.forts-and-debs__p {
   color: var(--gunmetal);
   font-family: var(--font-familyOpenSans);
   font-size: 1.6rem;
@@ -366,6 +365,72 @@ html {
 }
 
 // HERO & TEAM & STR-WEAK.CSS - TABLET
+
+@media all and (min-width: 320px) {
+  .index__hero {
+    position: relative;
+  }
+  .hero__banner {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px 30px 15px 30px;
+    margin: 341px 200px 0px 46px;
+    top: 0;
+    bottom: 0;
+  }
+  .team {
+    padding: 0px 45px 30px 45px;
+    bottom: 40px;
+  }
+  .team__title {
+    top: 45px;
+    margin-bottom: 15px;
+  }
+  .forts-and-debs__top-square {
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    transform: rotate(45deg);
+    position: relative;
+    z-index: 1;
+    bottom: 545px;
+    left: 145.2px;
+  }
+  .forts-and-debs {
+    background-color: rgba(57, 57, 60, 0.1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+  }
+  .forts-and-debs__container {
+    text-align: center;
+    margin: 0px 15px;
+    padding: 0px 10px;
+  }
+  .div1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .div2 {
+    padding-bottom: 45px;
+  }
+  .forts-and-debs__title {
+    color: var(--blue-green);
+    font-size: 2.2rem;
+    font-family: var(--font-familyRubik);
+    font-weight: 500;
+    line-height: 2.05;
+  }
+  .forts-and-debs__p {
+    color: var(--gunmetal);
+    font-family: var(--font-familyOpenSans);
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+}
 
 // MARTA.CSS - TABLET
 @media all and (min-width: 320px) {
