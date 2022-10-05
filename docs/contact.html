@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow" />
+    <!-- <meta name="description" content="Hola"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Branch Heroes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="h1">Git branch heroes</h1>
+      <nav class="nav">
+        <ul class="header-ul">
+          <li>
+            <a href="index.html#equipo" class="header-nav-item">Equipo</a>
+          </li>
+          <li>
+            <a href="index.html#quienes-somos" class="header-nav-item"
+              >Quienes somos</a
+            >
+          </li>
+          <li>
+            <a href="contact.html#contacto" class="header-nav-item">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <picture>
+          <source
+            srcset="./assets/images/hero-img-medium.jpg"
+            media="(min-width: 320px)"
+          />
+          <source
+            srcset="./assets/images/hero-img-big.jpg"
+            media="(min-width: 768px)"
+          />
+          <img
+            class="hero-image"
+            src="./assets/images/contact-background"
+            alt="Foto de redes sociales de contacto"
+          />
+        </picture>
+      </section>
+
+      <section class="contacto" id="contacto">
+        <h2 class="contacto-title">Contacto</h2>
+        <article class="contacto-p">
+          <p class="p1">
+            Si estás en peligro y necesitas contar con los servicios de una
+            <span class="capitalize">git branch hero</span> no dudes en ponerte en
+            contacto con nosotras a través de este formulario de contacto. Estaremos
+            ahí antes de que te des cuenta.
+          </p>
+          <p class="p2">
+            Todos los campos marcados con <span class="asterisco">*</span> son
+            obligatorios.
+          </p>
+        </article>
+        <form action="url de la base de datos" class="form">
+          <!--      url de la base de datos -->
+          <label for="Nombre-completo" class="label">
+            <span class="label-name"
+              >Nombre completo <span class="asterisco">*</span>
+            </span>
+            <input
+              class="input name"
+              type="text"
+              placeholder="Nombre..."
+              id="Nombre-completo"
+              required
+            />
+          </label>
+          <label for="mail" class="label">
+            <span class="label-mail">Email <span class="asterisco">*</span> </span>
+            <input
+              class="input mail"
+              type="mail"
+              placeholder="nombre.apellidos@mail.com"
+              id="mail"
+              required
+            />
+          </label>
+          <label for="telefono" class="label">
+            <span class="label-phone"
+              >Teléfono <span class="asterisco">*</span>
+            </span>
+            <input
+              class="input phone"
+              type="text"
+              placeholder="Ej: 123456789"
+              id="telefono"
+              required
+            />
+          </label>
+          <label for="Mensaje" class="label">
+            <span class="label-message"
+              >Mensaje <span class="asterisco">*</span>
+            </span>
+            <input
+              class="input message"
+              type="text"
+              placeholder="¿Qué necesitas?"
+              id="Mensaje"
+              required
+            />
+          </label>
+          <button type="submit" class="button">Enviar</button>
+        </form>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <p class="copyright">Git branch heroes ©️ 2022</p>
+      <nav>
+        <ul class="nav-footer">
+          <li><a class="link-footer" href="index.html#equipo">equipo</a></li>
+          <li>
+            <a class="link-footer" href="index.html#quienes-somos">quienes somos</a>
+          </li>
+          <li><a class="link-footer" href="contact.html#contacto">contacto</a></li>
+        </ul>
+      </nav>
+      <div class="logo-adalab">
+        <img
+          class="logo-adalab-img"
+          src="assets/images/logo-adalab.png"
+          alt="logo adalab"
+        />
+      </div>
+    </footer>
+
+  </body>
+</html>
