@@ -1,10 +1,54 @@
-.hero {
+.index__hero {
   width: 100%;
-  height: 65vh;
+  height: 56.5vh;
   position: relative;
   bottom: 40px;
 }
-.hero-image {
+.index__hero__image--small {
   width: 100%;
   height: 100%;
+}
+.emphasize {
+  font-style: oblique;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.hero__banner {
+  background-color: var(--white);
+  font-family: var(--font-familyOpenSans);
+  color: var(--black);
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1.39;
+  text-align: start;
+  padding: 14px 15px 16px 15px;
+  margin: 0px 15px 0px 15px;
+  position: absolute;
+  top: 415px;
+}
+// HERO & TEAM & STR-WEAK - TABLET
+@media all and (min-width: 320px) {
+  .index__hero {
+    position: relative;
+  }
+  .hero__banner {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px 30px 15px 30px;
+    margin: 341px 200px 0px 46px;
+    top: 0;
+    bottom: 0;
+  }
+}
+// HERO & TEAM & STR-AND-WEAK - DESKTOP
+@media all and (min-width: 768px) {
+  .index__hero {
+    height: 75vh;
+  }
+  .hero__banner {
+    width: 50%;
+    padding: 15px 30px 15px 30px;
+    margin: 460px 488px 0px 138px;
+    font-size: 2.4rem;
+  }
 }

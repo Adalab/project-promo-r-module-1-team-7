@@ -165,7 +165,7 @@ html {
   bottom: 545px;
   left: 145.2px;
 }
-.forts-and-debs {
+.str-and-weak {
   background-color: rgba(57, 57, 60, 0.1);
   width: 100%;
   display: flex;
@@ -175,7 +175,7 @@ html {
   position: relative;
   top: 40px;
 }
-.forts-and-debs__top-square {
+.str-and-weak__top-square {
   width: 30px;
   height: 30px;
   background-color: var(--white);
@@ -183,7 +183,7 @@ html {
   position: absolute;
   bottom: 565px;
 }
-.forts-and-debs__container {
+.str-and-weak__container {
   text-align: center;
   margin: 0px 15px;
   padding: 0px 10px;
@@ -196,14 +196,14 @@ html {
   padding-bottom: 45px;
 }
 
-.forts-and-debs__title {
+.str-and-weak__title {
   color: var(--blue-green);
   font-size: 2.2rem;
   font-family: var(--font-familyRubik);
   font-weight: 500;
   line-height: 2.05;
 }
-.forts-and-debs__p {
+.str-and-weak__p {
   color: var(--gunmetal);
   font-family: var(--font-familyOpenSans);
   font-size: 1.6rem;
@@ -385,14 +385,14 @@ html {
     top: 45px;
     margin-bottom: 15px;
   }
-  .forts-and-debs__top-square {
+  .str-and-weak__top-square {
     transform: translate(50, 50);
     bottom: 318px;
   }
-  .forts-and-debs {
+  .str-and-weak {
     flex-direction: row;
   }
-  .forts-and-debs__container {
+  .str-and-weak__container {
     margin: 0px 45px;
     padding: 0;
   }
@@ -401,7 +401,7 @@ html {
     padding-top: 45px;
     padding-bottom: 60px;
   }
-  .forts-and-debs__title {
+  .str-and-weak__title {
     margin-bottom: 15px;
   }
 }
@@ -420,11 +420,11 @@ html {
     padding: 0px 300px 30px 299px;
     bottom: 40px;
   }
-  .forts-and-debs__top-square {
+  .str-and-weak__top-square {
     transform: translate(50, 50);
     bottom: 270px;
   }
-  .forts-and-debs__container {
+  .str-and-weak__container {
     margin: 45px 110px 60px 110px;
   }
   .div1,
@@ -480,8 +480,8 @@ html {
 
 // FOOTER.CSS - TABLET
 @media all and (min-width: 320px) {
-  .footer {
-  }
+  // .footer {
+  // }
 }
 
 // FORM-MAIN.CSS

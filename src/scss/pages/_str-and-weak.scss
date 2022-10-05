@@ -1,4 +1,4 @@
-.forts-y-debs {
+.str-and-weak {
   background-color: rgba(57, 57, 60, 0.1);
   width: 100%;
   display: flex;
@@ -8,7 +8,7 @@
   position: relative;
   top: 40px;
 }
-.cuadrado-decorativo {
+.str-and-weak__top-square {
   width: 30px;
   height: 30px;
   background-color: var(--white);
@@ -16,32 +16,66 @@
   position: absolute;
   bottom: 565px;
 }
-.forts-y-debs-container {
+.str-and-weak__container {
   text-align: center;
   margin: 0px 15px;
   padding: 0px 10px;
 }
-.box1 {
+.div1 {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.box2 {
+.div2 {
   padding-bottom: 45px;
 }
 
-.forts-y-debs-title {
+.str-and-weak__title {
   color: var(--blue-green);
   font-size: 2.2rem;
   font-family: var(--font-familyRubik);
   font-weight: 500;
   line-height: 2.05;
 }
-.p-capitalize {
-  text-transform: capitalize;
-}
-.forts-y-debs-p {
+.str-and-weak__p {
   color: var(--gunmetal);
   font-family: var(--font-familyOpenSans);
   font-size: 1.6rem;
   line-height: 1.5;
+}
+
+// HERO & TEAM & STR-WEAK - TABLET
+@media all and (min-width: 320px) {
+  .str-and-weak__top-square {
+    transform: translate(50, 50);
+    bottom: 318px;
+  }
+  .str-and-weak {
+    flex-direction: row;
+  }
+  .str-and-weak__container {
+    margin: 0px 45px;
+    padding: 0;
+  }
+  .div1,
+  .div2 {
+    padding-top: 45px;
+    padding-bottom: 60px;
+  }
+  .str-and-weak__title {
+    margin-bottom: 15px;
+  }
+}
+// HERO & TEAM & STR-AND-WEAK - DESKTOP
+@media all and (min-width: 768px) {
+  .str-and-weak__top-square {
+    transform: translate(50, 50);
+    bottom: 270px;
+  }
+  .str-and-weak__container {
+    margin: 45px 110px 60px 110px;
+  }
+  .div1,
+  .div2 {
+    padding: 0;
+  }
 }
