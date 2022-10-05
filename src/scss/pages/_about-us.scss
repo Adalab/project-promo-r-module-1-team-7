@@ -1,0 +1,74 @@
+.quienes-somos {
+  color: var(--blue-green);
+  font-family: var(--font-familyRubik);
+  font-size: 2rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--white);
+  padding-top: 30px;
+  margin-bottom: 45px;
+}
+.quienessomosh2 {
+  align-self: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image-box {
+  width: 180px;
+  height: 180px;
+  /* border: solid 5px rgba(0, 0, 0, 0.08); */
+  border: solid 5px var(--blue-green);
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.image {
+  width: 100%;
+}
+.quienes-somos-text {
+  font-family: var(--font-familyOpenSans);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-name {
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 45px;
+  text-align: center;
+  color: var(--black);
+}
+.bio {
+  margin-bottom: 15px;
+  font-weight: normal;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: var(--gunmetal);
+}
+
+.icon-list {
+  width: 124px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.icon {
+  color: var(--blue-green);
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.icon:hover {
+  color: var(--aqua);
+}
