@@ -365,8 +365,7 @@ html {
   }
 }
 
-// HERO & TEAM & STR-WEAK.CSS - TABLET
-
+// HERO & TEAM & STR-WEAK - TABLET
 @media all and (min-width: 320px) {
   .index__hero {
     position: relative;
@@ -406,7 +405,33 @@ html {
     margin-bottom: 15px;
   }
 }
-
+// HERO & TEAM & STR-AND-WEAK - DESKTOP
+@media all and (min-width: 768px) {
+  .index__hero {
+    height: 75vh;
+  }
+  .hero__banner {
+    width: 50%;
+    padding: 15px 30px 15px 30px;
+    margin: 460px 488px 0px 138px;
+    font-size: 2.4rem;
+  }
+  .team {
+    padding: 0px 300px 30px 299px;
+    bottom: 40px;
+  }
+  .forts-and-debs__top-square {
+    transform: translate(50, 50);
+    bottom: 270px;
+  }
+  .forts-and-debs__container {
+    margin: 45px 110px 60px 110px;
+  }
+  .div1,
+  .div2 {
+    padding: 0;
+  }
+}
 // MARTA.CSS - TABLET
 @media all and (min-width: 320px) {
   .quienes-somos {
@@ -456,7 +481,6 @@ html {
 // FOOTER.CSS - TABLET
 @media all and (min-width: 320px) {
   .footer {
-    
   }
 }
 
@@ -656,7 +680,7 @@ html {
   height: 100%;
 }
 
-// FORM-TABLET
+// FORM -TABLET
 @media screen and (min-width: 320px) {
   .contact__article {
     margin: 0px 163px;
@@ -683,27 +707,41 @@ html {
   }
 }
 
-// FORM-DESKTOP
-.contact__article {
-  margin: 0px 163px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.contact__article__p1 {
-  padding: 15px 30px;
-}
-.contact__article__p2 {
-  margin-top: 20px;
-}
-.form {
-  margin: 0px 163px 30px 163px;
-}
-.name {
-  padding: 11px 209px 15px 15px;
-}
-.form__button {
-  width: 45%;
-  margin: 30px 0px 0px 244px;
+// FORM - DESKTOP
+@media all and (min-width: 768px) {
+  .contact__hero {
+    height: 60vh;
+  }
+  .contact {
+    margin-top: 45px;
+  }
+  .contact__article__p1 {
+    padding: 15px 200px;
+  }
+  .form {
+    margin: 0px 300px 30px 299px;
+  }
+  .name {
+    padding: 11px 209px 15px 15px;
+  }
+  .form__label--wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 44px;
+  }
+  .label--mail,
+  .form__input--mail {
+    width: 60%;
+  }
+  .label--phone,
+  .form__input--phone {
+    width: 32.5%;
+  }
+  .phone {
+    padding: 11px 0px 15px 15px;
+  }
+  .form__button {
+    width: 45%;
+    margin: 25px 0px 65px 330px;
+  }
 }

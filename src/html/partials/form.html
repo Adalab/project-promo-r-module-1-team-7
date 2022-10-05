@@ -14,7 +14,7 @@
   </article>
   <form action="url de la base de datos" class="form">
     <!--      url de la base de datos -->
-    <label for="Nombre-completo" class="label">
+    <label for="Nombre-completo" class="label label--name">
       <span class="form__label--name"
         >Nombre completo <span class="asterisc">*</span>
       </span>
@@ -26,31 +26,33 @@
         required
       />
     </label>
-    <label for="mail" class="label">
-      <span class="form__label--mail"
-        >Email <span class="asterisc">*</span>
-      </span>
-      <input
-        class="form__input mail"
-        type="mail"
-        placeholder="nombre.apellidos@mail.com"
-        id="mail"
-        required
-      />
-    </label>
-    <label for="telefono" class="label">
-      <span class="form__label--phone"
-        >Teléfono <span class="asterisc">*</span>
-      </span>
-      <input
-        class="form__input phone"
-        type="text"
-        placeholder="Ej: 123456789"
-        id="telefono"
-        required
-      />
-    </label>
-    <label for="Mensaje" class="label">
+    <div class="form__label--wrap">
+      <label for="mail" class="label label--mail">
+        <span class="form__label--mail"
+          >Email <span class="asterisc">*</span>
+        </span>
+        <input
+          class="form__input mail"
+          type="mail"
+          placeholder="nombre.apellidos@mail.com"
+          id="mail"
+          required
+        />
+      </label>
+      <label for="telefono" class="label label--phone">
+        <span class="form__label--phone"
+          >Teléfono <span class="asterisc">*</span>
+        </span>
+        <input
+          class="form__input phone"
+          type="text"
+          placeholder="Ej: 123456789"
+          id="telefono"
+          required
+        />
+      </label>
+    </div>
+    <label for="Mensaje" class="label label--message">
       <span class="form__label--message"
         >Mensaje <span class="asterisc">*</span>
       </span>

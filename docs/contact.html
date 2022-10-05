@@ -48,87 +48,91 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="contact__hero">
         <picture>
           <source
-            srcset="./assets/images/hero-img-medium.jpg"
+            srcset="\assets\images\contact-hero-image-medium.png"
             media="(min-width: 320px)"
           />
           <source
-            srcset="./assets/images/hero-img-big.jpg"
+            srcset="\assets\images\contact-hero-image-large-jpg.jpg"
             media="(min-width: 768px)"
           />
           <img
-            class="hero-image"
-            src="./assets/images/contact-background"
+            class="contact__hero__image"
+            src="\assets\images\contact-hero-image-small.png"
             alt="Foto de redes sociales de contacto"
           />
         </picture>
       </section>
 
-      <section class="contacto" id="contacto">
-        <h2 class="contacto-title">Contacto</h2>
-        <article class="contacto-p">
-          <p class="p1">
+      <section class="contact" id="contacto">
+        <h2 class="contact__title">Contacto</h2>
+        <article class="contact__article">
+          <p class="contact__article__p1">
             Si estás en peligro y necesitas contar con los servicios de una
             <span class="capitalize">git branch hero</span> no dudes en ponerte en
             contacto con nosotras a través de este formulario de contacto. Estaremos
             ahí antes de que te des cuenta.
           </p>
-          <p class="p2">
-            Todos los campos marcados con <span class="asterisco">*</span> son
+          <p class="contact__article__p2">
+            Todos los campos marcados con <span class="asterisc">*</span> son
             obligatorios.
           </p>
         </article>
         <form action="url de la base de datos" class="form">
           <!--      url de la base de datos -->
-          <label for="Nombre-completo" class="label">
-            <span class="label-name"
-              >Nombre completo <span class="asterisco">*</span>
+          <label for="Nombre-completo" class="label label--name">
+            <span class="form__label--name"
+              >Nombre completo <span class="asterisc">*</span>
             </span>
             <input
-              class="input name"
+              class="form__input name"
               type="text"
               placeholder="Nombre..."
               id="Nombre-completo"
               required
             />
           </label>
-          <label for="mail" class="label">
-            <span class="label-mail">Email <span class="asterisco">*</span> </span>
-            <input
-              class="input mail"
-              type="mail"
-              placeholder="nombre.apellidos@mail.com"
-              id="mail"
-              required
-            />
-          </label>
-          <label for="telefono" class="label">
-            <span class="label-phone"
-              >Teléfono <span class="asterisco">*</span>
+          <div class="form__label--wrap">
+            <label for="mail" class="label label--mail">
+              <span class="form__label--mail"
+                >Email <span class="asterisc">*</span>
+              </span>
+              <input
+                class="form__input mail"
+                type="mail"
+                placeholder="nombre.apellidos@mail.com"
+                id="mail"
+                required
+              />
+            </label>
+            <label for="telefono" class="label label--phone">
+              <span class="form__label--phone"
+                >Teléfono <span class="asterisc">*</span>
+              </span>
+              <input
+                class="form__input phone"
+                type="text"
+                placeholder="Ej: 123456789"
+                id="telefono"
+                required
+              />
+            </label>
+          </div>
+          <label for="Mensaje" class="label label--message">
+            <span class="form__label--message"
+              >Mensaje <span class="asterisc">*</span>
             </span>
             <input
-              class="input phone"
-              type="text"
-              placeholder="Ej: 123456789"
-              id="telefono"
-              required
-            />
-          </label>
-          <label for="Mensaje" class="label">
-            <span class="label-message"
-              >Mensaje <span class="asterisco">*</span>
-            </span>
-            <input
-              class="input message"
+              class="form__input message"
               type="text"
               placeholder="¿Qué necesitas?"
               id="Mensaje"
               required
             />
           </label>
-          <button type="submit" class="button">Enviar</button>
+          <button type="submit" class="form__button">Enviar</button>
         </form>
       </section>
 
