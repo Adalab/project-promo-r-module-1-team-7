@@ -452,7 +452,13 @@ html {
     margin-bottom: 0px;
   }
 }
+
 // FOOTER.CSS - TABLET
+@media all and (min-width: 320px) {
+  .footer {
+    
+  }
+}
 
 // FORM-MAIN.CSS
 /* A partir de aquí el Header */
