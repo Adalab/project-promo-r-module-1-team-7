@@ -162,14 +162,14 @@ html {
   width: 30px;
   height: 30px;
   background-color: var(--white);
-  transform: rotate(45deg);
   position: absolute;
   bottom: 565px;
+  transform: rotate(45deg);
 }
 .str-and-weak__container {
   text-align: center;
   margin: 0px 15px;
-  padding: 0px 10px;
+  padding: 0px 15px;
 }
 .div1 {
   padding-top: 30px;
@@ -178,7 +178,6 @@ html {
 .div2 {
   padding-bottom: 45px;
 }
-
 .str-and-weak__title {
   color: var(--blue-green);
   font-size: 2.2rem;
