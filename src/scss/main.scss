@@ -491,8 +491,28 @@ html {
 
 // FOOTER.CSS - TABLET
 @media all and (min-width: 320px) {
-  // .footer {
-  // }
+  .copyright {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+  .nav {
+    width: 100%;
+  }
+  .nav-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  } 
+  .logo-adalab {
+    width: 100%;
+    margin-right: 40vw;
+    margin-left: 3vw;
+    display: flex;
+    align-self: flex-start;
+  }
 }
 
 // FORM-MAIN.CSS
