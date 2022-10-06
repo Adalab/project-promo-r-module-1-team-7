@@ -7,10 +7,7 @@
 // @import 'layout/footer';
 // @import 'pages/index';
 
-.main {
-  width: 100%;
-}
-// MAIN.CSS
+// MAIN-MOBILE VERSION.CSS
 * {
   margin: 0;
   padding: 0;
@@ -86,13 +83,14 @@ html {
 .header-nav-item:active {
   color: var(--blue-green);
 }
+
 /*A partir de aquí el hero */
 .main {
   width: 100%;
 }
 .index__hero {
   width: 100%;
-  height: 56.5vh;
+  height: 56.8vh;
   position: relative;
   bottom: 40px;
 }
@@ -111,19 +109,19 @@ html {
   font-family: var(--font-familyOpenSans);
   color: var(--black);
   font-size: 1.8rem;
-  font-weight: 900;
+  font-weight: 600;
   line-height: 1.39;
   text-align: start;
   padding: 14px 15px 16px 15px;
   margin: 0px 15px 0px 15px;
   position: absolute;
-  top: 415px;
+  top: 420px;
 }
 .team {
   width: 100%;
   padding: 30px 15px 30px 15px;
   position: relative;
-  bottom: 0px;
+  top: 58px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,56 +135,41 @@ html {
   text-align: center;
   line-height: 1.88;
   text-transform: uppercase;
-  margin-bottom: 30px;
-  position: relative;
-  top: 50px;
+  margin-bottom: 15px;
 }
-
 .team__title__p {
   font-size: 1.6rem;
   font-family: var(--font-familyOpenSans);
   color: var(--gunmetal);
   line-height: 1.5;
   text-align: center;
-  padding: 0px 15px;
+  padding: 0px 17px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  position: relative;
-  top: 38px;
-}
-.cuadrado-decorativo {
-  width: 30px;
-  height: 30px;
-  background-color: var(--white);
-  transform: rotate(45deg);
-  position: relative;
-  z-index: 1;
-  bottom: 545px;
-  left: 145.2px;
+  gap: 28px;
 }
 .str-and-weak {
-  background-color: rgba(57, 57, 60, 0.1);
+  background-color: rgba(57, 57, 60, 0.2);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 40px;
+  top: 58px;
 }
 .str-and-weak__top-square {
   width: 30px;
   height: 30px;
   background-color: var(--white);
-  transform: rotate(45deg);
   position: absolute;
   bottom: 565px;
+  transform: rotate(45deg);
 }
 .str-and-weak__container {
   text-align: center;
   margin: 0px 15px;
-  padding: 0px 10px;
+  padding: 0px 15px;
 }
 .div1 {
   padding-top: 30px;
@@ -195,7 +178,6 @@ html {
 .div2 {
   padding-bottom: 45px;
 }
-
 .str-and-weak__title {
   color: var(--blue-green);
   font-size: 2.2rem;
@@ -373,6 +355,7 @@ html {
 @media all and (min-width: 320px) {
   .index__hero {
     position: relative;
+    height: 58vh;
   }
   .hero__banner {
     background-color: rgba(255, 255, 255, 0.8);
