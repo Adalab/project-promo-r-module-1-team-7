@@ -115,7 +115,7 @@ html {
   padding: 14px 15px 16px 15px;
   margin: 0px 15px 0px 15px;
   position: absolute;
-  top: 475px;
+  top: 92%;
 }
 .team {
   width: 100%;
@@ -163,7 +163,7 @@ html {
   height: 30px;
   background-color: var(--white);
   position: absolute;
-  bottom: 565px;
+  bottom: 97.5%;
   transform: rotate(45deg);
 }
 .str-and-weak__container {
@@ -357,10 +357,9 @@ html {
   }
   .hero__banner {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 15px 30px 15px 30px;
-    margin: 341px 200px 0px 46px;
-    top: 75px;
-    bottom: 0;
+    padding: 3% 3.5% 3% 3.5%;
+    margin: 41.4% 40% 0% 7.5%;
+    top: 16.1%;
   }
   .team {
     padding: 0px 45px 30px 45px;
@@ -371,9 +370,6 @@ html {
   }
   .team__title__p {
     padding: 0px 28px 0px 28px;
-  }
-  .str-and-weak__top-square {
-    bottom: 318px;
   }
   .str-and-weak {
     flex-direction: row;
@@ -403,17 +399,14 @@ html {
     height: 75vh;
   }
   .hero__banner {
-    width: 50%;
-    padding: 15px 30px 15px 30px;
-    margin: 460px 488px 0px 138px;
+    width: 55%;
+    padding: 2% 2.5% 2% 2.5%;
     font-size: 2.4rem;
+    top: 4.5%;
   }
   .team {
     padding: 0px 285px 30px 284px;
     bottom: 40px;
-  }
-  .str-and-weak__top-square {
-    bottom: 270px;
   }
   .str-and-weak__container {
     margin: 45px 110px 60px 110px;
