@@ -362,22 +362,29 @@ html {
   }
   .team {
     padding: 0px 45px 30px 45px;
-    bottom: 40px;
+    top: -42px;
   }
   .team__title {
-    top: 45px;
-    margin-bottom: 15px;
+    padding-top: 45px;
+  }
+  .team__title__p {
+    padding: 0px 28px 0px 28px;
   }
   .str-and-weak__top-square {
-    transform: translate(50, 50);
     bottom: 318px;
   }
   .str-and-weak {
     flex-direction: row;
+    top: 0;
   }
   .str-and-weak__container {
-    margin: 0px 45px;
     padding: 0;
+  }
+  .div1 {
+    padding: 0px 15px 0px 45px;
+  }
+  .div2 {
+    padding: 0px 45px 0px 15px;
   }
   .div1,
   .div2 {
@@ -400,11 +407,10 @@ html {
     font-size: 2.4rem;
   }
   .team {
-    padding: 0px 300px 30px 299px;
+    padding: 0px 285px 30px 284px;
     bottom: 40px;
   }
   .str-and-weak__top-square {
-    transform: translate(50, 50);
     bottom: 270px;
   }
   .str-and-weak__container {
