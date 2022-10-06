@@ -45,7 +45,7 @@
         </span>
         <input
           class="form__input phone"
-          type="text"
+          type="tel"
           placeholder="Ej: 123456789"
           id="telefono"
           required
@@ -56,13 +56,15 @@
       <span class="form__label--message"
         >Mensaje <span class="asterisc">*</span>
       </span>
-      <input
+      <textarea
         class="form__input message"
-        type="text"
-        placeholder="¿Qué necesitas?"
         id="Mensaje"
+        name="Mensaje"
+        rows="1"
+        cols="80"
         required
-      />
+        placeholder="¿Qué necesitas?"
+      ></textarea>
     </label>
     <button type="submit" class="form__button">Enviar</button>
   </form>
