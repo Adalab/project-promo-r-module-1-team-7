@@ -115,13 +115,13 @@ html {
   padding: 14px 15px 16px 15px;
   margin: 0px 15px 0px 15px;
   position: absolute;
-  top: 420px;
+  top: 475px;
 }
 .team {
   width: 100%;
   padding: 30px 15px 30px 15px;
   position: relative;
-  top: 58px;
+  top: 51px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -197,14 +197,14 @@ html {
 .quienes-somos {
   color: var(--blue-green);
   font-family: var(--font-familyRubik);
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 500;
   display: flex;
   flex-direction: column;
   text-align: center;
   background-color: var(--white);
-  padding-top: 30px;
-  margin-bottom: 45px;
+  padding-top: 73px;
+  margin-bottom: 35px;
 }
 .quienessomosh2 {
   align-self: center;
@@ -225,8 +225,6 @@ html {
   border-radius: 4px;
   margin-top: 30px;
   margin-bottom: 15px;
- 
-  
 }
 .image {
   width: 100%;
@@ -361,7 +359,7 @@ html {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 15px 30px 15px 30px;
     margin: 341px 200px 0px 46px;
-    top: 0;
+    top: 75px;
     bottom: 0;
   }
   .team {
@@ -424,7 +422,6 @@ html {
   .div2 {
     padding: 0;
   }
-  
 }
 // MARTA.CSS - TABLET
 @media all and (min-width: 320px) {
@@ -435,7 +432,8 @@ html {
     background-color: var(--white);
     margin-left: 44px;
     margin-right: 44px;
-    margin-top: 45px;
+    margin-bottom: 60px;
+    padding-top: 38px;
   }
   .article {
     display: flex;
@@ -445,29 +443,25 @@ html {
     flex-wrap: wrap;
     gap: 31px;
     margin-top: 41px;
-
   }
   .image-box {
     width: 150px;
     height: 150px;
     margin-top: 0px;
     margin-bottom: 0px;
-    order:1;
+    order: 1;
   }
 
-  .image-box.par{
+  .image-box.par {
     order: 3;
   }
-  
+
   .quienes-somos-text {
     width: 60vw;
     align-items: flex-start;
-
   }
-  .quienes-somos-text.par{
+  .quienes-somos-text.par {
     align-items: flex-end;
-    
-    
   }
 
   .bio {
@@ -487,13 +481,12 @@ html {
     padding-right: 0px;
     line-height: normal;
   }
-  .bio.par{
-    text-align:right;
+  .bio.par {
+    text-align: right;
   }
   .icon-list {
     margin-bottom: 0px;
   }
-  
 }
 
 // FOOTER.CSS - TABLET
@@ -726,88 +719,75 @@ html {
   }
 }
 //main - desktop
-@media all and (min-width: 768px){
-  
+@media all and (min-width: 768px) {
+  //a partir de aqui header
+  //a partir de aqui main
 
-//a partir de aqui header
-//a partir de aqui main
+  //a partit de aqui quienes somos
+  .quienes-somos {
+    display: flex;
+    flex-direction: column;
+    text-align: flex-start;
 
-//a partit de aqui quienes somos
-.quienes-somos {
-  display: flex;
-  flex-direction: column;
-  text-align: flex-start;
-  
-  background-color: var(--white);
-  margin-left: 138px;
-  margin-right: 138px;
-  margin-top: 45px;
- 
-}
-.article {
-  display: flex;
-  flex-direction: row;
-  justify-content: stretch;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 45px;
-  
+    background-color: var(--white);
+    margin-left: 138px;
+    margin-right: 138px;
+    margin-top: 45px;
+  }
+  .article {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 45px;
+  }
 
-}
+  .image-box {
+    width: 278px;
+    height: 278px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    order: 1;
+  }
 
-  
+  .image-box.par {
+    order: 3;
+  }
 
-.image-box {
-  width: 278px;
-  height: 278px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  order:1;
-}
+  .quienes-somos-text {
+    width: 40vw;
+    align-items: flex-start;
+  }
+  .quienes-somos-text.par {
+    align-items: flex-end;
+  }
 
-.image-box.par{
-  order: 3;
-}
-
-.quienes-somos-text {
-  width: 40vw;
-  align-items: flex-start;
-
-}
-.quienes-somos-text.par{
-  align-items: flex-end;
-  
-
-}
-
-.bio {
-  text-align: justify;
-  margin-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  line-height: normal;
-}
-.our-name {
-  line-height: normal;
-}
-.bio {
-  text-align: justify;
-  margin-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  line-height: normal;
-}
-.bio.par{
-  text-align:right;
-}
-.icon-list {
-  margin-bottom: 0px;
-}
-
+  .bio {
+    text-align: justify;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    line-height: normal;
+  }
+  .our-name {
+    line-height: normal;
+  }
+  .bio {
+    text-align: justify;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    line-height: normal;
+  }
+  .bio.par {
+    text-align: right;
+  }
+  .icon-list {
+    margin-bottom: 0px;
+  }
 }
 //a partir de aqui footer
-
-
 
 // FORM - DESKTOP
 @media all and (min-width: 768px) {
@@ -846,5 +826,4 @@ html {
     width: 45%;
     margin: 25px 0px 65px 330px;
   }
-  
 }
