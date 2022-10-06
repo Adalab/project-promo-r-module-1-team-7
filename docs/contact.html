@@ -80,9 +80,8 @@
             obligatorios.
           </p>
         </article>
-        <form action="url de la base de datos" class="form">
-          <!--      url de la base de datos -->
-          <label for="Nombre-completo" class="label label--name">
+        <form action="url del servidor" method="post" class="form">
+          <label for="nombre-completo" class="label label--name">
             <span class="form__label--name"
               >Nombre completo <span class="asterisc">*</span>
             </span>
@@ -90,12 +89,13 @@
               class="form__input name"
               type="text"
               placeholder="Nombre..."
-              id="Nombre-completo"
+              name="nombre-completo"
+              id="nombre-completo"
               required
             />
           </label>
           <div class="form__label--wrap">
-            <label for="mail" class="label label--mail">
+            <label for="email" class="label label--mail">
               <span class="form__label--mail"
                 >Email <span class="asterisc">*</span>
               </span>
@@ -103,7 +103,8 @@
                 class="form__input mail"
                 type="mail"
                 placeholder="nombre.apellidos@mail.com"
-                id="mail"
+                name="email"
+                id="email"
                 required
               />
             </label>
@@ -115,19 +116,20 @@
                 class="form__input phone"
                 type="tel"
                 placeholder="Ej: 123456789"
+                name="telefono"
                 id="telefono"
                 required
               />
             </label>
           </div>
-          <label for="Mensaje" class="label label--message">
+          <label for="mensaje" class="label label--message">
             <span class="form__label--message"
               >Mensaje <span class="asterisc">*</span>
             </span>
             <textarea
               class="form__input message"
-              id="Mensaje"
-              name="Mensaje"
+              id="mensaje"
+              name="mensaje"
               rows="1"
               cols="80"
               required
