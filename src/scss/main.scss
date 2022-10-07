@@ -93,6 +93,7 @@ html {
   align-items: center;
   max-width: 100vw;
   height: 50vh;
+  max-height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -365,6 +366,7 @@ html {
   .index__hero {
     position: relative;
     height: 58vh;
+    max-height: 58vh;
   }
   .hero__banner {
     background-color: rgba(255, 255, 255, 0.8);
@@ -409,6 +411,7 @@ html {
 @media all and (min-width: 768px) {
   .index__hero {
     height: 75vh;
+    max-height: 75vh;
   }
   .hero__banner {
     width: 55%;
