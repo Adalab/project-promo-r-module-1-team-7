@@ -316,6 +316,8 @@ html {
 .logo-adalab {
   width: 115.9px;
   height: 45px;
+  margin-left: 30%;
+  margin-top: 30px;
 }
 .logo-adalab-img {
   width: 100%;
@@ -500,13 +502,14 @@ html {
     flex-direction: column;
     align-items: flex-end;
     margin-top: -12%;
-    height: 90px;
+    height: 13vh;
     // line-height: 25px;
   }
  .logo-adalab {
-   width: 100%;
-   margin-right: 40vw;
-   margin-left: 3vw;
+    width: 100%;
+    margin-right: 40vw;
+    margin-left: 3vw;
+    margin-top: -1%;
  }
 }
 
