@@ -89,14 +89,16 @@ html {
   width: 100%;
 }
 .index__hero {
-  width: 100%;
-  height: 56.8vh;
-  position: relative;
-  bottom: 40px;
-}
-.index__hero__image--small {
-  width: 100%;
-  height: 100%;
+  background-image: url("/assets/images/fondo-pagina-1.png");
+  align-items: center;
+  max-width: 100vw;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .emphasize {
   font-style: oblique;
@@ -115,13 +117,13 @@ html {
   padding: 14px 15px 16px 15px;
   margin: 0px 15px 0px 15px;
   position: absolute;
-  top: 92%;
+  bottom: 0;
 }
 .team {
   width: 100%;
   padding: 30px 15px 30px 15px;
   position: relative;
-  top: 51px;
+  top: 58px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -136,6 +138,7 @@ html {
   line-height: 1.88;
   text-transform: uppercase;
   margin-bottom: 15px;
+  margin-top: 30px;
 }
 .team__title__p {
   font-size: 1.6rem;
@@ -361,7 +364,6 @@ html {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 3% 3.5% 3% 3.5%;
     margin: 41.4% 40% 0% 7.5%;
-    top: 3.2vh;
   }
   .team {
     padding: 0px 45px 30px 45px;
@@ -405,7 +407,6 @@ html {
     max-width: 659.44px;
     padding: 2% 2.5% 2% 2.5%;
     font-size: 2.4rem;
-    top: -5.6vh;
   }
   .team {
     padding: 0px 285px 30px 284px;
@@ -564,19 +565,17 @@ html {
   height: 60vh;
 }
 .contact__hero {
-  width: 100%;
-  height: 38vh;
-  position: relative;
-  bottom: 40px;
-}
-.contact__hero__image {
-  width: 100%;
-  height: 100%;
+  max-width: 100vw;
+  height: 37vh;
+  background-image: url("/assets/images/fondo-pagina-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .contact {
   width: 100%;
   position: relative;
-  bottom: 40px;
+  bottom: 30px;
   margin-top: 30px;
 }
 .contact__title {
@@ -587,6 +586,7 @@ html {
   line-height: 1.88;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 30px;
 }
 .contact__article {
   color: var(--gunmetal);
