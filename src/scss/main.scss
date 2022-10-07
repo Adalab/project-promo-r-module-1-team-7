@@ -118,7 +118,7 @@ html {
   padding: 14px 15px 16px 15px;
   margin: 0px 15px 0px 15px;
   position: absolute;
-  bottom: 0;
+  top: 90%;
 }
 .team {
   width: 100%;
@@ -127,6 +127,8 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: 58px;
 }
 .team__title {
   color: var(--blue-green);
@@ -368,6 +370,8 @@ html {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 3% 3.5% 3% 3.5%;
     margin: 41.4% 40% 0% 7.5%;
+    top: 16%;
+    bottom: 0;
   }
   .team {
     padding: 0px 45px 30px 45px;
@@ -411,6 +415,7 @@ html {
     max-width: 659.44px;
     padding: 2% 2.5% 2% 2.5%;
     font-size: 2.4rem;
+    top: 5%;
   }
   .team {
     padding: 0px 285px 30px 284px;
