@@ -115,13 +115,13 @@ html {
   padding: 14px 15px 16px 15px;
   margin: 0px 15px 0px 15px;
   position: absolute;
-  top: 420px;
+  top: 92%;
 }
 .team {
   width: 100%;
   padding: 30px 15px 30px 15px;
   position: relative;
-  top: 58px;
+  top: 51px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -163,7 +163,7 @@ html {
   height: 30px;
   background-color: var(--white);
   position: absolute;
-  bottom: 565px;
+  bottom: 97.5%;
   transform: rotate(45deg);
 }
 .str-and-weak__container {
@@ -197,14 +197,14 @@ html {
 .quienes-somos {
   color: var(--blue-green);
   font-family: var(--font-familyRubik);
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 500;
   display: flex;
   flex-direction: column;
   text-align: center;
   background-color: var(--white);
-  padding-top: 30px;
-  margin-bottom: 45px;
+  padding-top: 73px;
+  margin-bottom: 35px;
 }
 .quienessomosh2 {
   align-self: center;
@@ -234,7 +234,9 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  order: 2;
 }
+
 .our-name {
   font-size: 2rem;
   font-weight: normal;
@@ -314,6 +316,8 @@ html {
 .logo-adalab {
   width: 115.9px;
   height: 45px;
+  margin-left: 30%;
+  margin-top: 30px;
 }
 .logo-adalab-img {
   width: 100%;
@@ -361,29 +365,32 @@ html {
   }
   .hero__banner {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 15px 30px 15px 30px;
-    margin: 341px 200px 0px 46px;
-    top: 0;
-    bottom: 0;
+    padding: 3% 3.5% 3% 3.5%;
+    margin: 41.4% 40% 0% 7.5%;
+    top: 3.2vh;
   }
   .team {
     padding: 0px 45px 30px 45px;
-    bottom: 40px;
+    top: -42px;
   }
   .team__title {
-    top: 45px;
-    margin-bottom: 15px;
+    padding-top: 45px;
   }
-  .str-and-weak__top-square {
-    transform: translate(50, 50);
-    bottom: 318px;
+  .team__title__p {
+    padding: 0px 28px 0px 28px;
   }
   .str-and-weak {
     flex-direction: row;
+    top: 0;
   }
   .str-and-weak__container {
-    margin: 0px 45px;
     padding: 0;
+  }
+  .div1 {
+    padding: 0px 15px 0px 45px;
+  }
+  .div2 {
+    padding: 0px 45px 0px 15px;
   }
   .div1,
   .div2 {
@@ -400,18 +407,15 @@ html {
     height: 75vh;
   }
   .hero__banner {
-    width: 50%;
-    padding: 15px 30px 15px 30px;
-    margin: 460px 488px 0px 138px;
+    width: 55%;
+    max-width: 659.44px;
+    padding: 2% 2.5% 2% 2.5%;
     font-size: 2.4rem;
+    top: -5.6vh;
   }
   .team {
-    padding: 0px 300px 30px 299px;
+    padding: 0px 285px 30px 284px;
     bottom: 40px;
-  }
-  .str-and-weak__top-square {
-    transform: translate(50, 50);
-    bottom: 270px;
   }
   .str-and-weak__container {
     margin: 45px 110px 60px 110px;
@@ -430,6 +434,8 @@ html {
     background-color: var(--white);
     margin-left: 44px;
     margin-right: 44px;
+    margin-bottom: 60px;
+    padding-top: 38px;
   }
   .article {
     display: flex;
@@ -438,7 +444,6 @@ html {
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 31px;
-    background-color: orange;
     margin-top: 41px;
   }
   .image-box {
@@ -446,11 +451,27 @@ html {
     height: 150px;
     margin-top: 0px;
     margin-bottom: 0px;
+    order: 1;
   }
+
+  .image-box.par {
+    order: 3;
+  }
+
   .quienes-somos-text {
-    width: 70%;
+    width: 60vw;
     align-items: flex-start;
-    background-color: blue;
+  }
+  .quienes-somos-text.par {
+    align-items: flex-end;
+  }
+
+  .bio {
+    text-align: justify;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    line-height: normal;
   }
   .our-name {
     line-height: normal;
@@ -462,15 +483,41 @@ html {
     padding-right: 0px;
     line-height: normal;
   }
+  .bio.par {
+    text-align: right;
+  }
   .icon-list {
     margin-bottom: 0px;
   }
 }
 
-// FOOTER.CSS - TABLET
 @media all and (min-width: 320px) {
-  // .footer {
-  // }
+  .copyright {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+  .container-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .nav-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -12%;
+    height: 13vh;
+    // line-height: 25px;
+  }
+  .logo-adalab {
+    width: 100%;
+    margin-right: 40vw;
+    margin-left: 3vw;
+    margin-top: -1%;
+  }
 }
 
 // FORM-MAIN.CSS
@@ -479,10 +526,11 @@ html {
 /* A partir de aquí el main*/
 .main {
   width: 100%;
+  height: 60vh;
 }
 .contact__hero {
   width: 100%;
-  height: 42vh;
+  height: 38vh;
   position: relative;
   bottom: 40px;
 }
@@ -532,7 +580,6 @@ html {
   margin: 0px 15px 0px 15px;
   display: flex;
   flex-direction: column;
-  gap: 13px;
   font-family: var(--font-familyOpenSans);
   font-size: 1.4rem;
 }
@@ -553,6 +600,7 @@ html {
   opacity: 0.4;
   border: 1.5px solid var(--gunmetal);
   font-family: var(--font-familyOpenSans);
+  margin-bottom: 13px;
 }
 .name {
   padding: 11px 209px 15px 15px;
@@ -579,7 +627,7 @@ html {
   border: none;
   border-radius: 4%;
   margin-top: 17px;
-  margin-bottom: 60px;
+  margin-bottom: 25px;
 }
 /* A partir de aquí el footer */
 .footer {
@@ -642,7 +690,7 @@ html {
     padding: 15px 30px;
   }
   .contact__article__p2 {
-    margin-top: 20px;
+    margin-top: 17px;
   }
   .form {
     margin: 0px 163px 30px 163px;
@@ -651,10 +699,80 @@ html {
     padding: 11px 209px 15px 15px;
   }
   .form__button {
-    width: 45%;
-    margin: 30px 0px 0px 244px;
+    width: 50%;
+    margin: 30px 0px 0px 220px;
   }
 }
+//main - desktop
+@media all and (min-width: 768px) {
+  //a partir de aqui header
+  //a partir de aqui main
+
+  //a partit de aqui quienes somos
+  .quienes-somos {
+    display: flex;
+    flex-direction: column;
+    text-align: flex-start;
+
+    background-color: var(--white);
+    margin-left: 138px;
+    margin-right: 138px;
+    margin-top: 45px;
+  }
+  .article {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 45px;
+  }
+
+  .image-box {
+    width: 278px;
+    height: 278px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    order: 1;
+  }
+
+  .image-box.par {
+    order: 3;
+  }
+
+  .quienes-somos-text {
+    width: 40vw;
+    align-items: flex-start;
+  }
+  .quienes-somos-text.par {
+    align-items: flex-end;
+  }
+
+  .bio {
+    text-align: justify;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    line-height: normal;
+  }
+  .our-name {
+    line-height: normal;
+  }
+  .bio {
+    text-align: justify;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    line-height: normal;
+  }
+  .bio.par {
+    text-align: right;
+  }
+  .icon-list {
+    margin-bottom: 0px;
+  }
+}
+//a partir de aqui footer
 
 // FORM - DESKTOP
 @media all and (min-width: 768px) {
