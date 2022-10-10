@@ -1,25 +1,58 @@
-.quienes-somos {
-  color: var(--blue-green);
-  font-family: var(--font-familyRubik);
-  font-size: 2rem;
-  font-weight: 500;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+.quienessomos {
+  display: grid;
+  grid-template-columns: 1f;
+  grid-template-rows: auto 1fr 1fr 1fr 1fr;
   background-color: var(--white);
   padding-top: 30px;
+  margin-top: 30px;
   margin-bottom: 45px;
+  @media all and (min-width: 320px) {
+    text-align: flex-start;
+    background-color: var(--white);
+    margin-left: 44px;
+    margin-right: 44px;
+    margin-bottom: 60px;
+    padding-top: 38px;
+  }
+  @media all and (min-width: 768px) {
+    margin-left: 138px;
+    margin-right: 138px;
+    margin-top: 45px;
+  }
+}
+
+.article {
+ 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  @media all and (min-width: 320px) {
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr ;
+  
+    margin-top: 41px;
+  }
+  @media all and (min-width: 768px) {
+
+    gap: 45px;
+  }
+}
+.article.par{
+  grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr ;
+  
+    margin-top: 41px;
+background-color: orange;
 }
 .quienessomosh2 {
-  align-self: center;
+ 
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--blue-green);
+  font-family: var(--font-familyRubik);
+ text-align: center;
   margin-top: 30px;
   text-transform: uppercase;
-}
-.article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .image-box {
   width: 180px;
@@ -27,24 +60,64 @@
   /* border: solid 5px rgba(0, 0, 0, 0.08); */
   border: solid 5px var(--blue-green);
   border-radius: 4px;
-  margin-top: 30px;
   margin-bottom: 15px;
+
+  @media all and (min-width: 320px) {
+    width: 150px;
+    height: 150px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    order: 1;
+  }
+  @media all and (min-width: 768px) {
+    width: 278px;
+    height: 278px;
+    order: 1;
+  }
 }
 .image {
   width: 100%;
 }
+.image-box.par {
+  @media all and (min-width: 320px) {
+    order: 3;
+  }
+}
 .quienes-somos-text {
-  font-family: var(--font-familyOpenSans);
+  
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: yellow;
+align-items: flex-start;
+
+  font-family: var(--font-familyOpenSans);
+  text-align: center;
+  @media all and (min-width: 320px) {
+  
+    align-items: flex-start;
+  }
+
+  @media all and (min-width: 768px) {
+    width: 40vw;
+  }
 }
+.quienes-somos-text.par {
+  @media all and (min-width: 320px) {
+    align-items: flex-end;
+  }
+}
+
 .our-name {
   font-size: 2rem;
   font-weight: normal;
   line-height: 45px;
   text-align: center;
   color: var(--black);
+  @media all and (min-width: 320px) {
+    line-height: normal;
+    background-color: green;
+    text-align: justify;
+  }
 }
 .bio {
   margin-bottom: 15px;
@@ -54,15 +127,32 @@
   font-size: 1.6rem;
   line-height: 24px;
   color: var(--gunmetal);
-}
+  @media all and (min-width: 320px) {
+    background-color: aquamarine;
+    text-align:justify;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    line-height: normal;
+  }
 
+}
+.bio.impar {
+  @media all and (min-width: 320px) {
+    text-align: left;
+  }
+}
+.bio.par {
+  @media all and (min-width: 320px) {
+    text-align: right;
+  }
+}
 .icon-list {
-  width: 124px;
-  height: 30px;
+  background-color: red;
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
-  margin-bottom: 15px;
+
 }
 .icon {
   color: var(--blue-green);
