@@ -1,6 +1,6 @@
 # Git Branch Heros
 
-Git Branch Heros is a full responsive HTML and SASS (SCSS) website mocked-up and created by four future Junior Front - End Developers as part of their final project of Module 1 of Adalab's Web Programming Bootcamp.
+**Git Branch Heros** is a full responsive **HTML and SASS (SCSS)** website mocked-up and created by four future Junior Front - End Developers as part of their final project of Module 1 of Adalab's Web Programming Bootcamp.
 
 Given a design they have developed a completely new customized website implementing the subsequent guidelines:
 
@@ -12,7 +12,7 @@ Given a design they have developed a completely new customized website implement
 
 4. All the project had to be developed in Github's platform, including project planning, Github Pages hosting and creation of the repository among others.
 
-5. Both an "Index" and a "Contact Form" pages had to be created.
+5. Both an **"Index"** and a **"Contact Form"** pages had to be created.
 
 Taking all these features into account the "Git Branch Heros" team has developed a fully customized website introducing the following new features to improve the user's experience:
 
@@ -28,4 +28,4 @@ If you want to take a look, don't hesitate and go to our website attached in the
 
 Thanks for your attention and we hope you enjoy our work.
 
-_Project mocked up and created by Marta Castrillo, Úrsula Borrego, Virginia Menéndez and Yara Paz_
+**_Project mocked up and created by Marta Castrillo, Úrsula Borrego, Virginia Menéndez and Yara Paz_**
