@@ -200,7 +200,7 @@ html {
 
 /* a partir de aquí estilos quienes somos */
 
-.quienes-somos {
+/* .quienes-somos {
   color: var(--blue-green);
   font-family: var(--font-familyRubik);
   font-size: 2.4rem;
@@ -226,7 +226,7 @@ html {
 .image-box {
   width: 180px;
   height: 180px;
-  /* border: solid 5px rgba(0, 0, 0, 0.08); */
+
   border: solid 5px var(--blue-green);
   border-radius: 4px;
   margin-top: 30px;
@@ -275,7 +275,7 @@ html {
 }
 .icon:hover {
   color: var(--aqua);
-}
+} */
 
 /* a partir de aquí estilos footer */
 .footer {
@@ -438,7 +438,7 @@ html {
   }
 }
 // MARTA.CSS - TABLET
-@media all and (min-width: 320px) {
+/* @media all and (min-width: 320px) {
   .quienes-somos {
     display: flex;
     flex-direction: column;
@@ -501,7 +501,7 @@ html {
   .icon-list {
     margin-bottom: 0px;
   }
-}
+} */
 
 @media all and (min-width: 320px) {
   .copyright {
@@ -721,7 +721,7 @@ html {
   //a partir de aqui main
 
   //a partit de aqui quienes somos
-  .quienes-somos {
+  /* .quienes-somos {
     display: flex;
     flex-direction: column;
     text-align: flex-start;
@@ -783,7 +783,7 @@ html {
   .icon-list {
     margin-bottom: 0px;
   }
-}
+} */
 //a partir de aqui footer
 
 // FORM - DESKTOP
@@ -823,4 +823,4 @@ html {
     width: 45%;
     margin: 25px 0px 65px 330px;
   }
-}
+}}
