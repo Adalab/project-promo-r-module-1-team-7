@@ -9,118 +9,86 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Git Branch Heros - Contacto</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
 <body>
   <header class="header">
-    <h1 class="h1">Git branch heros</h1>
+    <h1 class="h1"> <a href="index.html#home" class="h1a"> Git branch heros </a></h1>
     <nav class="nav">
       <ul class="header-ul">
         <li>
-          <a href="index.html#equipo" class="header-nav-item">Equipo</a>
+          <a href="index.html#team" class="header-nav-item">Equipo</a>
         </li>
         <li>
-          <a href="index.html#quienes-somos" class="header-nav-item"
-            >Quienes somos</a
-          >
+          <a href="index.html#aboutus" class="header-nav-item">Quienes somos</a>
         </li>
         <li>
-          <a href="contact.html#contacto" class="header-nav-item">Contacto</a>
+          <a href="contact.html#contact" class="header-nav-item">Contacto</a>
         </li>
       </ul>
     </nav>
   </header>
-
-  <main>
-    <section class="contact__hero">
-    </section>
-    <section class="contact" id="contacto">
-      <h2 class="contact__title">Contacto</h2>
-      <article class="contact__article">
-        <p class="contact__article__p1">
-          Si estás en peligro y necesitas contar con los servicios de una
-          <span class="capitalize">git branch hero</span> no dudes en ponerte en
-          contacto con nosotras a través de este formulario de contacto. Estaremos
-          ahí antes de que te des cuenta.
-        </p>
-        <p class="contact__article__p2">
-          Todos los campos marcados con <span class="asterisc">*</span> son
-          obligatorios.
-        </p>
-      </article>
-      <form action="url del servidor" method="post" class="form">
-        <label for="nombre-completo" class="label label--name">
-          <span class="form__label--name"
-            >Nombre completo <span class="asterisc">*</span>
-          </span>
-          <input
-            class="form__input name"
-            type="text"
-            placeholder="Nombre..."
-            name="nombre-completo"
-            id="nombre-completo"
-            required
-          />
-        </label>
-        <div class="form__label--wrap">
-          <label for="email" class="label label--mail">
-            <span class="form__label--mail"
-              >Email <span class="asterisc">*</span>
+  <main class="main">
+      <section class="contact__hero">
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="contact__title">Contacto</h2>
+        <article class="contact__article">
+          <p class="contact__article__p1">
+            Si estás en peligro y necesitas contar con los servicios de una
+            <span class="capitalize">git branch hero</span> no dudes en ponerte en
+            contacto con nosotras a través de este formulario de contacto. Estaremos
+            ahí antes de que te des cuenta.
+          </p>
+          <p class="contact__article__p2">
+            Todos los campos marcados con <span class="asterisc">*</span> son
+            obligatorios.
+          </p>
+        </article>
+        <form action="url del servidor" method="post" class="form">
+          <label for="nombre-completo" class="form__label form__label--name">
+            <span class="form__label__text--name">Nombre completo <span class="asterisc">*</span>
             </span>
-            <input
-              class="form__input mail"
-              type="mail"
-              placeholder="nombre.apellidos@mail.com"
-              name="email"
-              id="email"
-              required
-            />
+            <input class="form__input form__input--name" type="text" placeholder="Nombre..." name="nombre-completo"
+              id="nombre-completo" required />
           </label>
-          <label for="telefono" class="label label--phone">
-            <span class="form__label--phone"
-              >Teléfono <span class="asterisc">*</span>
-            </span>
-            <input
-              class="form__input phone"
-              type="tel"
-              placeholder="Ej: 123456789"
-              name="telefono"
-              id="telefono"
-              required
-            />
-          </label>
-        </div>
-        <label for="mensaje" class="label label--message">
-          <span class="form__label--message"
-            >Mensaje <span class="asterisc">*</span>
-          </span>
-          <textarea
-            class="form__input message"
-            id="mensaje"
-            name="mensaje"
-            rows="1"
-            cols="80"
-            required
-            placeholder="¿Qué necesitas?"
-          ></textarea>
-        </label>
-        <button type="submit" class="form__button">Enviar</button>
-      </form>
-    </section>
 
+          <div class="form__label--wrap">
+            <label for="email" class="form__label form__label--mail">
+              <span class="form__label__text--mail">Email <span class="asterisc">*</span>
+              </span>
+              <input class="form__input form__input--mail" type="mail" placeholder="nombre.apellidos@mail.com" name="email"
+                id="email" required />
+            </label>
+            <label for="telefono" class="form__label form__label--phone">
+              <span class="form__label__text--phone">Teléfono
+              </span>
+              <input class="form__input form__input--phone" type="tel" placeholder="Ej: 123456789" name="telefono"
+                id="telefono" />
+            </label>
+          </div>
+
+          <label for="mensaje" class="form__label form__label--message">
+            <span class="form__label__text--message">Mensaje <span class="asterisc">*</span>
+            </span>
+            <textarea class="form__input form__input--message" id="mensaje" name="mensaje" rows="1" cols="80" required
+              placeholder="¿Qué necesitas?"></textarea>
+          </label>
+
+          <button type="submit" class="form__button">Enviar</button>
+        </form>
+      </section>
   </main>
   <footer class="footer">
-    <p class="copyright">Git branch heros ©️ 2022</p>
+    <p class="copyright">Git branch heros &copy; 2022</p>
     <div class="container-footer">
       <nav>
         <ul class="nav-footer">
@@ -130,11 +98,8 @@
         </ul>
       </nav>
       <div class="logo-adalab">
-        <img
-          class="logo-adalab-img"
-          src="assets/images/logo-adalab.png"
-          alt="logo adalab"
-        />
+        <img class="logo-adalab-img"
+          src="http://beta.adalab.es/project-promo-r-module-1-team-7/assets/images/logo-adalab.png" alt="logo adalab" />
       </div>
     </div>
   </footer>

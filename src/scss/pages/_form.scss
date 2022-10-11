@@ -1,146 +1,94 @@
-.contact {
-  width: 100%;
-  &__title {
-    color: var(--blue-green);
-    font-family: var(--font-familyRubik);
-    font-size: 2.4rem;
-    font-weight: 500;
-    line-height: 1.88;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 30px;
-  }
-  &__article {
-    color: var(--gunmetal);
-    font-family: var(--font-familyOpenSans);
-    line-height: 1.5;
-    padding-bottom: 58px;
-    margin: 15px 15px 0px 15px;
-    // cambiar margin a porcentajes
-    &__p1 {
-      font-size: 1.6rem;
-      text-align: center;
-      padding: 0px 14px;
-    }
-    &__p2 {
-      font-size: 1.2rem;
-      text-align: start;
-      margin-top: 30px;
-    }
-  }
-}
 .form {
-  margin: 0px 15px 0px 15px;
+  margin: 0% 4.5%;
   display: flex;
   flex-direction: column;
-  font-family: var(--font-familyOpenSans);
+  font-family: $font-familyOpenSans;
   font-size: 1.4rem;
-}
-.label {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.form__label--name,
-.form__label--mail,
-.form__label--phone,
-.form__label--message {
-  color: var(--gunmetal);
-  margin-bottom: 7px;
-}
-.form__input {
-  color: var(--cool-grey);
-  opacity: 0.4;
-  border: 1.5px solid var(--gunmetal);
-  font-family: var(--font-familyOpenSans);
-  margin-bottom: 13px;
-}
-.name {
-  padding: 11px 209px 15px 15px;
-}
-.mail {
-  padding: 7px 57px 16px 15px;
-  font-size: 1.6rem;
-  font-weight: 500;
-}
-.phone {
-  padding: 11px 180px 15px 15px;
-}
-.message {
-  padding: 11px 171px 75px 15px;
-}
-.form__button {
-  width: 100%;
-  height: 5.325443786982248vh;
-  color: var(--white);
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  background-color: var(--blue-green);
-  border: none;
-  border-radius: 4%;
-  margin-top: 17px;
-  margin-bottom: 25px;
-}
-
-@media screen and (min-width: 320px) {
-  .contact__article {
-    margin: 0px 163px;
+  &__label {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    &__text {
+      &--name,
+      &--mail,
+      &--phone,
+      &--message {
+        color: $color-gunmetal;
+        margin-bottom: 7px;
+      }
+    }
   }
-  .contact__article__p1 {
-    padding: 15px 30px;
+  &__input {
+    color: $color-cool-grey;
+    opacity: 0.4;
+    border: 1.5px solid $color-gunmetal;
+    font-family: $font-familyOpenSans;
+    margin-bottom: 13px;
+    &--name {
+      padding: 11px 0px 15px 15px;
+    }
+    &--mail {
+      padding: 7px 0px 16px 15px;
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+    &--phone {
+      padding: 11px 0px 15px 15px;
+    }
+    &--message {
+      padding: 11px 0px 75px 15px;
+    }
   }
-  .contact__article__p2 {
+  &__button {
+    width: 100%;
+    height: 5.325443786982248vh;
+    color: $color-white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: $color-blue-green;
+    border: none;
+    border-radius: 4%;
     margin-top: 17px;
   }
-  .form {
-    margin: 0px 163px 30px 163px;
+  @media screen and (min-width: 320px) {
+    margin: 0% 21% 0% 21%;
+    &__input {
+      &--name {
+        padding: 11px 0px 15px 15px;
+      }
+    }
+    &__button {
+      width: 50%;
+      margin-top: 30px;
+      margin-left: 50%;
+    }
   }
-  .name {
-    padding: 11px 209px 15px 15px;
-  }
-  .form__button {
-    width: 50%;
-    margin: 30px 0px 0px 220px;
-  }
-}
-
-@media all and (min-width: 768px) {
-  .contact {
-    margin-top: 45px;
-  }
-  .contact__article__p1 {
-    padding: 15px 200px;
-  }
-  .form {
-    margin: 0px 300px 30px 299px;
-  }
-  .name {
-    padding: 11px 209px 15px 15px;
-  }
-  .form__label--wrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 44px;
-    // cambiar a margin, probar margin
-  }
-  .label--mail,
-  .form__input--mail {
-    width: 60%;
-  }
-  .label--phone,
-  .form__input--phone {
-    width: 32.5%;
-  }
-  .phone {
-    padding: 11px 0px 15px 15px;
-  }
-  .form__button {
-    width: 45%;
-    margin: 25px 0px 65px 330px;
+  @media all and (min-width: 768px) {
+    margin: 0% 25%;
+    &__label {
+      &--mail {
+        width: 60%;
+        margin-right: 7.2%;
+      }
+      &--phone {
+        width: 32.5%;
+      }
+    }
+    &__input {
+      &--phone {
+        padding: 11px 0px 15px 15px;
+      }
+    }
+    &__label--wrap {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__button {
+      width: 45%;
+      margin-top: 25px;
+      margin-left: 54.7%;
+    }
   }
 }

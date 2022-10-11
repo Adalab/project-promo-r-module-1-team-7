@@ -13,32 +13,35 @@
     </p>
   </article>
   <form action="url del servidor" method="post" class="form">
-    <label for="nombre-completo" class="label label--name">
-      <span class="form__label--name">Nombre completo <span class="asterisc">*</span>
+    <label for="nombre-completo" class="form__label form__label--name">
+      <span class="form__label__text--name">Nombre completo <span class="asterisc">*</span>
       </span>
-      <input class="form__input name" type="text" placeholder="Nombre..." name="nombre-completo" id="nombre-completo"
-        required />
+      <input class="form__input form__input--name" type="text" placeholder="Nombre..." name="nombre-completo"
+        id="nombre-completo" required />
     </label>
+
     <div class="form__label--wrap">
-      <label for="email" class="label label--mail">
-        <span class="form__label--mail">Email <span class="asterisc">*</span>
+      <label for="email" class="form__label form__label--mail">
+        <span class="form__label__text--mail">Email <span class="asterisc">*</span>
         </span>
-        <input class="form__input mail" type="mail" placeholder="nombre.apellidos@mail.com" name="email" id="email"
-          required />
+        <input class="form__input form__input--mail" type="mail" placeholder="nombre.apellidos@mail.com" name="email"
+          id="email" required />
       </label>
-      <label for="telefono" class="label label--phone">
-        <span class="form__label--phone">Teléfono <span class="asterisc">*</span>
+      <label for="telefono" class="form__label form__label--phone">
+        <span class="form__label__text--phone">Teléfono
         </span>
-        <input class="form__input phone" type="tel" placeholder="Ej: 123456789" name="telefono" id="telefono"
-          required />
+        <input class="form__input form__input--phone" type="tel" placeholder="Ej: 123456789" name="telefono"
+          id="telefono" />
       </label>
     </div>
-    <label for="mensaje" class="label label--message">
-      <span class="form__label--message">Mensaje <span class="asterisc">*</span>
+
+    <label for="mensaje" class="form__label form__label--message">
+      <span class="form__label__text--message">Mensaje <span class="asterisc">*</span>
       </span>
-      <textarea class="form__input message" id="mensaje" name="mensaje" rows="1" cols="80" required
+      <textarea class="form__input form__input--message" id="mensaje" name="mensaje" rows="1" cols="80" required
         placeholder="¿Qué necesitas?"></textarea>
     </label>
+
     <button type="submit" class="form__button">Enviar</button>
   </form>
 </section>

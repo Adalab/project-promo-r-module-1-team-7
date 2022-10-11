@@ -1,0 +1,63 @@
+.contact {
+  width: 100%;
+  margin-top: 9%;
+  margin-bottom: 19%;
+  &__title {
+    color: $color-blue-green;
+    font-family: $font-familyRubik;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.88;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__article {
+    color: $color-gunmetal;
+    font-family: $font-familyOpenSans;
+    line-height: 1.5;
+    padding-bottom: 18%;
+    margin: 4.9% 4.9% 0% 4.9%;
+    &__p1 {
+      font-size: 1.6rem;
+      text-align: center;
+      padding: 0px 14px;
+    }
+    &__p2 {
+      font-size: 1.2rem;
+      text-align: start;
+      margin-top: 30px;
+    }
+  }
+  @media screen and (min-width: 320px) {
+    margin-top: 3.8%;
+    margin-bottom: 8.3%;
+    &__article {
+      margin: 0% 21.5%;
+      padding-bottom: 7.8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__p1 {
+        padding: 15px 30px;
+      }
+      &__p2 {
+        margin-top: 17px;
+      }
+    }
+  }
+  @media all and (min-width: 768px) {
+    margin-top: 4%;
+    margin-bottom: 10%;
+    &__article {
+      margin: 1.2% 25% 0% 25%;
+      padding-bottom: 4.9%;
+      &__p1 {
+        padding: 0px 20px;
+      }
+      &__p2 {
+        margin-top: 36px;
+      }
+    }
+  }
+}
