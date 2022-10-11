@@ -42,7 +42,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
+  top: 0;
   z-index: 1;
   text-transform: uppercase;
 }
@@ -56,6 +57,13 @@
   line-height: 30px;
   text-align: center;
   padding: 15px 40px 15px 40px;
+}
+.h1a {
+  text-decoration: none;
+  color: var(--white);
+  &:hover {
+    color: #0e423e;
+  }
 }
 .header-ul {
   list-style: none;
@@ -77,10 +85,10 @@
   text-decoration: none;
 }
 .header-nav-item:hover {
-  color: var(--blue-green);
+  color: #0e423e;
 }
 .header-nav-item:active {
-  color: var(--blue-green);
+  color: #0e423e;
 }
 
 /* a partir de aquí estilos footer */
@@ -248,4 +256,141 @@
 .logo-adalab-img {
   width: 100%;
   height: 100%;
+}
+
+// FORM -TABLET
+@media screen and (min-width: 320px) {
+  .contact__article {
+    margin: 0px 163px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact__article__p1 {
+    padding: 15px 30px;
+  }
+  .contact__article__p2 {
+    margin-top: 17px;
+  }
+  .form {
+    margin: 0px 163px 30px 163px;
+  }
+  .name {
+    padding: 11px 209px 15px 15px;
+  }
+  .form__button {
+    width: 50%;
+    margin: 30px 0px 0px 220px;
+  }
+}
+//main - desktop
+@media all and (min-width: 768px) {
+  //a partir de aqui header
+  //a partir de aqui main
+
+  //a partit de aqui quienes somos
+  /* .quienes-somos {
+    display: flex;
+    flex-direction: column;
+    text-align: flex-start;
+
+    background-color: var(--white);
+    margin-left: 138px;
+    margin-right: 138px;
+    margin-top: 45px;
+  }
+  .article {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 45px;
+  }
+
+  .image-box {
+    width: 278px;
+    height: 278px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    order: 1;
+  }
+
+  .image-box.par {
+    order: 3;
+  }
+
+  .quienes-somos-text {
+    width: 40vw;
+    align-items: flex-start;
+  }
+  .quienes-somos-text.par {
+    align-items: flex-end;
+  }
+
+  .bio {
+    text-align: justify;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    line-height: normal;
+  }
+  .our-name {
+    line-height: normal;
+  }
+  .bio {
+    text-align: justify;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    line-height: normal;
+  }
+  .bio.par {
+    text-align: right;
+  }
+  .icon-list {
+    margin-bottom: 0px;
+  }
+} */
+  //a partir de aqui footer
+
+  // FORM - DESKTOP
+  @media all and (min-width: 768px) {
+    .contact__hero {
+      height: 60vh;
+    }
+    .contact {
+      margin-top: 45px;
+    }
+    .contact__article__p1 {
+      padding: 15px 200px;
+    }
+    .form {
+      margin: 0px 300px 30px 299px;
+    }
+    .name {
+      padding: 11px 209px 15px 15px;
+    }
+    .form__label--wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 44px;
+    }
+    .label--mail,
+    .form__input--mail {
+      width: 60%;
+    }
+    .label--phone,
+    .form__input--phone {
+      width: 32.5%;
+    }
+    .phone {
+      padding: 11px 0px 15px 15px;
+    }
+    .form__button {
+      width: 45%;
+      margin: 25px 0px 65px 330px;
+    }
+  }
 }
