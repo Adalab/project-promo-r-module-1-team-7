@@ -1,18 +1,21 @@
-// @import 'core/variables';
 @import "core/reset";
+@import "core/variables";
+@import "components/emphasize";
+@import "components/capitalize";
+@import "components/asterisc";
 // @import 'components/code';
 // @import 'components/links';
-// @import 'layout/page';
-// @import 'layout/header';
+@import "layout/page";
+@import "layout/main";
 // @import 'layout/footer';
 // @import 'pages/index';
+@import "pages/indexhero";
+@import "pages/team";
+@import "pages/str-and-weak";
 @import "pages/about-us";
-// MAIN-MOBILE VERSION.CSS
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "pages/contacthero";
+@import "pages/form";
+
 :root {
   /* Colores del proyecto */
   --black: #000;
@@ -23,17 +26,14 @@
   --white: #fff;
   --cool-grey: #b8b8b9;
   --gunmetal: #54585a;
+
   /* Tipografías */
   --font-familyOpenSans: "Open Sans", sans-serif;
   --font-familyRubik: "Rubik", sans-serif;
 }
-html {
-  font-size: 62.5%;
-}
-.body {
-  width: 100vw;
-  min-height: 100vh;
-}
+
+// HEADER Y FOOTER - MOBILE.CSS
+
 /* A partir de aquí el header*/
 .header {
   width: 100%;
@@ -57,7 +57,6 @@ html {
   text-align: center;
   padding: 15px 40px 15px 40px;
 }
-
 .header-ul {
   list-style: none;
   background-color: var(--aqua);
@@ -83,199 +82,6 @@ html {
 .header-nav-item:active {
   color: var(--blue-green);
 }
-
-/*A partir de aquí el hero */
-.main {
-  width: 100%;
-}
-.index__hero {
-  // background-image: url("/assets/images/fondo-pagina-1.png");
-  background-image: url("http://beta.adalab.es/project-promo-r-module-1-team-7/assets/images/fondo-pagina-1.png");
-  align-items: center;
-  max-width: 100vw;
-  height: 50vh;
-  max-height: 50vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  position: relative;
-}
-.emphasize {
-  font-style: oblique;
-}
-.capitalize {
-  text-transform: capitalize;
-}
-.hero__banner {
-  background-color: var(--white);
-  font-family: var(--font-familyOpenSans);
-  color: var(--black);
-  font-size: 1.8rem;
-  font-weight: 600;
-  line-height: 1.39;
-  text-align: start;
-  padding: 14px 15px 16px 15px;
-  margin: 0px 15px 0px 15px;
-  position: absolute;
-  top: 90%;
-}
-.team {
-  width: 100%;
-  padding: 30px 15px 30px 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 58px;
-}
-.team__title {
-  color: var(--blue-green);
-  font-family: var(--font-familyRubik);
-  font-size: 2.4rem;
-  font-weight: 500;
-  text-align: center;
-  line-height: 1.88;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  margin-top: 30px;
-}
-.team__title__p {
-  font-size: 1.6rem;
-  font-family: var(--font-familyOpenSans);
-  color: var(--gunmetal);
-  line-height: 1.5;
-  text-align: center;
-  padding: 0px 17px;
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-}
-.str-and-weak {
-  background-color: rgba(57, 57, 60, 0.2);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 58px;
-}
-.str-and-weak__top-square {
-  width: 30px;
-  height: 30px;
-  background-color: var(--white);
-  position: absolute;
-  bottom: 97.5%;
-  transform: rotate(45deg);
-}
-.str-and-weak__container {
-  text-align: center;
-  margin: 0px 15px;
-  padding: 0px 15px;
-}
-.div1 {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.div2 {
-  padding-bottom: 45px;
-}
-.str-and-weak__title {
-  color: var(--blue-green);
-  font-size: 2.2rem;
-  font-family: var(--font-familyRubik);
-  font-weight: 500;
-  line-height: 2.05;
-}
-.str-and-weak__p {
-  color: var(--gunmetal);
-  font-family: var(--font-familyOpenSans);
-  font-size: 1.6rem;
-  line-height: 1.5;
-}
-
-/* a partir de aquí estilos quienes somos */
-
-/* .quienes-somos {
-  color: var(--blue-green);
-  font-family: var(--font-familyRubik);
-  font-size: 2.4rem;
-  font-weight: 500;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: var(--white);
-  padding-top: 73px;
-  margin-bottom: 35px;
-}
-.quienessomosh2 {
-  align-self: center;
-  margin-top: 30px;
-  text-transform: uppercase;
-}
-.article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.image-box {
-  width: 180px;
-  height: 180px;
-
-  border: solid 5px var(--blue-green);
-  border-radius: 4px;
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-.image {
-  width: 100%;
-}
-.quienes-somos-text {
-  font-family: var(--font-familyOpenSans);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  order: 2;
-}
-
-.our-name {
-  font-size: 2rem;
-  font-weight: normal;
-  line-height: 45px;
-  text-align: center;
-  color: var(--black);
-}
-.bio {
-  margin-bottom: 15px;
-  font-weight: normal;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: 1.6rem;
-  line-height: 24px;
-  color: var(--gunmetal);
-}
-
-.icon-list {
-  width: 124px;
-  height: 30px;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.icon {
-  color: var(--blue-green);
-  text-decoration: none;
-  font-size: 1.6rem;
-}
-.icon:hover {
-  color: var(--aqua);
-} */
 
 /* a partir de aquí estilos footer */
 .footer {
@@ -330,7 +136,8 @@ html {
   height: 100%;
 }
 
-//   HEADER-TABLET.CSS
+//   HEADER - TABLET.CSS
+
 @media all and (min-width: 320px) {
   .header {
     background-color: var(--blue-green);
@@ -362,146 +169,7 @@ html {
   }
 }
 
-// HERO & TEAM & STR-WEAK - TABLET
-@media all and (min-width: 320px) {
-  .index__hero {
-    position: relative;
-    height: 58vh;
-    max-height: 58vh;
-  }
-  .hero__banner {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 3% 3.5% 3% 3.5%;
-    margin: 44.4% 40% 0% 7.5%;
-    top: 0;
-    bottom: 0;
-  }
-  .team {
-    padding: 0px 45px 30px 45px;
-    top: -42px;
-  }
-  .team__title {
-    padding-top: 45px;
-  }
-  .team__title__p {
-    padding: 0px 28px 0px 28px;
-  }
-  .str-and-weak {
-    flex-direction: row;
-    top: 0;
-  }
-  .str-and-weak__container {
-    padding: 0;
-  }
-  .div1 {
-    padding: 0px 15px 0px 45px;
-  }
-  .div2 {
-    padding: 0px 45px 0px 15px;
-  }
-  .div1,
-  .div2 {
-    padding-top: 45px;
-    padding-bottom: 60px;
-  }
-  .str-and-weak__title {
-    margin-bottom: 15px;
-  }
-}
-// HERO & TEAM & STR-AND-WEAK - DESKTOP
-@media all and (min-width: 768px) {
-  .index__hero {
-    height: 75vh;
-    max-height: 75vh;
-  }
-  .hero__banner {
-    width: 55%;
-    max-width: 659.44px;
-    padding: 2% 2.5% 2% 2.5%;
-    margin: 38.4% 40% 0% 7.5%;
-    font-size: 2.4rem;
-  }
-  .team {
-    padding: 0px 285px 30px 284px;
-    bottom: 35px;
-    padding-top: 45px;
-  }
-  .team__title {
-    padding-top: 30px;
-  }
-  .str-and-weak__container {
-    margin: 45px 110px 60px 110px;
-  }
-  .div1,
-  .div2 {
-    padding: 0;
-  }
-}
-// MARTA.CSS - TABLET
-/* @media all and (min-width: 320px) {
-  .quienes-somos {
-    display: flex;
-    flex-direction: column;
-    text-align: flex-start;
-    background-color: var(--white);
-    margin-left: 44px;
-    margin-right: 44px;
-    margin-bottom: 60px;
-    padding-top: 38px;
-  }
-  .article {
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 31px;
-    margin-top: 41px;
-  }
-  .image-box {
-    width: 150px;
-    height: 150px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    order: 1;
-  }
-
-  .image-box.par {
-    order: 3;
-  }
-
-  .quienes-somos-text {
-    width: 60vw;
-    align-items: flex-start;
-  }
-  .quienes-somos-text.par {
-    align-items: flex-end;
-  }
-
-  .bio {
-    text-align: justify;
-    margin-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    line-height: normal;
-  }
-  .our-name {
-    line-height: normal;
-  }
-  .bio {
-    text-align: justify;
-    margin-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    line-height: normal;
-  }
-  .bio.par {
-    text-align: right;
-  }
-  .icon-list {
-    margin-bottom: 0px;
-  }
-} */
+//FOOTER - TABLET.CSS
 
 @media all and (min-width: 320px) {
   .copyright {
@@ -532,115 +200,8 @@ html {
   }
 }
 
-// FORM-MAIN.CSS
-/* A partir de aquí el Header */
+// FORM - MOBILE.CSS
 
-/* A partir de aquí el main*/
-.main {
-  width: 100%;
-  height: 60vh;
-}
-.contact__hero {
-  max-width: 100vw;
-  height: 37vh;
-  // background-image: url("/assets/images/fondo-pagina-2.png");
-  background-image: url("http://beta.adalab.es/project-promo-r-module-1-team-7/assets/images/fondo-pagina-2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.contact {
-  width: 100%;
-  position: relative;
-  bottom: 30px;
-  margin-top: 30px;
-}
-.contact__title {
-  color: var(--blue-green);
-  font-family: var(--font-familyRubik);
-  font-size: 2.4rem;
-  font-weight: 500;
-  line-height: 1.88;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 30px;
-}
-.contact__article {
-  color: var(--gunmetal);
-  font-family: var(--font-familyOpenSans);
-  line-height: 1.5;
-  padding-bottom: 58px;
-  margin: 15px 15px 0px 15px;
-}
-.contact__article__p1 {
-  font-size: 1.6rem;
-  text-align: center;
-  padding: 0px 14px;
-}
-.contact__article__p2 {
-  font-size: 1.2rem;
-  text-align: start;
-  margin-top: 30px;
-}
-.capitalize {
-  text-transform: capitalize;
-}
-.asterisc {
-  color: var(--aqua);
-}
-.form {
-  margin: 0px 15px 0px 15px;
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-familyOpenSans);
-  font-size: 1.4rem;
-}
-.label {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.form__label--name,
-.form__label--mail,
-.form__label--phone,
-.form__label--message {
-  color: var(--gunmetal);
-  margin-bottom: 7px;
-}
-.form__input {
-  color: var(--cool-grey);
-  opacity: 0.4;
-  border: 1.5px solid var(--gunmetal);
-  font-family: var(--font-familyOpenSans);
-  margin-bottom: 13px;
-}
-.name {
-  padding: 11px 209px 15px 15px;
-}
-.mail {
-  padding: 7px 57px 16px 15px;
-  font-size: 1.6rem;
-  font-weight: 500;
-}
-.phone {
-  padding: 11px 180px 15px 15px;
-}
-.message {
-  padding: 11px 171px 75px 15px;
-}
-.form__button {
-  width: 100%;
-  height: 5.325443786982248vh;
-  color: var(--white);
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  background-color: var(--blue-green);
-  border: none;
-  border-radius: 4%;
-  margin-top: 17px;
-  margin-bottom: 25px;
-}
 /* A partir de aquí el footer */
 .footer {
   width: 100%;
@@ -688,139 +249,3 @@ html {
   width: 100%;
   height: 100%;
 }
-
-// FORM -TABLET
-@media screen and (min-width: 320px) {
-  .contact__article {
-    margin: 0px 163px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .contact__article__p1 {
-    padding: 15px 30px;
-  }
-  .contact__article__p2 {
-    margin-top: 17px;
-  }
-  .form {
-    margin: 0px 163px 30px 163px;
-  }
-  .name {
-    padding: 11px 209px 15px 15px;
-  }
-  .form__button {
-    width: 50%;
-    margin: 30px 0px 0px 220px;
-  }
-}
-//main - desktop
-@media all and (min-width: 768px) {
-  //a partir de aqui header
-  //a partir de aqui main
-
-  //a partit de aqui quienes somos
-  /* .quienes-somos {
-    display: flex;
-    flex-direction: column;
-    text-align: flex-start;
-
-    background-color: var(--white);
-    margin-left: 138px;
-    margin-right: 138px;
-    margin-top: 45px;
-  }
-  .article {
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 45px;
-  }
-
-  .image-box {
-    width: 278px;
-    height: 278px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    order: 1;
-  }
-
-  .image-box.par {
-    order: 3;
-  }
-
-  .quienes-somos-text {
-    width: 40vw;
-    align-items: flex-start;
-  }
-  .quienes-somos-text.par {
-    align-items: flex-end;
-  }
-
-  .bio {
-    text-align: justify;
-    margin-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    line-height: normal;
-  }
-  .our-name {
-    line-height: normal;
-  }
-  .bio {
-    text-align: justify;
-    margin-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    line-height: normal;
-  }
-  .bio.par {
-    text-align: right;
-  }
-  .icon-list {
-    margin-bottom: 0px;
-  }
-} */
-//a partir de aqui footer
-
-// FORM - DESKTOP
-@media all and (min-width: 768px) {
-  .contact__hero {
-    height: 60vh;
-  }
-  .contact {
-    margin-top: 45px;
-  }
-  .contact__article__p1 {
-    padding: 15px 200px;
-  }
-  .form {
-    margin: 0px 300px 30px 299px;
-  }
-  .name {
-    padding: 11px 209px 15px 15px;
-  }
-  .form__label--wrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 44px;
-  }
-  .label--mail,
-  .form__input--mail {
-    width: 60%;
-  }
-  .label--phone,
-  .form__input--phone {
-    width: 32.5%;
-  }
-  .phone {
-    padding: 11px 0px 15px 15px;
-  }
-  .form__button {
-    width: 45%;
-    margin: 25px 0px 65px 330px;
-  }
-}}

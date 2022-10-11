@@ -1,54 +1,49 @@
 .team {
   width: 100%;
-  padding: 30px 15px 30px 15px;
-  position: relative;
-  bottom: 0px;
+  padding: 0% 5%;
+  margin-top: 23%;
+  margin-bottom: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.team__title {
-  color: var(--blue-green);
-  font-family: var(--font-familyRubik);
-  font-size: 2.4rem;
-  font-weight: 500;
-  text-align: center;
-  line-height: 1.88;
-  text-transform: uppercase;
-  margin-bottom: 30px;
   position: relative;
-  top: 50px;
-}
-
-.team__title__p {
-  font-size: 1.6rem;
-  font-family: var(--font-familyOpenSans);
-  color: var(--gunmetal);
-  line-height: 1.5;
-  text-align: center;
-  padding: 0px 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  position: relative;
-  top: 38px;
-}
-// HERO & TEAM & STR-WEAK - TABLET
-@media all and (min-width: 320px) {
-  .team {
-    padding: 0px 45px 30px 45px;
-    bottom: 40px;
+  top: 58px;
+  &__title {
+    color: $color-blue-green;
+    font-family: $font-familyRubik;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.88;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4.5%;
   }
-  .team__title {
-    top: 45px;
-    margin-bottom: 15px;
+  &__ps {
+    font-size: 1.6rem;
+    font-family: $font-familyOpenSans;
+    color: $color-gunmetal;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0% 5.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
   }
-}
-// HERO & TEAM & STR-AND-WEAK - DESKTOP
-@media all and (min-width: 768px) {
-  .team {
-    padding: 0px 300px 30px 299px;
-    bottom: 40px;
+  @media all and (min-width: 320px) {
+    margin-top: 5.9%;
+    margin-bottom: 7.9%;
+    padding: 0% 6%;
+    top: 0;
+    &__ps {
+      padding: 0%;
+      gap: 30px;
+      &__p2 {
+        padding: 0% 7%;
+      }
+    }
+  }
+  @media all and (min-width: 768px) {
+    padding: 0% 25%;
   }
 }

@@ -1,0 +1,13 @@
+.contact__hero {
+  max-width: 100%;
+  height: 37vh;
+  background-image: url("http://beta.adalab.es/project-promo-r-module-1-team-7/assets/images/fondo-pagina-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+@media all and (min-width: 768px) {
+  .contact__hero {
+    height: 60vh;
+  }
+}

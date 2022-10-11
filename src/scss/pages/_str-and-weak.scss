@@ -1,82 +1,55 @@
 .str-and-weak {
-  background-color: rgba(57, 57, 60, 0.1);
+  background-color: rgba(57, 57, 60, 0.2);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 40px;
-}
-.str-and-weak__top-square {
-
-  width: 30px;
-  height: 30px;
-  background-color: var(--white);
-  transform: rotate(45deg);
-  position: absolute;
-  bottom: 565px;
-}
-.str-and-weak__container {
-  text-align: center;
-  margin: 0px 15px;
-  padding: 0px 10px;
-}
-.div1 {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.div2 {
+  top: 58px;
   padding-bottom: 45px;
-}
-
-.str-and-weak__title {
-  color: var(--blue-green);
-  font-size: 2.2rem;
-  font-family: var(--font-familyRubik);
-  font-weight: 500;
-  line-height: 2.05;
-}
-.str-and-weak__p {
-  color: var(--gunmetal);
-  font-family: var(--font-familyOpenSans);
-  font-size: 1.6rem;
-  line-height: 1.5;
-}
-
-// HERO & TEAM & STR-WEAK - TABLET
-@media all and (min-width: 320px) {
-  .str-and-weak__top-square {
-    transform: translate(50, 50);
-    bottom: 318px;
+  &__top-square {
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    position: absolute;
+    bottom: 97.5%;
+    transform: rotate(45deg);
   }
-  .str-and-weak {
+  &__container {
+    text-align: center;
+    margin: 0% 5%;
+    padding: 0% 5%;
+  }
+  &__title {
+    color: var(--blue-green);
+    font-size: 2.2rem;
+    font-family: var(--font-familyRubik);
+    font-weight: 500;
+    line-height: 2.05;
+    margin-top: 30px;
+  }
+  &__p {
+    color: var(--gunmetal);
+    font-family: var(--font-familyOpenSans);
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  @media all and (min-width: 320px) {
     flex-direction: row;
+    top: 0;
+    &__container {
+      padding: 0;
+    }
+    &__title {
+      margin-bottom: 4.9%;
+    }
   }
-  .str-and-weak__container {
-    margin: 0px 45px;
-    padding: 0;
-  }
-  .div1,
-  .div2 {
-    padding-top: 45px;
-    padding-bottom: 60px;
-  }
-  .str-and-weak__title {
-    margin-bottom: 15px;
-  }
-}
-// HERO & TEAM & STR-AND-WEAK - DESKTOP
-@media all and (min-width: 768px) {
-  .str-and-weak__top-square {
-    transform: translate(50, 50);
-    bottom: 270px;
-  }
-  .str-and-weak__container {
-    margin: 45px 110px 60px 110px;
-  }
-  .div1,
-  .div2 {
-    padding: 0;
+  @media all and (min-width: 768px) {
+    padding: 3.8% 11.5% 5% 11.5%;
+    &__title {
+      margin-bottom: 3%;
+      margin-top: 0%;
+    }
   }
 }
