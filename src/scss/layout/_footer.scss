@@ -1,31 +1,57 @@
 .footer {
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 45px;
+  padding-top: 4.15vh;
+  padding-bottom: 5.54vh;
   border-top: solid 1px $color-cool-grey;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  gap: 20px 30px;
-  
+  gap: 2.77vh 4.15vh;
+  @media all and (min-width: 768px) {
+  padding-left: 5%;
+  gap: 0vh;
+  }
+  @media all and (min-width: 1200px) {
+  padding-left: 3%;
+  }
   .copyright {
-    padding: 0px 40px;
+    padding: 0vh 2.60vw;
     text-align: center;
     color: $color-cool-grey;
     font-size: 1.4rem;
     font-family: $font-familyOpenSans;
     text-transform: capitalize;
+    @media all and (min-width: 768px) {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1%;
+    padding-left: 1%;
+    }
+    @media all and (min-width: 1200px) {
+      padding-left: 7%;
+    }
   }
   
   .nav-footer {
-    padding-bottom: 30px;
-    padding: 0px 90px;
+    padding: 0vh 3vw;
     font-family: $font-familyOpenSans;
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.43;
     opacity: 0.75;
+    @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -12%;
+    height: 13vh;
+    gap: 0.625em;
+    }
+    @media all and (min-width: 1200px) {
+    padding-top: 4%;
+    }
     
     .link-footer {
       display: flex;
@@ -42,9 +68,28 @@
   .logo-adalab {
     width: 115.9px;
     height: 45px;
+    margin-top: 4.15vh;
+    @media all and (min-width: 768px) {
+    // margin-right: 40vw;
+    margin-left: -3vw;
+    }
+    @media all and (min-width: 1200px) {
+    margin-left: 3.5%;
+    margin-bottom: 1%;
+    }
     .logo-adalab-img {
       width: 100%;
       height: 100%;
     }
+  }
+}
+
+.container-footer{
+@media all and (min-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-inline: 2.92vw;
   }
 }

@@ -1,19 +1,24 @@
-@import "core/variables";
-@import "core/reset";
-@import "components/emphasize";
-@import "components/capitalize";
 @import "components/asterisc";
-@import "layout/page";
+@import "components/capitalize";
+@import "components/emphasize";
+
+@import "core/reset";
+@import "core/variables";
+
+@import 'layout/footer';
+@import 'layout/header';
 @import "layout/main";
-@import "layout/header";
-// @import 'layout/footer';
-@import "pages/indexhero";
-@import "pages/team";
-@import "pages/str-and-weak";
+@import "layout/page";
+
 @import "pages/about-us";
-@import "pages/contacthero";
 @import "pages/contact";
+@import "pages/contacthero";
 @import "pages/form";
+@import "pages/index";
+@import "pages/indexhero";
+@import "pages/str-and-weak";
+@import "pages/team";
+
 
 :root {
   /* Colores del proyecto */
@@ -31,62 +36,6 @@
   --font-familyRubik: "Rubik", sans-serif;
 }
 
-// HEADER Y FOOTER - MOBILE.CSS
-
-/* A partir de aquí el header*/
-
-/* a partir de aquí estilos footer */
-.footer {
-  width: 100%;
-  padding-top: 30px;
-  padding-bottom: 45px;
-  border-top: solid 1px var(--cool-grey);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  gap: 20px 30px;
-}
-.copyright {
-  padding: 0px 40px;
-  text-align: center;
-  color: var(--cool-grey);
-  font-size: 1.4rem;
-  font-family: var(--font-familyOpenSans);
-  text-transform: capitalize;
-}
-.nav-footer {
-  padding-bottom: 30px;
-  padding: 0px 90px;
-  font-family: var(--font-familyOpenSans);
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 1.43;
-  opacity: 0.75;
-}
-.link-footer {
-  display: flex;
-  justify-content: center;
-  color: var(--gunmetal);
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.link-footer:hover {
-  color: var(--blue-green);
-}
-.link-footer:active {
-  color: var(--blue-green);
-}
-.logo-adalab {
-  width: 115.9px;
-  height: 45px;
-  margin-left: 30%;
-  margin-top: 30px;
-}
-.logo-adalab-img {
-  width: 100%;
-  height: 100%;
-}
 
 //   HEADER - TABLET.CSS
 
@@ -119,85 +68,4 @@
   .header-nav-item {
     padding: 10px;
   }
-}
-
-//FOOTER - TABLET.CSS
-
-@media all and (min-width: 320px) {
-  .copyright {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    margin-top: 30px;
-  }
-  .container-footer {
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-  }
-  .nav-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: -12%;
-    height: 13vh;
-    gap: 10px;
-  }
-  .logo-adalab {
-    width: 100%;
-    margin-right: 40vw;
-    margin-left: 3vw;
-    margin-top: -1%;
-  }
-}
-
-// FORM - MOBILE.CSS
-
-/* A partir de aquí el footer */
-.footer {
-  width: 100%;
-  padding-top: 30px;
-  padding-bottom: 45px;
-  border-top: solid 1px var(--cool-grey);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  gap: 20px 30px;
-}
-.copyright {
-  padding: 0px 40px;
-  text-align: center;
-  color: var(--cool-grey);
-  font-size: 1.4rem;
-  font-family: var(--font-familyOpenSans);
-  text-transform: capitalize;
-}
-.nav-footer {
-  padding-bottom: 30px;
-  padding: 0px 90px;
-  font-family: var(--font-familyOpenSans);
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 1.43;
-  opacity: 0.75;
-}
-.link-footer {
-  display: flex;
-  justify-content: center;
-  color: var(--gunmetal);
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.link-footer:hover {
-  color: var(--blue-green);
-}
-.logo-adalab {
-  width: 115.9px;
-  height: 45px;
-}
-.logo-adalab-img {
-  width: 100%;
-  height: 100%;
 }
