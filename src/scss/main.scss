@@ -5,7 +5,7 @@
 @import "components/asterisc";
 @import "layout/page";
 @import "layout/main";
-// @import 'layout/header';
+@import 'layout/header';
 // @import 'layout/footer';
 @import "pages/indexhero";
 @import "pages/team";
@@ -34,61 +34,6 @@
 // HEADER Y FOOTER - MOBILE.CSS
 
 /* A partir de aquí el header*/
-.header {
-  width: 100%;
-  font-family: var(--font-familyRubik);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  text-transform: uppercase;
-}
-.h1 {
-  background-color: var(--blue-green);
-  color: var(--white);
-  font-size: 1.6rem;
-  opacity: 0.95;
-  width: 100%;
-  height: 60px;
-  line-height: 30px;
-  text-align: center;
-  padding: 15px 40px 15px 40px;
-}
-.h1a {
-  text-decoration: none;
-  color: var(--white);
-  &:hover {
-    color: #0e423e;
-  }
-}
-.header-ul {
-  list-style: none;
-  background-color: var(--aqua);
-  width: 100vw;
-  height: 45px;
-  opacity: 0.9;
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-top: 8px;
-  padding-bottom: 7px;
-}
-.header-nav-item {
-  color: var(--white);
-  font-size: 1.5rem;
-  text-decoration: none;
-}
-.header-nav-item:hover {
-  color: #0e423e;
-}
-.header-nav-item:active {
-  color: #0e423e;
-}
 
 /* a partir de aquí estilos footer */
 .footer {
@@ -145,7 +90,7 @@
 
 //   HEADER - TABLET.CSS
 
-@media all and (min-width: 320px) {
+@media all and (min-width: 768px) {
   .header {
     background-color: var(--blue-green);
     height: 60px;
