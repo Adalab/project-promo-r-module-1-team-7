@@ -1,14 +1,14 @@
 .team {
   width: 100%;
   padding: 0% 5%;
-  margin-top: 23%;
+  margin-top: 10%;
   margin-bottom: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 58px;
+  top: 103px;
   &__title {
     color: $color-blue-green;
     font-family: $font-familyRubik;
@@ -30,11 +30,14 @@
     flex-direction: column;
     gap: 28px;
   }
-  @media all and (min-width: 320px) {
+  @media all and (min-width: 768px) {
     margin-top: 5.9%;
     margin-bottom: 7.9%;
     padding: 0% 6%;
     top: 0;
+    &__title {
+      margin-bottom: 2.5%;
+    }
     &__ps {
       padding: 0%;
       gap: 30px;
@@ -43,7 +46,12 @@
       }
     }
   }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 1200px) {
     padding: 0% 25%;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    &__title {
+      margin-bottom: 2.5%;
+    }
   }
 }

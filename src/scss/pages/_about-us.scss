@@ -8,6 +8,8 @@
   margin-top: 30px;
   margin-bottom: 30px;
   text-transform: uppercase;
+  position: relative;
+  top: 90px;
 }
 .quienessomos {
   display: grid;
@@ -16,7 +18,10 @@
   margin: 0px 15px 0px 15px;
   margin-left: 15%;
   margin-right: 15%;
+  margin-bottom: 40%;
   background-color: var(--white);
+  position: relative;
+  top: 100px;
   @media all and (min-width: 768px) {
     row-gap: 60px;
     grid-template-columns: auto;

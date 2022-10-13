@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 58px;
+  top: 105px;
   padding-bottom: 45px;
   &__top-square {
     width: 30px;
@@ -35,18 +35,23 @@
     font-size: 1.6rem;
     line-height: 1.5;
   }
-  @media all and (min-width: 320px) {
+  @media all and (min-width: 768px) {
     flex-direction: row;
     top: 0;
+    padding: 0% 5% 7.8% 5%;
     &__container {
       padding: 0;
+      margin: 0%;
     }
     &__title {
       margin-bottom: 4.9%;
     }
   }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 1200px) {
     padding: 3.8% 11.5% 5% 11.5%;
+    &__container {
+      padding: 0% 3% 0% 3%;
+    }
     &__title {
       margin-bottom: 3%;
       margin-top: 0%;

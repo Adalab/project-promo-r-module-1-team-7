@@ -35,7 +35,7 @@
 
 /* A partir de aquí el header*/
 .header {
-  width: 100%;
+  width: 100vw;
   font-family: var(--font-familyRubik);
   display: flex;
   flex-direction: column;
@@ -145,7 +145,7 @@
 
 //   HEADER - TABLET.CSS
 
-@media all and (min-width: 320px) {
+@media all and (min-width: 768px) {
   .header {
     background-color: var(--blue-green);
     height: 60px;

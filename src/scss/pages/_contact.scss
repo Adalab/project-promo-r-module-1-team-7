@@ -28,7 +28,7 @@
       margin-top: 30px;
     }
   }
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 768px) {
     margin-top: 3.8%;
     margin-bottom: 8.3%;
     &__article {
@@ -46,7 +46,7 @@
       }
     }
   }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 1200px) {
     margin-top: 4%;
     margin-bottom: 10%;
     &__article {

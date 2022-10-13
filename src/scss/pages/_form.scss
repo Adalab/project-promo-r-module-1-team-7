@@ -52,7 +52,7 @@
     border-radius: 4%;
     margin-top: 17px;
   }
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 768px) {
     margin: 0% 21% 0% 21%;
     &__input {
       &--name {
@@ -65,7 +65,7 @@
       margin-left: 50%;
     }
   }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 1200px) {
     margin: 0% 25%;
     &__label {
       &--mail {

@@ -24,26 +24,26 @@
     position: absolute;
     top: 91%;
   }
-  @media all and (min-width: 320px) {
+  @media all and (min-width: 768px) {
     height: 58vh;
     &__banner {
       background-color: rgba(255, 255, 255, 0.8);
-      top: 75%;
+      top: 76%;
       left: 7.5%;
       padding: 2.5% 3% 2.5% 3%;
       margin: 0% 0% 0% 0%;
       width: 57.5%;
-      height: 25%;
+      height: 24%;
     }
   }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 1200px) {
     height: 75vh;
     &__banner {
       width: 48%;
-      height: 25%;
-      top: 75%;
+      height: 24.5%;
+      top: 76%;
       left: 7.5%;
-      padding: 2% 2.5% 2% 2.5%;
+      padding: 1.8% 2.5% 2% 2.5%;
       font-size: 2.4rem;
     }
   }
