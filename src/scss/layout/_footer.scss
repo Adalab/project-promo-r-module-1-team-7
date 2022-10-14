@@ -9,31 +9,31 @@
   justify-content: space-around;
   gap: 2.77vh 4.15vh;
   @media all and (min-width: 768px) {
-  padding-left: 5%;
-  gap: 0vh;
+    padding-left: 5%;
+    gap: 0vh;
   }
   @media all and (min-width: 1200px) {
-  padding-left: 3%;
+    padding-left: 3%;
   }
   .copyright {
-    padding: 0vh 2.60vw;
+    padding: 0vh 2.6vw;
     text-align: center;
     color: $color-cool-grey;
     font-size: 1.4rem;
     font-family: $font-familyOpenSans;
     text-transform: capitalize;
     @media all and (min-width: 768px) {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    margin-top: 1%;
-    padding-left: 1%;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      margin-top: 1%;
+      padding-left: 1%;
     }
     @media all and (min-width: 1200px) {
       padding-left: 7%;
     }
   }
-  
+
   .nav-footer {
     padding: 0vh 3vw;
     font-family: $font-familyOpenSans;
@@ -42,26 +42,26 @@
     line-height: 1.43;
     opacity: 0.75;
     @media all and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: -12%;
-    height: 13vh;
-    gap: 0.625em;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: -12%;
+      height: 13vh;
+      gap: 0.625em;
     }
     @media all and (min-width: 1200px) {
-    padding-top: 4%;
+      padding-top: 4%;
     }
-    
+
     .link-footer {
       display: flex;
       justify-content: center;
       text-decoration: none;
       text-transform: uppercase;
       color: $color-gunmetal;
-        &:hover {
+      &:hover {
         color: $color-blue-green;
-        }
+      }
     }
   }
 
@@ -70,12 +70,12 @@
     height: 45px;
     margin-top: 4.15vh;
     @media all and (min-width: 768px) {
-    // margin-right: 40vw;
-    margin-left: -3vw;
+      // margin-right: 40vw;
+      margin-left: -3vw;
     }
     @media all and (min-width: 1200px) {
-    margin-left: 3.5%;
-    margin-bottom: 1%;
+      margin-left: 3.5%;
+      margin-bottom: 1%;
     }
     .logo-adalab-img {
       width: 100%;
@@ -84,8 +84,8 @@
   }
 }
 
-.container-footer{
-@media all and (min-width: 768px) {
+.container-footer {
+  @media all and (min-width: 768px) {
     width: 100%;
     display: flex;
     flex-direction: row-reverse;

@@ -1,8 +1,8 @@
 .quienessomosh2 {
   font-size: 2rem;
   font-weight: 500;
-  color: var(--blue-green);
-  font-family: var(--font-familyRubik);
+  color: $color-blue-green;
+  font-family: $font-familyRubik;
   text-align: center;
   padding-top: 30px;
   margin-top: 30px;
@@ -17,7 +17,7 @@
   margin-left: 15%;
   margin-right: 15%;
   margin-bottom: 45px;
-  background-color: var(--white);
+  background-color: $color-white;
   @media all and (min-width: 768px) {
     row-gap: 60px;
     grid-template-columns: auto;
@@ -56,7 +56,7 @@ background-color: orange;
   justify-self: center;
   width: 180px;
   height: 180px;
-  border: solid 5px var(--blue-green);
+  border: solid 5px $color-blue-green;
   border-radius: 4px;
 
   @media all and (min-width: 768px) {
@@ -91,7 +91,7 @@ background-color: orange;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: var(--font-familyOpenSans);
+  font-family: $font-familyOpenSans;
 
   @media all and (min-width: 768px) {
     align-items: flex-start;
@@ -109,7 +109,7 @@ background-color: orange;
   font-weight: normal;
   line-height: 45px;
   text-align: center;
-  color: var(--black);
+  color: $color-black;
   margin-top: 15px;
   /*  @media all and (min-width: 768px) {
     text-align: left;
@@ -120,7 +120,7 @@ background-color: orange;
   font-weight: normal;
   font-size: 1.6rem;
   line-height: 24px;
-  color: var(--gunmetal);
+  color: $color-gunmetal;
   @media all and (min-width: 768px) {
     margin-bottom: 0px;
     padding-left: 0px;
@@ -153,10 +153,10 @@ background-color: orange;
 }
 
 .icon {
-  color: var(--blue-green);
+  color: $color-blue-green;
   text-decoration: none;
   font-size: 1.6rem;
   &:hover {
-    color: var(--aqua);
+    color: $color-aqua;
   }
 }
