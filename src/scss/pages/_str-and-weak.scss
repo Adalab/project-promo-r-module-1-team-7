@@ -5,15 +5,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-  top: 105px;
   padding-bottom: 45px;
+  position: relative;
   &__top-square {
     width: 30px;
     height: 30px;
     background-color: var(--white);
     position: absolute;
-    bottom: 97.5%;
+    bottom: 97.4%;
     transform: rotate(45deg);
   }
   &__container {
