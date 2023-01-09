@@ -35,3 +35,9 @@ If you want to take a look, don't hesitate and go to our GitHub Pages Link attac
 Thanks for your attention and we hope you enjoy our work!
 
 **_Project mocked up and created by Marta Castrillo, Úrsula Borrego, Virginia Menéndez and Yara Paz_**
+
+### Authors:
+- [@martaCastrillo](https://github.com/martscastrillo)
+- [@virginiaMenendez](https://github.com/VirginiaMSordo)
+- [@ursulaBorrego](https://github.com/UrsulaBorrego)
+- [@yarapaz](https://github.com/yarapaz)
